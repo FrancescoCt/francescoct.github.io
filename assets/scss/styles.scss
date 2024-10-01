@@ -1,0 +1,464 @@
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$font-stack: 'Helvetica Neue', sans-serif;
+
+//Codice landing page
+.full-screen-image {
+    background-image: url('../img/lavagna.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+//Codice contatti page
+
+input:user-valid{
+    border-color: green;
+}
+input:user-invalid{
+    border-color: red;
+}
+
+.container{
+    h2, label{
+        color: $primary-color;     
+    }
+}
+
+//Il seguente codice scss è stato scritto per rispettare l'ultimo requisito e mostrare le mie conoscenze di sass
+//Codice per Portfolio page
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $secondary-color;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+
+    .logo {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: $primary-color;
+            }  
+        }
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-left: 20px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 16px;
+                display: block;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        span {
+            height: 3px;
+            width: 25px;
+            background: white;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        .menu {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            
+
+            li {
+                margin: 0;
+
+                a {
+                    padding: 10px;
+                }
+            }
+            
+        }
+
+        .hamburger {
+            display: flex;
+            margin-right: 5%;
+        }
+
+        #menu-toggle:checked + .hamburger {
+            span:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            span:nth-child(2) {
+                opacity: 0;
+            }
+            span:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+
+        #menu-toggle:checked + .hamburger + .menu {
+            display: flex;
+        }
+    }
+}
+
+.hero {
+    margin-top: 50px;
+    background: $primary-color;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+    }
+}
+.space_image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px $primary-color;
+    margin: 20px auto;
+    img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+section {
+    padding: 2rem 0;
+    line-height : 1.5em;
+
+    width: 90%;
+    margin: 0 auto;
+    
+    .content {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 100%;
+            margin-right: 2rem;
+            
+        }
+
+        p {
+            flex: 1;
+        }
+    }
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card {
+        background: white;
+        border: 1px solid #ddd;
+        margin-top: 5%;
+        padding: 2%;
+        text-align: center;
+        max-width: 40%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px $primary-color;
+
+        h3, h4 {
+            margin-top: 2%;
+            color: $primary-color;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s, color 0.3s;
+
+            &:hover {
+                background: $primary-color;
+                color: white;
+            }
+        }
+
+        p {
+            color: $secondary-color;
+            font-style: italic;
+        }
+
+        .linguaggi{
+            img{
+                width: 24px;
+                height: 24px;
+                border-radius: 5px;
+                margin-right: 1%;
+            }
+        }
+
+        img {
+            border-radius: 10px;
+            height: 50%;
+            &:hover {
+                  transform: scale(1.1);
+                  transition: 0.4s;
+              }
+        }
+    }
+}
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px $primary-color;
+    margin: 20px auto;
+  
+    .profile-image {
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        &:hover {
+            img {
+            transform: scale(1.8);
+            box-shadow: 0 4px 8px $primary-color;
+            transition: 0.4s;
+            }
+            transition: 0.4s;
+            padding: 5%;
+        }
+    }
+  
+    .profile-description {
+      flex: 1;
+      margin-left: 20px;
+  
+      h2 {
+        color: $primary-color;
+        margin: 0 0 10px;
+      }
+      h3 {
+        color: $primary-color;
+      }
+  
+      p {
+        margin: 0;
+        font-size: 1em;
+        color: $secondary-color;
+        
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            img {
+                height: 24px;
+                width: 24px;
+                padding: 2px;
+                border-radius: 10px;
+                margin-top: 2px;
+                &:hover {
+                    background-color: $primary-color;
+                }    
+            }
+            }
+        }
+
+      em {
+        color: $primary-color;
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        .card {
+            max-width: 100%;
+            p {
+                font-size: smaller;
+            }
+            a {
+                display: inline-block;
+                margin-bottom: 5%;
+                font-size: smaller;
+            }
+            img{
+                &:hover {
+                    transform: scale(1.01);
+                }
+            }
+        }
+    }
+    .profile-card {
+      flex-direction: column;
+      text-align: left;
+  
+      .profile-image {
+        margin-bottom: 20px;
+        &:hover {
+            img {
+            transform: scale(1.5);
+            }
+        }
+      }
+  
+      .profile-description {
+        margin-left: 0;
+      }
+    }
+  }
+  
+.contact {
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+}
+
+footer {
+    width: auto;
+    background-color: $secondary-color;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        width: 150px;
+        
+        li {
+            margin-right: 10%;
+            padding: 5%;
+            background-color: white;
+            border-radius: 20%;
+
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+
+        a img {
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    .contact {
+        margin-top: 2%;
+        img{
+            width: 150px;
+            margin: 10%;
+            padding: 5%;
+            background-color: white;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+    }
+}
+
+.linguaggi{
+    img{
+        width: 24px;
+        height: 24px;
+        border-radius: 5px;
+        margin-right: 1%;
+        &:hover {
+            transform: scale(1.8);
+            box-shadow: 0 4px 8px $primary-color;
+            transition: 0.4s;
+            
+        }
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;//Per avere la tabella arrotondata
+
+    th, td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: $secondary-color;
+        color:white
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/scss/styles.css">
+    <link rel="icon" type="image/x-icon" href="../assets/svg/github.svg" >
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="../">Francesco Catania</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contattami <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../portfolio/">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Form -->
+    <div class="container mt-5">
+        <h2>Feedback</h2>
+        <form>
+            <div class="form-group m-2">
+                <label for="nome">Nome</label>
+                <input type="text" pattern="[A-Za-z]" required name="nome" class="form-control" id="nome" placeholder="Inserisci il tuo nome">
+            </div>
+            <div class="form-group m-2">
+                <label for="cognome">Cognome</label>
+                <input type="text" pattern="[A-Za-z]" required name="cognome" class="form-control" id="cognome" placeholder="Inserisci il tuo cognome">
+            </div>
+            <div class="form-group m-2">
+                <label for="email">Email</label>
+                <input type="email" required class="form-control" name="email" id="email" placeholder="Inserisci la tua email">
+            </div>
+            <div class="form-group m-2">
+                <label for="telefono">Telefono</label>
+                <input type="tel" class="form-control" pattern="^[+]?[0-9]{9,12}$" name="telefono" id="telefono" placeholder="Inserisci il tuo numero di telefono">
+            </div>
+            <div class="form-group m-2">
+                <label for="cellulare">Cellulare</label>
+                <input type="tel" class="form-control" pattern="^[+]?[0-9]{9,12}$" name="cellulare" id="cellulare" placeholder="Inserisci il tuo numero di cellulare">
+            </div>
+            <div class="form-group mt-5">
+                <label for="feedback">Feedback</label>
+                <textarea class="form-control" id="feedback" rows="3" placeholder="Inserisci il tuo feedback"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary m-2">Invia</button>
+            <button type="button" class="btn btn-secondary m-2" onclick="window.location.href='../'">Home</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-lg-start mt-5">
+        <div class="text-center">
+            <address class="contact">
+                <a href="https://start2impact.it"><img type="image/x-icon" src="../assets/favicons/start_to_impact_logo.png" alt="Logo Start 2 Impact" class="logo"></a>
+                <p>Indirizzo: Via Fittizia 123, 00100 Roma</p>
+                <p>Telefono: +39 06 12345678</p>
+                <p>Email: info@azienda.it</p>
+            </address>
+            <ul class="m-5">
+                <li><a href="https://github.com"><img src="../assets/svg/github.svg" alt="GitHub"></a></li>
+                <li><a href="https://instagram.com"><img src="../assets/svg/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="https://linkedin.com"><img src="../assets/svg/linkedin.svg" alt="Linkedin"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
