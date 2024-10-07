@@ -1,0 +1,25 @@
+.dark-theme {
+    background-color: #343a40;
+    color: #ffffff;
+}
+.dark-theme .navbar, .dark-theme .footer {
+    background-color: #23272b;
+}
+
+.counter {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+.emoticon {
+    font-size: 5rem;
+    display: none;
+}
+.emoticon.visible {
+    display: block;
+}
+
+.btn img {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+}
