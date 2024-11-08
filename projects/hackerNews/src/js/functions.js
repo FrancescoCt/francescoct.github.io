@@ -59,7 +59,7 @@ class Loader{
             this.startWindow = this.startWindow > 0 ? this.startWindow - 10 : 0;
         }
         
-        //Per ogni id contenuto nell'array eseguo un ulteriore fetch per avere la descrizione dettagliata
+        //Per ogni id contenuto nell'array eseguo ulteriori fetch per avere la descrizione dettagliata
         const detailsPromises = this.arrayNewsIds.map(async id => {
             const details = await this.fetchDetails(id);
             const imageUrl = await this.fetchRandomImage();
