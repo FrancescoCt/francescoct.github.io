@@ -46,6 +46,9 @@ class CustomHeadContent extends HTMLElement {
       script.defer = true;
       document.head.appendChild(script);
     });
+
+    // Dopo aver inserito gli elementi, rimuove il tag dal DOM
+    this.remove();
   }
 }
 
