@@ -2,37 +2,64 @@
 <html lang="it">
 <head>
   <script src="../assets/components/headContent.js" defer></script>
-  <custom-head_content title="Francesco Catania - Portfolio" linkStyle="../assets/scss/styles.css" linkIcon="../assets/svg/github.svg"></custom-head_content>
+  <custom-head_content 
+    title="Francesco Catania - Portfolio" 
+    linkStyle="../assets/scss/styles.css" 
+    linkIcon="../assets/svg/github.svg"
+    images="
+    ../assets/img/profile.png,
+    ../assets/img/progetto.webp,
+    ../assets/favicons/unict_logo.png,
+    ../assets/favicons/start_to_impact_logo.png,
+    ../assets/favicons/start_to_impact_logo.png,
+    ../assets/svg/github.svg,
+    ../assets/svg/linkedin.svg,
+    ../assets/svg/instagram.svg,
+    "
+    scripts="
+    ../assets/components/customNavbar.js,
+    ../assets/components/header.js,
+    ../assets/components/section.js,
+    ../assets/components/footer.js,
+    "
+    >
+  </custom-head_content>
 </head>
 
 <body>
-    <nav>
-        <div class="logo"><a href="../">Francesco Catania</a></div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <ul class="menu">
-            <li><a href="#about">Chi Sono</a></li>
-            <li><a href="#skills">Competenze</a></li>
-            <li><a href="#projects">Progetti</a></li>
-            <li><a href="#contact">Contatti</a></li>
-        </ul>
-    </nav>
+    <custom-horizontal_navbar
+        urlHome = "../"
+        items="Chi Sono, #about; Competenze, #skills; Progetti, #projects; Contatti, #contact">
+    </custom-horizontal_navbar>
 
+    <custom-header
+        title = "Portfolio"
+        motto="Un breve riassunto dei miei progetti di Web Design">
+    </custom-header>
+    
+    <!-- Ok
     <header class="hero">
         <div class="container">
             <h1>Portfolio</h1>
             <p><em>Un breve riassunto dei miei progetti di Web Design</em></p>
         </div>
-    </header>
+    </header> -->
+    <!-- Non la rimetto
     <section>
         <div class="space_image">
             <img src="../assets/img/programmazione.webp" alt="Immagine dev tools">
         </div>
-    </section>
+    </section> -->
+    <custom-section
+        idSection="about"
+        image="../assets/img/profile.png"
+        title="Chi sono"
+        description="Ciao, mi chiamo Francesco Catania.</p>
+                    <p>Ho conseguito una laurea in <em>Ingegneria Informatica</em> presso l'<em>Università degli Studi di Catania</em> e ho sviluppato esperienze rilevanti nell'ambito dello sviluppo <em>Full-Stack</em> e dell'<em>Ingegneria del Software</em>.</p>     
+                    <p>Mi piace <em>progettare siti Web</em>: scrivo codice nel tempo libero tenendomi aggiornato sulle nuove tecnologie del momento.</p>    
+                    <p>Creare cose nuove mi appassiona, per questo sono sempre alla ricerca di nuove sfide e opportunità per crescere professionalmente. "
+    ></custom-section>
+    <!-- ok 
     <section id="about" class="about">
             <div class="profile-card">
                 <div class="profile-image">
@@ -47,7 +74,14 @@
                 </div>
                 </div>
         </div>
-    </section>
+    </section> -->
+    <custom-section
+        idSection="skills"
+        image="../assets/favicons/unict-logo.png"
+        title="Competenze"
+        description="Di seguito riporto le competenze nell'ambito della <em>programmazione</em> apprese durante il percorso di studi: (da inserire tabella)"
+    ></custom-section>
+    <!-- Da aggiungere logica tabella
     <section id="skills" class="skills">
         <div class="profile-card">
             <div class="profile-image">
@@ -117,7 +151,17 @@
                 </table>
             </div>
         </div>
-    </section>
+    </section> -->
+    <custom-section
+        idSection="projects"
+        image="../assets/img/progetto.webp"
+        title="Progetti"
+        description="Riporto di seguito alcuni dei miei progetti di Web Design portati avanti con <em>Start2Impact</em>.</p>
+                <p>Per maggiori informazioni sulla mia attività da programmatore, date un'occhiata alla mia cartella <em>GitHub</em>:</p>
+                <p><a href='https://francescoct.github.io/'><img src='../assets/svg/github.svg' alt='GitHub'></a>"
+    ></custom-section>
+
+    <!-- Ok da recuperare la struttura delle cards
     <section id="projects" class="projects">
         <div class="profile-card">
             <div class="profile-image">
@@ -169,8 +213,25 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="contact">
+    </section> -->
+
+    <custom-section
+        idSection="contact"
+        image="../assets/img/profile.png"
+        title="Contatti"
+        description="Sentitevi liberi di contattarmi via social o via mail ai seguenti indirizzi di <em>posta elettronica</em>:</p>
+                <ul>
+                    <li>Email: <em>frank@mailFalsa.it</em></li>
+                    <li>Pec: <em>frank@pec-mailFalsa.it</em></li>            
+                </ul>
+                <p>o ai seguenti <em>recapiti telefonici</em>:</p>
+                <ul>
+                    <li>Tel: <em>+39 06 12345678</em></li>
+                    <li>Cel: <em>+39 06 12345678</em></li>
+                </ul>
+                <p>Qualsiasi tipo di feedback è ben accetto e incoraggiato, potete lasciarne uno compilando il seguente <a href='../contattami/'>form</a>. Grazie della collaborazione!"
+    ></custom-section>
+    <!-- <section id="contact">
         <div class="profile-card">
             <div class="profile-image">
                 <img src="../assets/img/profile.png" alt="Immagine profilo">
@@ -190,8 +251,14 @@
                 <p>Qualsiasi tipo di feedback è ben accetto e incoraggiato, potete lasciarne uno compilando il seguente <a href="../contattami/">form</a>. Grazie della collaborazione!</p>
             </div>
         </div>
-    </section>
-    <footer>
+    </section> -->
+    <custom-footer
+    imageLogo="../assets/favicons/start_to_impact_logo.png"
+    imageGit="../assets/svg/github.svg"
+    imageInsta="../assets/svg/instagram.svg"
+    imageLinkedin="../assets/svg/linkedin.svg"
+    ></custom-footer>
+    <!-- <footer>
         <address class="contact">
             <a href="https://start2impact.it"><img type="image/x-icon" src="../assets/favicons/start_to_impact_logo.png" alt="Logo Start 2 Impact" class="logo"></a>
             <p>Indirizzo: Via Fittizia 123, 00100 Roma</p>
@@ -203,6 +270,6 @@
             <li><a href="https://instagram.com"><img src="../assets/svg/instagram.svg" alt="Instagram"></a></li>
             <li><a href="https://linkedin.com"><img src="../assets/svg/linkedin.svg" alt="Linkedin"></a></li>
         </ul>
-    </footer>
+    </footer> -->
 </body>
 </html>
