@@ -1,6 +1,8 @@
 .full-screen-image {
   /*background: url("../img/lavagna.jpg") no-repeat center center fixed;  Imposta immagine */
-  background-size: cover; /* Copre tutta la viewport */
+  /*background-size: cover;  Copre tutta la viewport */
+  object-fit: cover; /* Copre tutta la viewport senza distorsione */
+  object-position: center;
   width: 100vw;
   height: 100vh;
   position: absolute;

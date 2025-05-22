@@ -27,7 +27,6 @@ class CustomHeadContent extends HTMLElement {
 
     if (linkIcon) {
       document.head.insertAdjacentHTML("beforeend", `
-        <link rel="preload" href="${linkIcon}" as="image">
         <link rel="icon" href="${linkIcon}">
       `);
     }
