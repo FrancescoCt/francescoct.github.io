@@ -1,3 +1,10 @@
+/* Inizio cambiamenti a mano css */
+.background-color-main{
+   background-color: rgba(52, 152, 219, 0.8);
+ /*#3498db; */
+  padding: 2%;
+  border-radius: 10px;
+}
 .full-screen-image {
   /*background: url("../img/lavagna.jpg") no-repeat center center fixed;  Imposta immagine */
   /*background-size: cover;  Copre tutta la viewport */
@@ -45,7 +52,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
+/* Fine cambiamenti a mano su css */
 
 nav {
   display: flex;
