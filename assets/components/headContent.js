@@ -18,26 +18,38 @@ class CustomHeadContent extends HTMLElement {
     document.title = title;  // Modifica il titolo senza modificare innerHTML
 
     if (linkStyle) {
-      const styleLink = document.createElement("link");
-      styleLink.rel = "stylesheet";
-      styleLink.href = linkStyle;
-      styleLink.setAttribute("loading", "lazy");
-      document.head.appendChild(styleLink);
+      document.head.insertAdjacentHTML("beforeend", `
+        <link rel="preload" href="${linkStyle}" as="style">
+        <link rel="stylesheet" href="${linkStyle}">
+      `);
+      // const styleLink = document.createElement("link");
+      // styleLink.rel = "stylesheet";
+      // styleLink.href = linkStyle;
+      // styleLink.setAttribute("loading", "lazy");
+      // document.head.appendChild(styleLink);
     }
 
     if (linkIcon) {
-      const iconLink = document.createElement("link");
-      iconLink.rel = "icon";
-      iconLink.href = linkIcon;
-      iconLink.setAttribute("loading", "lazy");
-      document.head.appendChild(iconLink);
+      document.head.insertAdjacentHTML("beforeend", `
+        <link rel="preload" href="${linkIcon}" as="image">
+        <link rel="icon" href="${linkIcon}">
+      `);
+      // const iconLink = document.createElement("link");
+      // iconLink.rel = "icon";
+      // iconLink.href = linkIcon;
+      // iconLink.setAttribute("loading", "lazy");
+      // document.head.appendChild(iconLink);
     }
 
     if (useBootstrap) {
-      const bootstrapLink = document.createElement("link");
-      bootstrapLink.rel = "stylesheet";
-      bootstrapLink.href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
-      document.head.appendChild(bootstrapLink);
+      document.head.insertAdjacentHTML("beforeend", `
+        <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" as="style">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      `);
+      // const bootstrapLink = document.createElement("link");
+      // bootstrapLink.rel = "stylesheet";
+      // bootstrapLink.href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
+      // document.head.appendChild(bootstrapLink);
     }
 
     scripts.forEach(src => {
