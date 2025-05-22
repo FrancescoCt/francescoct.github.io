@@ -6,6 +6,7 @@ class CustomHeadContent extends HTMLElement {
     const linkStyle = this.getAttribute("linkStyle");
     const linkIcon = this.getAttribute("linkIcon");
     const useBootstrap = this.getAttribute("useBootstrap");
+    const images = this.getAttribute("images")?.split(",") || [];
     const scripts = this.getAttribute("scripts")?.split(",") || [];
 
     // Inserisci solo nuovi elementi, senza sovrascrivere head
@@ -22,11 +23,6 @@ class CustomHeadContent extends HTMLElement {
         <link rel="preload" href="${linkStyle}" as="style">
         <link rel="stylesheet" href="${linkStyle}">
       `);
-      // const styleLink = document.createElement("link");
-      // styleLink.rel = "stylesheet";
-      // styleLink.href = linkStyle;
-      // styleLink.setAttribute("loading", "lazy");
-      // document.head.appendChild(styleLink);
     }
 
     if (linkIcon) {
@@ -34,11 +30,6 @@ class CustomHeadContent extends HTMLElement {
         <link rel="preload" href="${linkIcon}" as="image">
         <link rel="icon" href="${linkIcon}">
       `);
-      // const iconLink = document.createElement("link");
-      // iconLink.rel = "icon";
-      // iconLink.href = linkIcon;
-      // iconLink.setAttribute("loading", "lazy");
-      // document.head.appendChild(iconLink);
     }
 
     if (useBootstrap) {
@@ -46,18 +37,26 @@ class CustomHeadContent extends HTMLElement {
         <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" as="style">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       `);
-      // const bootstrapLink = document.createElement("link");
-      // bootstrapLink.rel = "stylesheet";
-      // bootstrapLink.href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
-      // document.head.appendChild(bootstrapLink);
     }
 
-    scripts.forEach(src => {
-      const script = document.createElement("script");
-      script.src = src.trim();
-      script.defer = true;
-      document.head.appendChild(script);
-    });
+    if (images) {
+      images.forEach(src => {
+          document.head.insertAdjacentHTML("beforeend", `
+            <link rel="preload" href="${src}" as="image">
+          `);
+      });
+      
+    }
+
+    if(scripts){
+      scripts.forEach(src => {
+        const script = document.createElement("script");
+        script.src = src.trim();
+        script.defer = true;
+        document.head.appendChild(script);
+      });
+    }
+    
 
     // Dopo aver inserito gli elementi, rimuove il tag dal DOM
     this.remove();
