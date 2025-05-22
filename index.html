@@ -8,6 +8,7 @@
             linkStyle="assets/scss/styles.css" 
             linkIcon="assets/svg/github.svg"
             images="assets/img/lavagna.webp"
+            scripts="assets/components/customNavbar.js"
         >
         </custom-head_content>
     </head>
@@ -15,40 +16,18 @@
 <body>
     <!-- Menu di navigazione -->
 
-    <nav>
-        <div class="logo"><a href="#">Francesco Catania</a></div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <ul class="menu">
-            <li class="nav-item"><a class="nav-link" href="portfolio/">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="contattami/">Contattami</a></li>
-        </ul>
-    </nav>
+    <custom-horizontal_navbar items="Portfolio, portfolio/; Contattami, contattami/"></custom-horizontal_navbar>
     <!-- Full Screen Image -->
-     <img class="full-screen-image" src="assets/img/lavagna.webp" width="960" height="549" alt="Sfondo">
-     <div class="overlay">
-            <div class="background-color-main">
-                <em>
-                    <p>Hello there! I am</p>
-                    <h1>Francesco Catania</h1>
-                    <p>a Software Developer specializing in UX and Visual Design</p>
-                    <a href="portfolio/" class="btn btn-primary">Scopri di più</a>
-                </em>  
-            </div>
-            
-        </div>
-    <!-- <div class="full-screen-image">
-        <div class="overlay">
+    <img class="full-screen-image" src="assets/img/lavagna.webp" width="960" height="549" alt="Sfondo">
+    <div class="overlay">
+        <div class="background-color-main">
             <em>
                 <p>Hello there! I am</p>
                 <h1>Francesco Catania</h1>
                 <p>a Software Developer specializing in UX and Visual Design</p>
-            <a href="portfolio/" class="btn btn-primary">Scopri di più</a></em>
-        </div>
-    </div> -->
+                <a href="portfolio/" class="btn btn-primary">Scopri di più</a>
+            </em>  
+        </div> 
+    </div>
 </body>
 </html>
