@@ -6,13 +6,13 @@ class CustomHeadContent extends HTMLElement {
     document.head.innerHTML = `
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     `;
 
     // Recupera gli attributi passati in <custom-head>
     const title = this.getAttribute("title") || "Default Title";
     const linkStyle = this.getAttribute("linkStyle");
     const linkIcon = this.getAttribute("linkIcon");
+    const useBootstrap = this.getAttribute("useBootstrap");
 
     const scripts = this.getAttribute("scripts")?.split(",") || [];
 
@@ -35,6 +35,14 @@ class CustomHeadContent extends HTMLElement {
       document.head.appendChild(iconLink);
     }
 
+    // Se si vuole usare bootstrap, aggiungila alla <head>
+    if (useBootstrap) {
+      const bootstrapLink = document.createElement("link");
+      bootstrapLink.rel = "stylesheet";
+      bootstrapLink.href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
+      document.head.appendChild(bootstrapLink);
+    }
+
     //Se esistono scripts
     // Caricamento degli script specificati
     scripts.forEach(src => {
@@ -55,7 +63,7 @@ customElements.define("custom-head_content", CustomHeadContent);
 // <!DOCTYPE html>
 // <html lang="it">
 // <head>
-//   <custom-head title="Home Page" scripts="components/my-card.js, components/example.js"></custom-head>
+//   <custom-head title="Home Page" scripts="components/my-card.js, components/example.js" useBootstrap></custom-head>
 // </head>
 // <body>
 
