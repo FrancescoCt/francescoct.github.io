@@ -5,15 +5,16 @@
   padding: 2%;
   border-radius: 10px;
 }
-.full-screen-image {
-  /*background: url("../img/lavagna.jpg") no-repeat center center fixed;  Imposta immagine */
-  /*background-size: cover;  Copre tutta la viewport */
-  object-fit: cover; /* Copre tutta la viewport senza distorsione */
+
+ .full-screen-image {
+  object-fit: cover;
   object-position: center;
   width: 100vw;
   height: 100vh;
   position: absolute;
-}
+} /**/
+/*background: url("../img/lavagna.jpg") no-repeat center center fixed;  Imposta immagine */
+/*background-size: cover;  Copre tutta la viewport */
 
 .overlay {
   position: absolute;
@@ -51,6 +52,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  visibility: hidden;
 }
 /* Fine cambiamenti a mano su css */
 

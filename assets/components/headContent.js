@@ -59,6 +59,10 @@ class CustomHeadContent extends HTMLElement {
 
     // Dopo aver inserito gli elementi, rimuove il tag dal DOM
     this.remove();
+    //Rendo visibile il body per evitare cumulative layer shift
+    window.onload = function() {
+      document.body.style.visibility = "visible";
+    };
   }
 }
 
