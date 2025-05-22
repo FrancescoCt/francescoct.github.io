@@ -3,7 +3,7 @@ class CustomHorizontalNavbar extends HTMLElement {
     super();
 
     // Recupera le coppie titolo-link dall'attributo "items"
-    const urlHome = this.getAttribute("home") || "#";
+    const urlHome = this.getAttribute("urlHome") || "#";
     const items = this.getAttribute("items")?.split(";") || [];
 
     // Creazione della struttura del menu
