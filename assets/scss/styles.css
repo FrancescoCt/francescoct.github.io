@@ -1,7 +1,7 @@
 /* Inizio cambiamenti a mano css */
 .background-color-main{
    background-color: rgba(52, 152, 219, 0.8);
- /*#3498db; */
+ /*#1e77bc; */
   padding: 2%;
   border-radius: 10px;
 }
@@ -40,7 +40,7 @@ input:user-invalid {
 }
 
 .container h2, .container label {
-  color: #3498db;
+  color: #1e77bc;
 }
 
 html {
@@ -77,7 +77,7 @@ nav .logo a {
   text-decoration: none;
 }
 nav .logo a:hover {
-  color: #3498db;
+  color: #1e77bc;
 }
 nav .menu {
   list-style: none;
@@ -95,7 +95,7 @@ nav .menu li a {
   display: block;
 }
 nav .menu li a:hover {
-  color: #3498db;
+  color: #1e77bc;
 }
 nav .hamburger {
   display: none;
@@ -144,7 +144,7 @@ nav #menu-toggle {
 }
 .hero {
   margin-top: 50px;
-  background: #3498db;
+  background: #1e77bc;
   color: white;
   padding: 2rem 0;
   text-align: center;
@@ -161,7 +161,7 @@ nav #menu-toggle {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 4px 8px #3498db;
+  box-shadow: 0 4px 8px #1e77bc;
   margin: 20px auto;
 }
 .space_image img {
@@ -202,22 +202,22 @@ section .content p {
   text-align: center;
   max-width: 40%;
   border-radius: 10px;
-  box-shadow: 0 4px 8px #3498db;
+  box-shadow: 0 4px 8px #1e77bc;
 }
 .cards .card h3, .cards .card h4 {
   margin-top: 2%;
-  color: #3498db;
+  color: #1e77bc;
 }
 .cards .card a {
   display: inline-block;
   text-decoration: none;
-  color: #3498db;
-  border: 1px solid #3498db;
+  color: #1e77bc;
+  border: 1px solid #1e77bc;
   padding: 0.5rem 1rem;
   transition: background 0.3s, color 0.3s;
 }
 .cards .card a:hover {
-  background: #3498db;
+  background: #1e77bc;
   color: white;
 }
 .cards .card p {
@@ -246,7 +246,7 @@ section .content p {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 4px 8px #3498db;
+  box-shadow: 0 4px 8px #1e77bc;
   margin: 20px auto;
 }
 .profile-card .profile-image img {
@@ -262,7 +262,7 @@ section .content p {
 }
 .profile-card .profile-image:hover img {
   transform: scale(1.8);
-  box-shadow: 0 4px 8px #3498db;
+  box-shadow: 0 4px 8px #1e77bc;
   transition: 0.4s;
 }
 .profile-card .profile-description {
@@ -270,11 +270,11 @@ section .content p {
   margin-left: 20px;
 }
 .profile-card .profile-description h2 {
-  color: #3498db;
+  color: #1e77bc;
   margin: 0 0 10px;
 }
 .profile-card .profile-description h3 {
-  color: #3498db;
+  color: #1e77bc;
 }
 .profile-card .profile-description p {
   margin: 0;
@@ -283,7 +283,7 @@ section .content p {
 }
 .profile-card .profile-description p a {
   text-decoration: none;
-  color: #3498db;
+  color: #1e77bc;
 }
 .profile-card .profile-description p a img {
   height: 24px;
@@ -293,10 +293,10 @@ section .content p {
   margin-top: 2px;
 }
 .profile-card .profile-description p a img:hover {
-  background-color: #3498db;
+  background-color: #1e77bc;
 }
 .profile-card .profile-description em {
-  color: #3498db;
+  color: #1e77bc;
 }
 
 @media (max-width: 600px) {
@@ -447,7 +447,7 @@ footer ul li {
   border-radius: 20%;
 }
 footer ul li:hover {
-  background-color: #3498db;
+  background-color: #1e77bc;
 }
 footer ul a img {
   height: 24px;
@@ -464,7 +464,7 @@ footer .contact img {
   border-radius: 10px;
 }
 footer .contact img:hover {
-  background-color: #3498db;
+  background-color: #1e77bc;
 }
 
 .linguaggi img {
@@ -475,7 +475,7 @@ footer .contact img:hover {
 }
 .linguaggi img:hover {
   transform: scale(1.8);
-  box-shadow: 0 4px 8px #3498db;
+  box-shadow: 0 4px 8px #1e77bc;
   transition: 0.4s;
 } */
 

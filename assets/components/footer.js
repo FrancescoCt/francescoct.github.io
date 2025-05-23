@@ -16,7 +16,7 @@ class CustomFooter extends HTMLElement {
               <div class="row">
                 <!-- Contatti -->
                 <div class="col-md-4">
-                  <h4>Contatti</h4>
+                  <h3>Contatti</h3>
                   <ul class="list-unstyled">
                     <li>Telefono: +39 123 456 7890</li>
                     <li>Email: info@hotelazienda.com</li>
@@ -25,16 +25,16 @@ class CustomFooter extends HTMLElement {
                 </div>
                 <!-- Social Media -->
                 <div class="col-md-4">
-                  <h4>Seguici</h4>
+                  <h3>Seguici</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#" class="text-white"><img class="svg m-2" src="${imageInsta}" alt="Instagram">Instagram</a></li>
-                    <li><a href="#" class="text-white"><img class="svg m-2" src="${imageGit}" alt="GitHub">Github</a></li>
-                    <li><a href="#" class="text-white"><img class="svg m-2" src="${imageLinkedin}" alt="Linkedin">LinkedIn</a></li>
+                    <li><a href="#" class="text-white"><img class="svg m-2" src="${imageInsta}" alt="insta logo">Instagram</a></li>
+                    <li><a href="#" class="text-white"><img class="svg m-2" src="${imageGit}" alt="git logo">Github</a></li>
+                    <li><a href="#" class="text-white"><img class="svg m-2" src="${imageLinkedin}" alt="ln logo">LinkedIn</a></li>
                   </ul>
                 </div>
                 <!-- Informazioni -->
                 <div class="col-md-4">
-                  <h4>Informazioni</h4>
+                  <h3>Informazioni</h3>
                   <ul class="list-unstyled">
                     <li><a href="#" class="text-white">Chi siamo</a></li>
                     <li><a href="#" class="text-white">Servizi</a></li>
