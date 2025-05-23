@@ -282,8 +282,9 @@ section .content p {
   color: #2c3e50;
 }
 .profile-card .profile-description p a {
-  color: #388e3c;
-  font-weight: bold;
+    color: #0d47a1; /* Blu scuro */
+    text-decoration: none;
+    font-weight: bold;
 }
 .profile-card .profile-description p a img {
   height: 24px;
