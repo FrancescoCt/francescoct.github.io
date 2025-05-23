@@ -16,7 +16,7 @@ class CustomFooter extends HTMLElement {
               <div class="row">
                 <!-- Contatti -->
                 <div class="col-md-4">
-                  <h3>Contatti</h3>
+                  <h1>Contatti</h1>
                   <ul class="list-unstyled">
                     <li>Telefono: +39 123 456 7890</li>
                     <li>Email: info@hotelazienda.com</li>
@@ -25,21 +25,21 @@ class CustomFooter extends HTMLElement {
                 </div>
                 <!-- Social Media -->
                 <div class="col-md-4">
-                  <h3>Seguici</h3>
+                  <h1>Seguici</h1>
                   <ul class="list-unstyled">
-                    <li><a href="#" class="text-white"><img class="svg m-2" src="${imageInsta}" alt="insta logo">Instagram</a></li>
-                    <li><a href="#" class="text-white"><img class="svg m-2" src="${imageGit}" alt="git logo">Github</a></li>
-                    <li><a href="#" class="text-white"><img class="svg m-2" src="${imageLinkedin}" alt="ln logo">LinkedIn</a></li>
+                    <li><a href="#"><img class="svg m-2" src="${imageInsta}" alt="insta logo">Instagram</a></li>
+                    <li><a href="#"><img class="svg m-2" src="${imageGit}" alt="git logo">Github</a></li>
+                    <li><a href="#"><img class="svg m-2" src="${imageLinkedin}" alt="ln logo">LinkedIn</a></li>
                   </ul>
                 </div>
                 <!-- Informazioni -->
                 <div class="col-md-4">
-                  <h3>Informazioni</h3>
+                  <h1>Informazioni</h1>
                   <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Chi siamo</a></li>
-                    <li><a href="#" class="text-white">Servizi</a></li>
-                    <li><a href="#" class="text-white">Privacy Policy</a></li>
-                    <li><a href="#" class="text-white">Termini e Condizioni</a></li>
+                    <li><a href="#">Chi siamo</a></li>
+                    <li><a href="#">Servizi</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Termini e Condizioni</a></li>
                   </ul>
                 </div>
               </div>

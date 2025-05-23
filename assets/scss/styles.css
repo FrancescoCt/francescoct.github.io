@@ -95,7 +95,7 @@ nav .menu li a {
   display: block;
 }
 nav .menu li a:hover {
-  color: #1e77bc;
+  color: orange;
 }
 nav .hamburger {
   display: none;
@@ -211,8 +211,8 @@ section .content p {
 .cards .card a {
   display: inline-block;
   text-decoration: none;
-  color: #1e77bc;
-  border: 1px solid #1e77bc;
+  color: orange;
+  border: 1px solid orange;
   padding: 0.5rem 1rem;
   transition: background 0.3s, color 0.3s;
 }
@@ -283,7 +283,7 @@ section .content p {
 }
 .profile-card .profile-description p a {
   text-decoration: none;
-  color: #1e77bc;
+  color: orange;
 }
 .profile-card .profile-description p a img {
   height: 24px;
@@ -354,12 +354,6 @@ section .content p {
     margin-top: auto !important;
 }
 
-.container {
-    max-width: 1140px; /* Simile a Bootstrap container */
-    /* padding-left: 15px;
-    padding-right: 15px; */
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -368,22 +362,20 @@ section .content p {
 
 .col-md-4 {
     flex: 0 0 auto;
-    width: 200px;  /*Un terzo della larghezza */
+    width: 200px;
     margin-left: 2%;
     margin-right: 2%;
 }
 
 @media (max-width: 600px) {
   .col-md-4 {
-    margin-right: 15%; /**/
+    margin-right: 15%;
   }
 }
 
 .col {
     flex: 1 1 auto;
     width: 100%;
-    /* padding-left: 15px;
-    padding-right: 15px; */
 }
 
 .list-unstyled {
@@ -421,63 +413,13 @@ section .content p {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-
-/* footer {
-  width: auto;
-  background-color: #2c3e50;
+footer a{
   color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  position:sticky;
-  bottom: 0;
+  text-decoration: none;
 }
-footer ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  width: 150px;
+footer a:hover{
+  color: orange;
 }
-footer ul li {
-  margin-right: 10%;
-  padding: 5%;
-  background-color: white;
-  border-radius: 20%;
-}
-footer ul li:hover {
-  background-color: #1e77bc;
-}
-footer ul a img {
-  height: 24px;
-  width: 24px;
-}
-footer .contact {
-  margin-top: 2%;
-}
-footer .contact img {
-  width: 150px;
-  margin: 2%;
-  padding: 5%;
-  background-color: white;
-  border-radius: 10px;
-}
-footer .contact img:hover {
-  background-color: #1e77bc;
-}
-
-.linguaggi img {
-  width: 24px;
-  height: 24px;
-  border-radius: 5px;
-  margin-right: 1%;
-}
-.linguaggi img:hover {
-  transform: scale(1.8);
-  box-shadow: 0 4px 8px #1e77bc;
-  transition: 0.4s;
-} */
 
 table {
   width: 100%;
