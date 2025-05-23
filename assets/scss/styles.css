@@ -338,7 +338,91 @@ section .content p {
   margin: 0;
 }
 
-footer {
+.bg-dark-custom {
+    background-color: #2c3e50 !important; /* Simile a .bg-dark */
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.pt-4 {
+    padding-top: 1.5rem !important; /* Bootstrap usa 1.5rem per pt-4 */
+}
+
+.mt-auto {
+    margin-top: auto !important;
+}
+
+.container {
+    max-width: 1140px; /* Simile a Bootstrap container */
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 200px;  /*Un terzo della larghezza */
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+@media (max-width: 600px) {
+  .col-md-4 {
+    margin-right: 15%; /**/
+  }
+}
+
+.col {
+    flex: 1 1 auto;
+    width: 100%;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-unstyled li{
+    margin-top: 5px;
+}
+
+.svg {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Per rendere le icone bianche */
+    margin-right: 10px;
+}
+
+.me-2 {
+    margin-right: 0.5rem !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.text-center {
+    text-align: center !important;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* footer {
   width: auto;
   background-color: #2c3e50;
   color: white;
@@ -347,6 +431,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  position:sticky;
   bottom: 0;
 }
 footer ul {
@@ -373,7 +458,7 @@ footer .contact {
 }
 footer .contact img {
   width: 150px;
-  margin: 10%;
+  margin: 2%;
   padding: 5%;
   background-color: white;
   border-radius: 10px;
@@ -392,7 +477,7 @@ footer .contact img:hover {
   transform: scale(1.8);
   box-shadow: 0 4px 8px #3498db;
   transition: 0.4s;
-}
+} */
 
 table {
   width: 100%;

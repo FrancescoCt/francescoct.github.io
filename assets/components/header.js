@@ -7,8 +7,8 @@ class CustomHeader extends HTMLElement {
     const motto = this.getAttribute("motto") || "Default motto";
 
     // Creazione della struttura del menu
-    
-    document.body.insertAdjacentHTML("beforeend", `
+    const prefooter = document.querySelector("#pre-footer");
+    prefooter.insertAdjacentHTML("beforebegin", `
         <header class="hero">
             <div class="container">
                 <h1>${title}</h1>

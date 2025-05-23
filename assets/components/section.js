@@ -11,7 +11,8 @@ class CustomSection extends HTMLElement {
 
     // Creazione della struttura del menu
     
-    document.body.insertAdjacentHTML("beforeend", `
+    const prefooter = document.querySelector("#pre-footer");
+    prefooter.insertAdjacentHTML("beforebegin", `
         <section id="${idSection}" class="about">
             <div class="profile-card">
                 <div class="profile-image">
