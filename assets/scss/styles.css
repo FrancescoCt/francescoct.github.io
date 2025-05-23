@@ -282,8 +282,7 @@ section .content p {
   color: #2c3e50;
 }
 .profile-card .profile-description p a {
-  text-decoration: none;
-  color: green;
+  color: #ff9800;
 }
 .profile-card .profile-description p a img {
   height: 24px;
