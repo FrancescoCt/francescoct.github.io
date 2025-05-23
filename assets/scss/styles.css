@@ -282,7 +282,8 @@ section .content p {
   color: #2c3e50;
 }
 .profile-card .profile-description p a {
-  color: #ff9800;
+  color: #388e3c;
+  font-weight: bold;
 }
 .profile-card .profile-description p a img {
   height: 24px;
