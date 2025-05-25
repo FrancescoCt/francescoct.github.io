@@ -8,8 +8,8 @@ class CustomHorizontalNavbar extends HTMLElement {
 
     // Creazione della struttura del menu
     if (items) {
-      const prefooter = document.querySelector("#pre-footer");
-      prefooter.insertAdjacentHTML("beforebegin", `
+      const navbar = document.querySelector("#navbar");
+      navbar.insertAdjacentHTML("beforebegin", `
         <nav>
             <div class="logo"><a href="${urlHome}">Francesco Catania</a></div>
             <input type="checkbox" id="menu-toggle">

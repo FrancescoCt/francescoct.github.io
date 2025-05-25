@@ -77,7 +77,7 @@ nav .logo a {
   text-decoration: none;
 }
 nav .logo a:hover {
-  color: #1e77bc;
+  color: orange;
 }
 nav .menu {
   list-style: none;
@@ -177,15 +177,17 @@ section {
   width: 90%;
   margin: 0 auto;
 }
-section .content {
+.content {
   display: flex;
   align-items: center;
+  margin-right: 2%;
+  margin-left: 1%;
 }
-section .content img {
+.content img {
   width: 100%;
   margin-right: 2rem;
 }
-section .content p {
+.content p {
   flex: 1;
 }
 
