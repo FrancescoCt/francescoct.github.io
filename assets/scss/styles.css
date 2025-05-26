@@ -3,7 +3,7 @@
   --secondary-color: #2c3e50;
   --a-hover-color: orange;
   --a-normal-color: #0d47a1;
-  --font-type: 'Titillium Web', sans-serif;
+  --font-type: 'Titillium Web', 'Helvetica Neue';
 }
 
 /* Inizio cambiamenti a mano css, cambiare ouput del scss!!*/
