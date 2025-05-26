@@ -211,8 +211,8 @@ section {
 .cards .card a {
   display: inline-block;
   text-decoration: none;
-  color: orange;
-  border: 1px solid orange;
+  color: #1e77bc;
+  border: 1px solid #1e77bc;
   padding: 0.5rem 1rem;
   transition: background 0.3s, color 0.3s;
 }
@@ -233,10 +233,8 @@ section {
 .cards .card img {
   border-radius: 10px;
   height: 50%;
-}
-.cards .card img:hover {
-  transform: scale(1.1);
-  transition: 0.4s;
+  width: 50%;
+  margin: 0;
 }
 
 .profile-card {
@@ -314,9 +312,6 @@ section {
     display: inline-block;
     margin-bottom: 5%;
     font-size: smaller;
-  }
-  .cards .card img:hover {
-    transform: scale(1.01);
   }
   .profile-card {
     flex-direction: column;
