@@ -232,8 +232,9 @@ section {
 }
 .cards .card img {
   border-radius: 10px;
-  height: 50%;
-  width: 50%;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
   margin: 0;
 }
 
