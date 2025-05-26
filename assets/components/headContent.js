@@ -15,10 +15,10 @@ class CustomHeadContent extends HTMLElement {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Author: Francesco Catania, Page: ${title}">
 
-      <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" as="style"/>
-      <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+      
     `);
-
+      //<link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" as="style"/>
+      //<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet"></link>
     document.title = title;  // Modifica il titolo senza modificare innerHTML
 
     if (linkStyle) {
