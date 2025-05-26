@@ -37,14 +37,14 @@ const projects = [
     {
     "Id" : 1,
     "Title" : "Introduzione allo sviluppo",
-    "Thumbnail": "../projects/introduzioneSviluppo/assets/img/ricercatore1.jpg",
+    "Thumbnail": "../projects/introduzioneSviluppo/assets/img/ricercatore1.webp",
     "Description": "<p>Landing page statica per sito di divulgazione scientifica</p>\n<h4>Linguaggi: HTML, CSS</h4>",
     "Url": "../projects/introduzioneSviluppo/"
     },
     {
     "Id" : 2,
     "Title" : "Counter JS",
-    "Thumbnail": "../projects/counterjs/assets/img/CounterJSLightTheme.png",
+    "Thumbnail": "../projects/counterjs/assets/img/CounterJSLightTheme.webp",
     "Description": "<p>Contatore javascript</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
     "Url": "../projects/counterjs/"
     },

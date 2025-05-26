@@ -302,9 +302,9 @@ section {
 .profile-card .profile-description p a img:hover {
   background-color: var(--primary-color);
 }
-.profile-card .profile-description em {
+/* .profile-card .profile-description em {
   color: var(--primary-color);
-}
+} */
 
 @media (max-width: 683px) {
   .cards {
@@ -343,7 +343,7 @@ section {
 }
 
 .bg-dark-custom {
-    background-color: var(--secondary-color) !important; /* Simile a .bg-dark */
+    background-color: var(--secondary-color) !important;
 }
 
 .text-white {
@@ -351,7 +351,7 @@ section {
 }
 
 .pt-4 {
-    padding-top: 1.5rem !important; /* Bootstrap usa 1.5rem per pt-4 */
+    padding-top: 1.5rem !important;
 }
 
 .mt-auto {
