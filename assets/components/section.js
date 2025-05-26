@@ -3,7 +3,7 @@ class CustomSection extends HTMLElement {
     super();
 
     // Recupera le coppie titolo-link dall'attributo "items"
-    const idSection = this.getAttribute("idSection");
+    const id = this.getAttribute("id");
     const image = this.getAttribute("image");
     const title = this.getAttribute("title");
     const description = this.getAttribute("description");
@@ -11,9 +11,9 @@ class CustomSection extends HTMLElement {
 
     // Creazione della struttura del menu
     
-    const prefooter = document.querySelector("#pre-footer");
-    prefooter.insertAdjacentHTML("beforebegin", `
-        <section id="${idSection}" class="about">
+    const section = document.querySelector(`#${id}`);
+    section.insertAdjacentHTML("beforebegin", `
+        <section id="${id}" class="about">
             <div class="profile-card">
                 <div class="profile-image">
                     <img src="${image}" alt="Img_${title}">

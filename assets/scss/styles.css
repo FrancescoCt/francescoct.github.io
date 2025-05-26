@@ -1,4 +1,4 @@
-/* Inizio cambiamenti a mano css */
+/* Inizio cambiamenti a mano css, cambiare ouput del scss!!*/
 .background-color-main{
    background-color: rgba(52, 152, 219, 0.8);
  /*#1e77bc; */
@@ -12,9 +12,7 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-} /**/
-/*background: url("../img/lavagna.jpg") no-repeat center center fixed;  Imposta immagine */
-/*background-size: cover;  Copre tutta la viewport */
+}
 
 .overlay {
   position: absolute;
@@ -302,7 +300,7 @@ section {
   color: #1e77bc;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 683px) {
   .cards {
     flex-direction: column;
   }

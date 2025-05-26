@@ -18,6 +18,7 @@
     ../assets/components/customNavbar.js,
     ../assets/components/header.js,
     ../assets/components/section.js,
+    ../assets/components/card1.js,
     ../assets/components/footer.js
     "
     >
@@ -37,7 +38,7 @@
         motto="Un breve riassunto dei miei progetti di Web Design">
     </custom-header>
     <custom-section
-        idSection="about"
+        id="about"
         image="../assets/img/profile.png"
         title="Chi sono"
         description="Ciao, mi chiamo Francesco Catania.</p>
@@ -46,7 +47,7 @@
                     <p>Creare cose nuove mi appassiona, per questo sono sempre alla ricerca di nuove sfide e opportunità per crescere professionalmente. "
     ></custom-section>
     <custom-section
-        idSection="skills"
+        id="skills"
         image="../assets/favicons/unict-logo.png"
         title="Competenze"
         description="Di seguito riporto le competenze nell'ambito della <em>programmazione</em> apprese durante il percorso di studi: (da inserire tabella)"
@@ -123,7 +124,7 @@
         </div>
     </section> -->
     <custom-section
-        idSection="projects"
+        id="projects"
         image="../assets/img/progetto.webp"
         title="Progetti"
         description="Riporto di seguito alcuni dei miei progetti di Web Design portati avanti con <em>Start2Impact</em>.</p>
@@ -131,101 +132,9 @@
                 <p><a href='https://francescoct.github.io/'><img src='../assets/svg/github.svg' alt='GitHub'></a>"
     ></custom-section>
 
-    <!-- <div class="content">
-            <div class="cards">
-                <div class="card">
-                    <img src="../projects/introduzioneSviluppo/assets/img/ricercatore1.jpg" alt="Thumbnail progetto 1">
-                    <h3>Introduzione allo Sviluppo</h3>
-                    <p>Landing page statica per sito di divulgazione scientifica</p>
-                    <h4>Linguaggi: </h4>
-                    <div class="linguaggi">
-                        <img src="../assets/favicons/html.png" alt="Icona html">
-                        <img src="../assets/favicons/css.png" alt="Icona css">
-                    </div>
-                    <a href="../projects/introduzioneSviluppo/" target="_blank">Scopri di più</a>
-                </div>
-                <div class="card">
-                    <img src="../projects/counterjs/assets/img/CounterJSLightTheme.png" alt="Thumbnail progetto 2">
-                    <h3>Counter JS</h3>
-                    <p>Contatore javascript</p>
-                    <h4>Linguaggi: </h4>
-                    <div class="linguaggi">
-                        <img src="../assets/favicons/html.png" alt="Icona html">
-                        <img src="../assets/favicons/css.png" alt="Icona css">
-                        <img src="../assets/favicons/javascript.png" alt="Icona js">
-                    </div>
-                    <a href="../projects/counterjs/">Scopri di più</a>
-                </div>
-                <div class="card">
-                    <img src="../assets/img/lavagna.webp" alt="Thumbnail progetto 3">
-                    <h3>Hacker News</h3>
-                    <p>Chiamate API con Javascript, uso di Webpack, fetch e Axios</p>
-                    <h4>Linguaggi: </h4>
-                    <div class="linguaggi">
-                        <img src="../assets/favicons/html.png" alt="Icona html">
-                        <img src="../assets/favicons/css.png" alt="Icona css">
-                        <img src="../assets/favicons/javascript.png" alt="Icona js">
-                    </div>
-                    <a href="../projects/hackerNews/dist/">Scopri di più</a>
-                </div>
-            </div>
-    </div> -->
-    <!-- Ok da recuperare la struttura delle cards
-    <section id="projects" class="projects">
-        <div class="profile-card">
-            <div class="profile-image">
-                <img src="../assets/img/progetto.webp" alt="Progetto start to impact">
-            </div>
-            <div class="profile-description">
-                <h2>Progetti</h2>
-                <p>Riporto di seguito alcuni dei miei progetti di Web Design portati avanti con <em>Start2Impact</em>.</p>
-                <p>Per maggiori informazioni sulla mia attività da programmatore, date un'occhiata alla mia cartella <em>GitHub</em>:</p>
-                <p><a href="https://francescoct.github.io/"><img src="../assets/svg/github.svg" alt="GitHub"></a></p>
-            </div>
-        </div>
-        <div class="content">
-            <div class="cards">
-                <div class="card">
-                    <img src="../projects/introduzioneSviluppo/assets/img/ricercatore1.jpg" alt="Thumbnail progetto 1">
-                    <h3>Introduzione allo Sviluppo</h3>
-                    <p>Landing page statica per sito di divulgazione scientifica</p>
-                    <h4>Linguaggi: </h4>
-                    <div class="linguaggi">
-                        <img src="../assets/favicons/html.png" alt="Icona html">
-                        <img src="../assets/favicons/css.png" alt="Icona css">
-                    </div>
-                    <a href="../projects/introduzioneSviluppo/" target="_blank">Scopri di più</a>
-                </div>
-                <div class="card">
-                    <img src="../projects/counterjs/assets/img/CounterJSLightTheme.png" alt="Thumbnail progetto 2">
-                    <h3>Counter JS</h3>
-                    <p>Contatore javascript</p>
-                    <h4>Linguaggi: </h4>
-                    <div class="linguaggi">
-                        <img src="../assets/favicons/html.png" alt="Icona html">
-                        <img src="../assets/favicons/css.png" alt="Icona css">
-                        <img src="../assets/favicons/javascript.png" alt="Icona js">
-                    </div>
-                    <a href="../projects/counterjs/">Scopri di più</a>
-                </div>
-                <div class="card">
-                    <img src="../assets/img/lavagna.webp" alt="Thumbnail progetto 3">
-                    <h3>Hacker News</h3>
-                    <p>Chiamate API con Javascript, uso di Webpack, fetch e Axios</p>
-                    <h4>Linguaggi: </h4>
-                    <div class="linguaggi">
-                        <img src="../assets/favicons/html.png" alt="Icona html">
-                        <img src="../assets/favicons/css.png" alt="Icona css">
-                        <img src="../assets/favicons/javascript.png" alt="Icona js">
-                    </div>
-                    <a href="../projects/hackerNews/dist/">Scopri di più</a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+    <custom-cards id="cards-container" dataJson="projects"></custom-cards>
     <custom-section
-        idSection="contact"
+        id="contact"
         image="../assets/img/profile.png"
         title="Contatti"
         description="Sentitevi liberi di contattarmi via social o via mail ai seguenti indirizzi di <em>posta elettronica</em>:</p>
@@ -242,12 +151,11 @@
     ></custom-section>
     
     <custom-footer
-    imageLogo="../assets/favicons/start_to_impact_logo.png"
-    imageGit="../assets/svg/github.svg"
-    imageInsta="../assets/svg/instagram.svg"
-    imageLinkedin="../assets/svg/linkedin.svg"
+        id="footer"
+        imageLogo="../assets/favicons/start_to_impact_logo.png"
+        imageGit="../assets/svg/github.svg"
+        imageInsta="../assets/svg/instagram.svg"
+        imageLinkedin="../assets/svg/linkedin.svg"
     ></custom-footer>
-
-    <div id="pre-footer"></div>
 </body>
 </html>

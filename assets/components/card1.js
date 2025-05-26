@@ -1,61 +1,62 @@
-class CustomFooter extends HTMLElement {
+class CustomCards extends HTMLElement {
   constructor() {
     super();
 
     // Recupera le coppie titolo-link dall'attributo "items"
-    const dataJson = this.getAttribute("dataJson") || [];
+    const dataJson = this.getAttribute("dataJson"); //path del file dataJson con le info
 
-    if(dataJson != []){
-        // Creazione della struttura del menu
-        const prefooter = document.querySelector("#pre-footer");
-        prefooter.insertAdjacentHTML("afterend", `
+    if(dataJson == "projects"){
+        const data = projects;
+        // Creazione del container
+        const cards_container = document.querySelector("#cards-container");
+        cards_container.insertAdjacentHTML("beforebegin", `
             <div class="content">
-                <div class="cards">
-                    <div class="card">
-                        <img src="../projects/introduzioneSviluppo/assets/img/ricercatore1.jpg" alt="Thumbnail progetto 1">
-                        <h3>Introduzione allo Sviluppo</h3>
-                        <p>Landing page statica per sito di divulgazione scientifica</p>
-                        <h4>Linguaggi: </h4>
-                        <div class="linguaggi">
-                            <img src="../assets/favicons/html.png" alt="Icona html">
-                            <img src="../assets/favicons/css.png" alt="Icona css">
-                        </div>
-                        <a href="../projects/introduzioneSviluppo/" target="_blank">Scopri di più</a>
-                    </div>
-                    <div class="card">
-                        <img src="../projects/counterjs/assets/img/CounterJSLightTheme.png" alt="Thumbnail progetto 2">
-                        <h3>Counter JS</h3>
-                        <p>Contatore javascript</p>
-                        <h4>Linguaggi: </h4>
-                        <div class="linguaggi">
-                            <img src="../assets/favicons/html.png" alt="Icona html">
-                            <img src="../assets/favicons/css.png" alt="Icona css">
-                            <img src="../assets/favicons/javascript.png" alt="Icona js">
-                        </div>
-                        <a href="../projects/counterjs/">Scopri di più</a>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/lavagna.webp" alt="Thumbnail progetto 3">
-                        <h3>Hacker News</h3>
-                        <p>Chiamate API con Javascript, uso di Webpack, fetch e Axios</p>
-                        <h4>Linguaggi: </h4>
-                        <div class="linguaggi">
-                            <img src="../assets/favicons/html.png" alt="Icona html">
-                            <img src="../assets/favicons/css.png" alt="Icona css">
-                            <img src="../assets/favicons/javascript.png" alt="Icona js">
-                        </div>
-                        <a href="../projects/hackerNews/dist/">Scopri di più</a>
-                    </div>
-                </div>
-        </div>
+                <div id="cards" class="cards"></div>
+            </div>       
         `);
+        //Contenuto del container in cards
+        const cards = document.querySelector("#cards");
+        data.forEach(record => {
+            cards.insertAdjacentHTML("beforeend", `
+                    <div class="card">
+                        <img src="${record.Thumbnail}" alt="${record.Title}">
+                        <h3>${record.Title}</h3>
+                        ${record.Description}
+                        <a href="${record.Url}" target="_blank">Scopri di più</a>
+                    </div>
+            `);
+        })
     }
-
-   
     // Dopo aver inserito gli elementi, rimuove il tag dal DOM
     this.remove();
   }
 }
+//Definizione dei dati che possono essere usati nelle cards
+const projects = [
+
+    {
+    "Id" : 1,
+    "Title" : "Introduzione allo sviluppo",
+    "Thumbnail": "../projects/introduzioneSviluppo/assets/img/ricercatore1.jpg",
+    "Description": "<p>Landing page statica per sito di divulgazione scientifica</p>\n<h4>Linguaggi: HTML, CSS</h4>",
+    "Url": "../projects/introduzioneSviluppo/"
+    },
+    {
+    "Id" : 2,
+    "Title" : "Counter JS",
+    "Thumbnail": "../projects/counterjs/assets/img/CounterJSLightTheme.png",
+    "Description": "<p>Contatore javascript</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
+    "Url": "../projects/counterjs/"
+    },
+    {
+    "Id" : 3,
+    "Title" : "Hacker News",
+    "Thumbnail": "../assets/img/lavagna.webp",
+    "Description": "<p>Chiamate API con Javascript, uso di Webpack, fetch e Axios</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
+    "Url": "../projects/hackerNews/dist/"
+    },
+
+]
 
 // Registra il Custom Element
-customElements.define("custom-footer", CustomFooter);
+customElements.define("custom-cards", CustomCards);

@@ -9,8 +9,8 @@ class CustomFooter extends HTMLElement {
     const imageLinkedin = this.getAttribute("imageLinkedin");
 
     // Creazione della struttura del menu
-    const prefooter = document.querySelector("#pre-footer");
-    prefooter.insertAdjacentHTML("afterend", `
+    const footer = document.querySelector("#footer");
+    footer.insertAdjacentHTML("beforebegin", `
         <footer class="text-white pt-4 mt-auto bg-dark-custom">
             
               <div class="row">
