@@ -1,7 +1,14 @@
+:root {
+  --primary-color: #1e77bc;
+  --secondary-color: #2c3e50;
+  --a-hover-color: orange;
+  --a-normal-color: #0d47a1;
+  --font-type: 'Titillium Web', sans-serif;
+}
+
 /* Inizio cambiamenti a mano css, cambiare ouput del scss!!*/
 .background-color-main{
-   background-color: rgba(52, 152, 219, 0.8);
- /*#1e77bc; */
+   background-color: rgba(52, 152, 219, 0.8);/*#1e77bc; */
   padding: 2%;
   border-radius: 10px;
 }
@@ -38,7 +45,7 @@ input:user-invalid {
 }
 
 .container h2, .container label {
-  color: #1e77bc;
+  color: var(--primary-color);
 }
 
 html {
@@ -46,7 +53,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: var(--font-type);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -58,7 +65,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #2c3e50;
+  background: var(--secondary-color);
   padding: 10px;
   position: fixed;
   width: 100%;
@@ -75,7 +82,7 @@ nav .logo a {
   text-decoration: none;
 }
 nav .logo a:hover {
-  color: orange;
+  color: var(--a-hover-color);
 }
 nav .menu {
   list-style: none;
@@ -93,7 +100,7 @@ nav .menu li a {
   display: block;
 }
 nav .menu li a:hover {
-  color: orange;
+  color: var(--a-hover-color);
 }
 nav .hamburger {
   display: none;
@@ -142,7 +149,7 @@ nav #menu-toggle {
 }
 .hero {
   margin-top: 50px;
-  background: #1e77bc;
+  background: var(--primary-color);
   color: white;
   padding: 2rem 0;
   text-align: center;
@@ -159,7 +166,7 @@ nav #menu-toggle {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 4px 8px #1e77bc;
+  box-shadow: 0 4px 8px var(--primary-color);
   margin: 20px auto;
 }
 .space_image img {
@@ -202,26 +209,26 @@ section {
   text-align: center;
   max-width: 40%;
   border-radius: 10px;
-  box-shadow: 0 4px 8px #1e77bc;
+  box-shadow: 0 4px 8px var(--primary-color);
 }
 .cards .card h3, .cards .card h4 {
   margin-top: 2%;
-  color: #1e77bc;
+  color: var(--primary-color);
 }
 .cards .card a {
   display: inline-block;
   text-decoration: none;
-  color: #1e77bc;
-  border: 1px solid #1e77bc;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   padding: 0.5rem 1rem;
   transition: background 0.3s, color 0.3s;
 }
 .cards .card a:hover {
-  background: #1e77bc;
+  background: var(--primary-color);
   color: white;
 }
 .cards .card p {
-  color: #2c3e50;
+  color: var(--secondary-color);
   font-style: italic;
 }
 .cards .card .linguaggi img {
@@ -245,7 +252,7 @@ section {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 4px 8px #1e77bc;
+  box-shadow: 0 4px 8px var(--primary-color);
   margin: 20px auto;
 }
 .profile-card .profile-image img {
@@ -261,7 +268,7 @@ section {
 }
 .profile-card .profile-image:hover img {
   transform: scale(1.8);
-  box-shadow: 0 4px 8px #1e77bc;
+  box-shadow: 0 4px 8px var(--primary-color);
   transition: 0.4s;
 }
 .profile-card .profile-description {
@@ -269,19 +276,19 @@ section {
   margin-left: 20px;
 }
 .profile-card .profile-description h2 {
-  color: #1e77bc;
+  color: var(--primary-color);
   margin: 0 0 10px;
 }
 .profile-card .profile-description h3 {
-  color: #1e77bc;
+  color: var(--primary-color);
 }
 .profile-card .profile-description p {
   margin: 0;
   font-size: 1em;
-  color: #2c3e50;
+  color: var(--secondary-color);
 }
 .profile-card .profile-description p a {
-    color: #0d47a1; /* Blu scuro */
+    color: var(--a-normal-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -293,10 +300,10 @@ section {
   margin-top: 2px;
 }
 .profile-card .profile-description p a img:hover {
-  background-color: #1e77bc;
+  background-color: var(--primary-color);
 }
 .profile-card .profile-description em {
-  color: #1e77bc;
+  color: var(--primary-color);
 }
 
 @media (max-width: 683px) {
@@ -336,7 +343,7 @@ section {
 }
 
 .bg-dark-custom {
-    background-color: #2c3e50 !important; /* Simile a .bg-dark */
+    background-color: var(--secondary-color) !important; /* Simile a .bg-dark */
 }
 
 .text-white {
@@ -415,7 +422,7 @@ footer a{
   text-decoration: none;
 }
 footer a:hover{
-  color: orange;
+  color: var(--a-hover-color);
 }
 
 table {
@@ -431,11 +438,11 @@ table th, table td {
   text-align: left;
 }
 table th {
-  background-color: #2c3e50;
+  background-color: var(--secondary-color);
   color: white;
 }
 table td {
-  color: #0d47a1;
+  color: var(--a-normal-color);
 }
 tbody tr:nth-child(odd) {
   background-color: #d6eaf8;

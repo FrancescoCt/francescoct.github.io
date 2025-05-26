@@ -14,6 +14,7 @@ class CustomHeadContent extends HTMLElement {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Author: Francesco Catania, Page: ${title}">
+      <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
     `);
 
     document.title = title;  // Modifica il titolo senza modificare innerHTML
