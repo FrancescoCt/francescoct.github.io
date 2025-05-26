@@ -19,6 +19,7 @@
     ../assets/components/header.js,
     ../assets/components/section.js,
     ../assets/components/card1.js,
+    ../assets/components/table.js,
     ../assets/components/footer.js
     "
     >
@@ -50,79 +51,9 @@
         id="skills"
         image="../assets/favicons/unict-logo.png"
         title="Competenze"
-        description="Di seguito riporto le competenze nell'ambito della <em>programmazione</em> apprese durante il percorso di studi: (da inserire tabella)"
+        description="Di seguito riporto le competenze nell'ambito della <em>programmazione</em> apprese durante il percorso di studi:"
     ></custom-section>
-    <!-- Da aggiungere logica tabella
-    <section id="skills" class="skills">
-        <div class="profile-card">
-            <div class="profile-image">
-                <img src="../assets/favicons/unict-logo.png" alt="immagine lavagna">
-            </div>
-            <div class="profile-description">
-                <h2>Competenze</h2>
-                <p>Di seguito riporto le competenze nell'ambito della <em>programmazione</em> apprese durante il percorso di studi:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Sviluppo Web</th>
-                            <th>General Purpose</th>
-                            <th>Analisi Dati</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Sviluppo Web">
-                                <div class="linguaggi">
-                                    <img type="image/x-icon" src="../assets/favicons/html.png" alt="Icona html">
-                                    <img type="image/x-icon" src="../assets/favicons/css.png" alt="Icona css">
-                                    <img type="image/x-icon" src="../assets/favicons/javascript.png" alt="Icona javascript">
-                                    <img type="image/x-icon" src="../assets/favicons/php.png" alt="Icona php">
-                                </div>
-                            </td>
-                            <td data-label="General Purpose">
-                                <div class="linguaggi">
-                                    <img type="image/x-icon" src="../assets/favicons/c.png" alt="Icona c">
-                                    <img type="image/x-icon" src="../assets/favicons/cSharp.png" alt="Icona csharp">
-                                    <img type="image/x-icon" src="../assets/favicons/java.png" alt="Icona java">
-                                </div>
-                            </td>
-                            <td data-label="Analisi Dati">
-                                <div class="linguaggi">
-                                    <img type="image/x-icon" src="../assets/favicons/python.png" alt="Icona python">
-                                    <img type="image/x-icon" src="../assets/favicons/ruby.png" alt="Icona ruby">
-                                    <img type="image/x-icon" src="../assets/favicons/mysql.png" alt="Icona mysql">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-label="Sviluppo Web">
-                                <ul >
-                                    <li><em>HTML</em> </li>
-                                    <li><em>CSS</em></li>
-                                    <li><em>JavaScript</em></li>
-                                    <li><em>PHP</em></li>
-                                </ul>
-                            </td>
-                            <td data-label="General Purpose">
-                                <ul>
-                                    <li><em>C</em></li> 
-                                    <li><em>C#</em></li> 
-                                    <li><em>Java</em></li> 
-                                </ul>
-                            </td>
-                            <td data-label="Analisi Dati">
-                                <ul class="linguaggi">
-                                    <li><em>Python</em></li>
-                                    <li><em>Ruby</em></li>
-                                    <li><em>Mysql</em></li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section> -->
+    <custom-table id="skillsTable" dataJson="skills"></custom-table>
     <custom-section
         id="projects"
         image="../assets/img/progetto.webp"

@@ -7,8 +7,6 @@ class CustomSection extends HTMLElement {
     const image = this.getAttribute("image");
     const title = this.getAttribute("title");
     const description = this.getAttribute("description");
-    const table = this.getAttribute("table"); //Prenderà come parametro l'id di un elemento json dove definisco dati da inserire in tabella
-
     // Creazione della struttura del menu
     
     const section = document.querySelector(`#${id}`);
