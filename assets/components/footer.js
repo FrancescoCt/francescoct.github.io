@@ -25,11 +25,11 @@ class CustomFooter extends HTMLElement {
                 </div>
                 <!-- Social Media -->
                 <div class="col-md-4">
-                  <h1>Seguici</h1>
+                  <h1>Seguimi</h1>
                   <ul class="list-unstyled">
-                    <li><a href="#"><img class="svg m-2" src="${imageInsta}" alt="insta logo">Instagram</a></li>
-                    <li><a href="#"><img class="svg m-2" src="${imageGit}" alt="git logo">Github</a></li>
-                    <li><a href="#"><img class="svg m-2" src="${imageLinkedin}" alt="ln logo">LinkedIn</a></li>
+                    <li><a href="https://github.com/FrancescoCt"><img class="svg m-2" src="${imageInsta}" alt="insta logo">Instagram</a></li>
+                    <li><a href="https://github.com/FrancescoCt"><img class="svg m-2" src="${imageGit}" alt="git logo">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/francesco-catania-6168451bb/"><img class="svg m-2" src="${imageLinkedin}" alt="ln logo">LinkedIn</a></li>
                   </ul>
                 </div>
                 <!-- Informazioni -->
