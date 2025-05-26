@@ -14,7 +14,7 @@ class CustomSection extends HTMLElement {
         <section id="${id}" class="about">
             <div class="profile-card">
                 <div class="profile-image">
-                    <img src="${image}" alt="Img_${title}">
+                    <img src="${image}" alt="Img_${title} width="200" heigth="200"">
                 </div>
                 <div class="profile-description">
                     <h2>${title}</h2>

@@ -302,9 +302,9 @@ section {
 .profile-card .profile-description p a img:hover {
   background-color: var(--primary-color);
 }
-/* .profile-card .profile-description em {
+.profile-card .profile-description em {
   color: var(--primary-color);
-} */
+}
 
 @media (max-width: 683px) {
   .cards {
