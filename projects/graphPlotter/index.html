@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <script src="../../assets/components/headContent.js" defer></script>
+    <custom-head_content 
+        title="Graph Plotter" 
+        linkStyle="../../assets/scss/styles.css" 
+        linkIcon="../../assets/svg/github.svg"
+        images="
+        ../../assets/svg/github.svg,
+        ../../assets/svg/linkedin.svg,
+        ../../assets/svg/instagram.svg
+        "
+        scripts="
+        ../../assets/components/customNavbar.js,
+        ../../assets/components/header.js,
+        ../../assets/components/footer.js
+        "
+        >
+    </custom-head_content>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        canvas { border: 1px solid #0077b5; margin-top: 20px; width: 100%; max-width: 600px; height: auto; }
+        .container-graph { width: 90%; max-width: 600px; margin: 2% auto ; }
+        input, select, button { width: 100%; max-width: 400px; padding: 8px; margin: 10px auto; display: block; }
+    </style>
+</head>
+<body>
+
+    <custom-horizontal_navbar
+        id="navbar"
+        urlHome = "../../"
+        items="Portfolio, https://francescoct.github.io/portfolio/">
+    </custom-horizontal_navbar>
+    <custom-header
+        id="custom-header"
+        title = "Graph Plotter"
+        motto="Un analizzatore veloce di trend di dati">
+    </custom-header>
+    <div class="container-graph">
+        <label for="dataInput">Inserisci i dati (separati da ";"):</label>
+        <input type="text" id="dataInput" placeholder="20;50;80;40;100;60">
+
+        <label for="labelsInput">Inserisci le etichette (separate da ";"):</label>
+        <input type="text" id="labelsInput" placeholder="A;B;C;D;E;F">
+
+        <label for="trendType">Tipo di tendenza:</label>
+        <select id="trendType">
+            <option value="linear">Regressione Lineare</option>
+            <option value="movingAverage">Media Mobile</option>
+            <option value="quadratic">Interpolazione Quadratica</option>
+        </select>
+
+        <button onclick="generaGrafico()">Plotta il Grafico</button>
+        <canvas id="grafico"></canvas>
+    </div>
+
+    <script>
+        function resizeCanvas() {
+            const canvas = document.getElementById('grafico');
+            canvas.width = document.querySelector('.container-graph').offsetWidth;
+            canvas.height = 400;
+            generaGrafico();
+        }
+
+        window.addEventListener("resize", resizeCanvas);
+
+        function generaGrafico() {
+            const dataInput = document.getElementById('dataInput').value.split(";").map(Number);
+            const labelsInput = document.getElementById('labelsInput').value.split(";");
+            const trendType = document.getElementById('trendType').value;
+            const canvas = document.getElementById('grafico');
+            const ctx = canvas.getContext('2d');
+            const larghezza = canvas.width;
+            const altezza = canvas.height;
+            const margine = 60;
+            const spazio = (larghezza - 2 * margine) / (dataInput.length - 1);
+
+            if (dataInput.length !== labelsInput.length) {
+                alert("Il numero di etichette deve corrispondere al numero di dati!");
+                return;
+            }
+
+            // 🔹 Nuovo calcolo della scala Y
+            const maxValore = Math.max(...dataInput);
+            const minValore = Math.min(...dataInput);
+
+            function scalaY(valore) {
+                return altezza - margine - ((valore - minValore) * (altezza - 2 * margine) / (maxValore - minValore));
+            }
+
+            ctx.clearRect(0, 0, larghezza, altezza);
+
+            function disegnaAssi() {
+                ctx.beginPath();
+                ctx.moveTo(margine, altezza - margine);
+                ctx.lineTo(larghezza - margine, altezza - margine);
+                ctx.moveTo(margine, altezza - margine);
+                ctx.lineTo(margine, margine);
+                ctx.strokeStyle = "#000";
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            }
+
+            function disegnaEtichette() {
+                ctx.font = "14px Arial";
+                ctx.fillStyle = "#000";
+                ctx.textAlign = "center";
+
+                for (let i = 0; i < labelsInput.length; i++) {
+                    let x = margine + i * spazio;
+                    ctx.fillText(labelsInput[i], x, altezza - 10);
+                }
+
+                ctx.textAlign = "right";
+                for (let i = 0; i <= 5; i++) {
+                    let valore = minValore + i * ((maxValore - minValore) / 5);
+                    let y = scalaY(valore);
+                    ctx.fillText(Math.round(valore), margine - 10, y);
+                }
+            }
+
+            function disegnaGrafico() {
+                ctx.beginPath();
+                ctx.moveTo(margine, scalaY(dataInput[0]));
+
+                for (let i = 1; i < dataInput.length; i++) {
+                    ctx.lineTo(margine + i * spazio, scalaY(dataInput[i]));
+                }
+
+                ctx.strokeStyle = "#007BFF";
+                ctx.lineWidth = 2;
+                ctx.stroke();
+
+                for (let i = 0; i < dataInput.length; i++) {
+                    ctx.beginPath();
+                    ctx.arc(margine + i * spazio, scalaY(dataInput[i]), 5, 0, Math.PI * 2);
+                    ctx.fillStyle = "#FF0000";
+                    ctx.fill();
+                }
+            }
+
+            function disegnaTrend(formula, colore, tratteggiata = false) {
+                ctx.beginPath();
+                ctx.moveTo(margine, scalaY(formula(0)));
+
+                for (let i = 1; i < dataInput.length; i++) {
+                    let x = margine + i * spazio;
+                    let y = scalaY(formula(i));
+                    ctx.lineTo(x, y);
+                }
+
+                ctx.strokeStyle = colore;
+                ctx.lineWidth = 2;
+                if (tratteggiata) ctx.setLineDash([5, 5]);
+                ctx.stroke();
+                ctx.setLineDash([]);
+            }
+
+            function regressioneLineare(x) {
+                let n = dataInput.length;
+                let sommaX = 0, sommaY = 0, sommaXY = 0, sommaX2 = 0;
+
+                for (let i = 0; i < n; i++) {
+                    sommaX += i;
+                    sommaY += dataInput[i];
+                    sommaXY += i * dataInput[i];
+                    sommaX2 += i * i;
+                }
+
+                let m = (n * sommaXY - sommaX * sommaY) / (n * sommaX2 - sommaX * sommaX);
+                let b = (sommaY - m * sommaX) / n;
+
+                return m * x + b;
+            }
+
+            function mediaMobile(x, N = 3) {
+                let somma = 0, conteggio = 0;
+                for (let i = Math.max(0, x - N + 1); i <= x; i++) {
+                    somma += dataInput[i];
+                    conteggio++;
+                }
+                return somma / conteggio;
+            }
+
+            function interpolazioneQuadratica(x) {
+                return 0.1 * Math.pow(x - dataInput.length / 2, 2) + minValore;
+            }
+
+            disegnaAssi();
+            disegnaEtichette();
+            disegnaGrafico();
+
+            if (trendType === "linear") disegnaTrend(regressioneLineare, "#00CC66", true);
+            if (trendType === "movingAverage") disegnaTrend(mediaMobile, "#FF6600", false);
+            if (trendType === "quadratic") disegnaTrend(interpolazioneQuadratica, "#6600CC", true);
+        }
+
+        resizeCanvas();
+    </script>
+    <custom-footer
+        id="footer"
+        imageLogo="../../assets/favicons/start_to_impact_logo.webp"
+        imageGit="../../assets/svg/github.svg"
+        imageInsta="../../assets/svg/instagram.svg"
+        imageLinkedin="../../assets/svg/linkedin.svg"
+    ></custom-footer>
+</body>
+</html>

@@ -62,6 +62,13 @@ const projects = [
     "Description": "<p>Convertitore istantaneo da csv a json</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
     "Url": "../projects/csvToJsonConverter/"
     },
+    {
+    "Id" : 5,
+    "Title" : "Graph Plotter",
+    "Thumbnail": "../assets/img/programmazione.webp",
+    "Description": "<p>Analisi di trend veloce a partire da punti ed etichette prese in input </p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
+    "Url": "../projects/graphPlotter/"
+    },
 
 ]
 
