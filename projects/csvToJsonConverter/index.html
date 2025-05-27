@@ -46,13 +46,25 @@
             margin: 10px auto;
             overflow: auto;
         }
+        label {
+            display: block;
+            font-size: 16px;
+        }
+
+        input[type="text"] {
+            padding: 2px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <custom-horizontal_navbar
         id="navbar"
         urlHome = "../../"
-        items="Portfolio, https://francescoct.github.io/portfolio/;">
+        items="Portfolio, https://francescoct.github.io/portfolio/">
     </custom-horizontal_navbar>
     <custom-header
         id="custom-header"
@@ -70,7 +82,7 @@
         <label>Delimitatore di campo: <input type="text" id="delimiter" value="," size="2"></label><br>
         <label>Text delimiter: <input type="text" id="textDelimiter" value='"' size="2"></label><br><br>
         <button onclick="convertCSVtoJSON()">Converti</button>
-        <h3>JSON Output:</h3>
+        <h1>JSON Output:</h1>
         <pre id="jsonOutput"></pre>
     </div>
     
