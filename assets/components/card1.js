@@ -55,6 +55,13 @@ const projects = [
     "Description": "<p>Chiamate API con Javascript, uso di Webpack, fetch e Axios</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
     "Url": "../projects/hackerNews/dist/"
     },
+    {
+    "Id" : 4,
+    "Title" : "CSV to JSON Converter",
+    "Thumbnail": "../assets/img/progetto.webp",
+    "Description": "<p>Convertitore istantaneo da csv a json</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
+    "Url": "../projects/csvToJsonConverter/"
+    },
 
 ]
 

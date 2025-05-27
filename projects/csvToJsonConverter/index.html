@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <script src="../../assets/components/headContent.js" defer></script>
+    <custom-head_content 
+        title="Csv to Json Converter" 
+        linkStyle="../../assets/scss/styles.css" 
+        linkIcon="../../assets/svg/github.svg"
+        images="
+        ../../assets/svg/github.svg,
+        ../../assets/svg/linkedin.svg,
+        ../../assets/svg/instagram.svg
+        "
+        scripts="
+        ../../assets/components/customNavbar.js,
+        ../../assets/components/header.js,
+        ../../assets/components/footer.js
+        "
+        >
+    </custom-head_content>
+    <style>
+        .centered-items {
+            text-align: center;
+            margin: 20px;
+        }
+        textarea {
+            width: 80%;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0077b5;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005f8d;
+        }
+        pre {
+            text-align: left;
+            background: #f4f4f4;
+            padding: 10px;
+            width: 80%;
+            margin: 10px auto;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <custom-horizontal_navbar
+        id="navbar"
+        urlHome = "../../"
+        items="Portfolio, https://francescoct.github.io/portfolio/;">
+    </custom-horizontal_navbar>
+    <custom-header
+        id="custom-header"
+        title = "CSV to JSON Converter"
+        motto="Un veloce convertitore da csv a json, funziona anche offline.">
+    </custom-header>
+    <div class="centered-items">
+        <textarea id="csvInput" 
+        placeholder='Nome;Età;Città
+"Luca";30;"Roma"
+"Anna";25;"Milano"
+"Marco";35;"Napoli"
+"Giulia";28;"Torino"
+        '></textarea><br>
+        <label>Delimitatore di campo: <input type="text" id="delimiter" value="," size="2"></label><br>
+        <label>Text delimiter: <input type="text" id="textDelimiter" value='"' size="2"></label><br><br>
+        <button onclick="convertCSVtoJSON()">Converti</button>
+        <h3>JSON Output:</h3>
+        <pre id="jsonOutput"></pre>
+    </div>
+    
+
+    <script>
+        function convertCSVtoJSON() {
+            const csvText = document.getElementById("csvInput").value.trim();
+            const delimiter = document.getElementById("delimiter").value || ",";
+            const textDelimiter = document.getElementById("textDelimiter").value || '"';
+
+            if (!csvText) {
+                alert("Inserisci dei dati CSV!");
+                return;
+            }
+
+            const lines = csvText.split("\n");
+            const headers = lines[0].split(delimiter).map(header => header.replace(new RegExp(textDelimiter, 'g'), "").trim());
+            const jsonArray = [];
+
+            for (let i = 1; i < lines.length; i++) {
+                const values = lines[i].split(delimiter).map(value => value.replace(new RegExp(textDelimiter, 'g'), "").trim());
+                let obj = {};
+                headers.forEach((header, index) => {
+                    obj[header] = values[index] || "";
+                });
+                jsonArray.push(obj);
+            }
+
+            document.getElementById("jsonOutput").textContent = JSON.stringify(jsonArray, null, 4);
+        }
+    </script>
+
+    <custom-footer
+        id="footer"
+        imageLogo="../../assets/favicons/start_to_impact_logo.webp"
+        imageGit="../../assets/svg/github.svg"
+        imageInsta="../../assets/svg/instagram.svg"
+        imageLinkedin="../../assets/svg/linkedin.svg"
+    ></custom-footer>
+</body>
+</html>

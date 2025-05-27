@@ -22,7 +22,7 @@ class CustomHorizontalNavbar extends HTMLElement {
                 ${
                   items.map(item => {
                     const [title, link] = item.split(",");
-                    return `<li class="nav-item"><a href="${link.trim()}">${title.trim()}</a></li>`;
+                    return `<li class="nav-item"><a href="${link}">${title.trim()}</a></li>`;
                   }).join("")
                 }
             </ul>
