@@ -451,4 +451,79 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
   background-color: #ffffff;
 }
+
+/* Roadmap */
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.timeline em {
+  color: var(--primary-color);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Modifica per responsività */
+.timeline-dot {
+    width: 15px;
+    height: 15px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+}
+
+/* Linea di collegamento */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 20px;
+    width: 3px;
+    height: calc(100% + 20px);
+    background-color: var(--primary-color);
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px var(--primary-color);
+    margin-left: 30px;
+    width: calc(100% - 40px);
+}
+
+/* Media queries per dispositivi mobili */
+@media screen and (max-width: 600px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-dot {
+        left: 0;
+        top: 0;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .timeline-item::before {
+        left: 7px;
+        height: 100%;
+        top: auto;
+    }
+
+}
 /*# sourceMappingURL=styles.css.map */
