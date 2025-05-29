@@ -424,7 +424,9 @@ footer a{
 footer a:hover{
   color: var(--a-hover-color);
 }
-
+footer{
+  margin-top: 2%;
+}
 table {
   width: 80%;
   border-collapse: collapse;

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script src="../../assets/components/headContent.js" defer></script>
+  <custom-head_content 
+    title="Francesco Catania - Personal Projects" 
+    linkStyle="../../assets/scss/styles.css" 
+    linkIcon="../../assets/svg/github.svg"
+    images="
+    ../../assets/img/progetto.webp,
+    ../../assets/favicons/unict-logo.webp,
+    ../../assets/svg/github.svg,
+    ../../assets/svg/linkedin.svg,
+    ../../assets/svg/instagram.svg
+    "
+    scripts="
+    ../../assets/components/customNavbar.js,
+    ../../assets/components/header.js,
+    ../../assets/components/section.js,
+    ../../assets/components/card1.js,
+    ../../assets/components/footer.js
+    "
+    >
+  </custom-head_content>
+</head>
+
+<body>
+    <custom-horizontal_navbar
+        id="navbar"
+        urlHome = "../../"
+        items="Portfolio, ../../portfolio/">
+    </custom-horizontal_navbar>
+
+    <custom-header
+        id="custom-header"
+        title = "Personal Projects"
+        motto="Raccolta dei miei migliori progetti personali">
+    </custom-header>
+    <custom-section
+        id="personal_projects"
+        image="../../assets/favicons/unict-logo.webp"
+        title="Progetti Personali"
+        description="Riporto di seguito alcuni dei miei progetti Web  portati avanti in autonomia.</p>
+                <p>Per maggiori informazioni sulla mia attività da programmatore, date un'occhiata alla mia cartella <em>GitHub</em>:</p>
+                <p><a href='https://github.com/FrancescoCt'><img src='../../assets/svg/github.svg' alt='GitHub'></a>"
+    ></custom-section>
+
+    <custom-cards id="cards-container" dataJson="personalProjects"></custom-cards>
+    <custom-footer
+        id="footer"
+        imageLogo="../../assets/favicons/start_to_impact_logo.webp"
+        imageGit="../../assets/svg/github.svg"
+        imageInsta="../../assets/svg/instagram.svg"
+        imageLinkedin="../../assets/svg/linkedin.svg"
+    ></custom-footer>
+</body>
+</html>

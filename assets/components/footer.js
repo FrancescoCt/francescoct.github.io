@@ -11,7 +11,7 @@ class CustomFooter extends HTMLElement {
     // Creazione della struttura del menu
     const footer = document.querySelector("#footer");
     footer.insertAdjacentHTML("beforebegin", `
-        <footer class="text-white pt-4 mt-auto bg-dark-custom">
+        <footer class="text-white pt-4 bg-dark-custom">
             
               <div class="row">
                 <!-- Contatti -->

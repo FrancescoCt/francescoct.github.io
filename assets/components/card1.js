@@ -4,9 +4,13 @@ class CustomCards extends HTMLElement {
 
     // Recupera le coppie titolo-link dall'attributo "items"
     const dataJson = this.getAttribute("dataJson"); //path del file dataJson con le info
-
-    if(dataJson == "projects"){
-        const data = projects;
+    
+    if(dataJson){
+        let data = [];
+        if(dataJson == "projects"){data = projects;}
+        if(dataJson == "start2impactProjects"){data = start2impactProjects;}
+        if(dataJson == "personalProjects"){data = personalProjects;}
+        
         // Creazione del container
         const cards_container = document.querySelector("#cards-container");
         cards_container.insertAdjacentHTML("beforebegin", `
@@ -33,44 +37,65 @@ class CustomCards extends HTMLElement {
 }
 //Definizione dei dati che possono essere usati nelle cards
 const projects = [
-
     {
     "Id" : 1,
-    "Title" : "Introduzione allo sviluppo",
-    "Thumbnail": "../projects/introduzioneSviluppo/assets/img/ricercatore1.webp",
-    "Description": "<p>Landing page statica per sito di divulgazione scientifica</p>\n<h4>Linguaggi: HTML, CSS</h4>",
+    "Title" : "Progetti Start2Impact",
+    "Thumbnail": "../assets/img/progetto.webp",
+    "Description": "<p>Raccolta di progetti sviluppati durante il Master in Back End Development.</p>",
     "Url": "../projects/introduzioneSviluppo/"
     },
     {
     "Id" : 2,
+    "Title" : "Progetti Personali",
+    "Thumbnail": "../assets/img/programmazione.webp",
+    "Description": "<p>Raccolta dei migliori progetti sviluppati durante il mio percorso di formazione universitario e personale.</p>",
+    "Url": "../projects/introduzioneSviluppo/"
+    },
+];
+const start2impactProjects = [
+
+    {
+    "Id" : 1,
+    "Title" : "Introduzione allo sviluppo",
+    "Thumbnail": "introduzioneSviluppo/assets/img/ricercatore1.webp",
+    "Description": "<p>Landing page statica per sito di divulgazione scientifica</p>\n<h4>Linguaggi: HTML, CSS</h4>",
+    "Url": "introduzioneSviluppo/"
+    },
+    {
+    "Id" : 2,
     "Title" : "Counter JS",
-    "Thumbnail": "../projects/counterjs/assets/img/CounterJSLightTheme.webp",
+    "Thumbnail": "counterjs/assets/img/CounterJSLightTheme.webp",
     "Description": "<p>Contatore javascript</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
-    "Url": "../projects/counterjs/"
+    "Url": "counterjs/"
     },
     {
     "Id" : 3,
     "Title" : "Hacker News",
-    "Thumbnail": "../assets/img/lavagna.webp",
+    "Thumbnail": "../../assets/img/lavagna.webp",
     "Description": "<p>Chiamate API con Javascript, uso di Webpack, fetch e Axios</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
-    "Url": "../projects/hackerNews/dist/"
-    },
+    "Url": "hackerNews/dist/"
+    }
+];
+
+const personalProjects = [
     {
     "Id" : 4,
     "Title" : "CSV to JSON Converter",
-    "Thumbnail": "../assets/img/progetto.webp",
+    "Thumbnail": "../../assets/img/progetto.webp",
     "Description": "<p>Convertitore istantaneo da csv a json</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
-    "Url": "../projects/csvToJsonConverter/"
+    "Url": "csvToJsonConverter/"
     },
     {
     "Id" : 5,
     "Title" : "Graph Plotter",
-    "Thumbnail": "../assets/img/programmazione.webp",
+    "Thumbnail": "../../assets/img/programmazione.webp",
     "Description": "<p>Analisi di trend veloce a partire da punti ed etichette prese in input </p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
-    "Url": "../projects/graphPlotter/"
+    "Url": "graphPlotter/"
     },
 
-]
+];
+
+
 
 // Registra il Custom Element
 customElements.define("custom-cards", CustomCards);
