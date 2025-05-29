@@ -42,14 +42,14 @@ const projects = [
     "Title" : "Progetti Start2Impact",
     "Thumbnail": "../assets/img/progetto.webp",
     "Description": "<p>Raccolta di progetti sviluppati durante il Master in Back End Development.</p>",
-    "Url": "../projects/introduzioneSviluppo/"
+    "Url": "../projects/start2impact/"
     },
     {
     "Id" : 2,
     "Title" : "Progetti Personali",
     "Thumbnail": "../assets/img/programmazione.webp",
     "Description": "<p>Raccolta dei migliori progetti sviluppati durante il mio percorso di formazione universitario e personale.</p>",
-    "Url": "../projects/introduzioneSviluppo/"
+    "Url": "../projects/personal/"
     },
 ];
 const start2impactProjects = [
