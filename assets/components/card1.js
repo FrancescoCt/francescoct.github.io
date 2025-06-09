@@ -74,7 +74,49 @@ const start2impactProjects = [
     "Thumbnail": "../../assets/img/lavagna.webp",
     "Description": "<p>Chiamate API con Javascript, uso di Webpack, fetch e Axios</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
     "Url": "hackerNews/dist/"
-    }
+    },
+    {
+    "Id" : 4,
+    "Title" : "Education Typescript",
+    "Thumbnail": "../../assets/img/lavagna.webp",
+    "Description": "<p>Gestione di Corsi erogati da Aziende per Partecipanti con determinati requisiti, utilizzo di tipi ed eccezioni da gestire. Progetto visionabile sul link CodePen situato nel Readme della Repo.</p>\n<h4>Linguaggi: Typescript, JS</h4>",
+    "Url": "https://github.com/FrancescoCt/EducationTypescript"
+    },
+    {
+    "Id" : 5,
+    "Title" : "Travel Api",
+    "Thumbnail": "../../assets/img/lavagna.webp",
+    "Description": "<p>Servizio API in PHP per la gestione di un'agenzia di viaggi. Usare Xampp per il testing in locale dell'applicazione.</p>\n<h4>Linguaggi: HTML, CSS, PHP, JS, MySQL</h4>",
+    "Url": "https://github.com/FrancescoCt/TravelAPI"
+    },
+    {
+    "Id" : 6,
+    "Title" : "NodeJs Travel Api",
+    "Thumbnail": "../../assets/img/lavagna.webp",
+    "Description": "<p>Riscrittura del progetto Travel API riadattato in NodeJs. Usare Xampp per il testing in locale dell'applicazione.</p>\n<h4>Linguaggi: HTML, CSS, JS, MySQL, NodeJS</h4>\n<h4>Framework: NodeJS</h4>",
+    "Url": "https://github.com/FrancescoCt/NodejsTravelApi"
+    },
+    {
+    "Id" : 7,
+    "Title" : "WordPress Custom Theme",
+    "Thumbnail": "../../assets/img/lavagna.webp",
+    "Description": "<p>Tema custom in Wordpress, testabile in locale anche con Xampp, ma applicabile anche online.</p>\n<h4>Linguaggi: HTML, CSS, PHP, JS, MySQL</h4>\n<h4>Framework: WordPress</h4>",
+    "Url": "https://github.com/FrancescoCt/wordpressCustomTheme"
+    },
+    {
+    "Id" : 8,
+    "Title" : "Node JWT API",
+    "Thumbnail": "../../assets/img/lavagna.webp",
+    "Description": "<p>Progetto finale del corso: accesso ad area di login e uso credenziali per servizi API usate e migliorate del progetto NodeJsTravelApi</p>\n<h4>Linguaggi: HTML, CSS, JS, MySQL</h4>\n<h4>Framework: NodeJS</h4>",
+    "Url": "https://github.com/FrancescoCt/wordpressCustomTheme"
+    },
+    {
+    "Id" : 9,
+    "Title" : "Portfolio",
+    "Thumbnail": "../../assets/img/lavagna.webp",
+    "Description": "<p>Il nono progetto menzionato nella certificazione del master è proprio questo Portfolio, buona visione :)</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
+    "Url": "https://francescoct.github.io/"
+    },
 ];
 
 const personalProjects = [
