@@ -24,24 +24,16 @@
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
 
     <style>
+        /* @media (max-width: 768px) {
+            #sidebar{
+                display: none;
+            }
+        } */
         .map-container {
             display: flex;
             height: 100vh;
+            position: relative;
         }
-
-        #sidebar h2 {
-            margin-top: 0;
-        }
-
-        #sidebar button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
         #map {
             flex-grow: 1;
         }
@@ -68,15 +60,20 @@
         motto="Seleziona due punti sulla mappa e calcola la rotta da seguire!">
     </custom-header>
 
+    <div class="row my-2px">
+        <div class="col">
+            <button id="toggle-menu" onclick="toggleMenu()">☰ Apri/Chiudi Menu</button>
+        </div>
+    </div>
     <div class="map-container">
-        <div id="sidebar">
+        <div id="sidebar" class="hidden">
             <h2>Controlli Mappa</h2>
             <button onclick="resetMarkers()">🗑 Rimuovi Punti</button>
             <button onclick="toggleLegend()">📌 Mostra/Nascondi Legenda</button>
             <div id="legend">
                 <strong>Legenda:</strong>
-                <p>🔵 Partenza</p>
-                <p>🔴 Arrivo</p>
+                <p>🔵 Punto di Partenza</p>
+                <p>🔴 Punto di Arrivo</p>
             </div>
         </div>
         <div id="map"></div>
@@ -150,6 +147,12 @@
         function toggleLegend() {
             const legend = document.getElementById("legend");
             legend.style.display = (legend.style.display === "none") ? "block" : "none";
+        }
+
+        // Funzione per mostrare/nascondere il menu laterale
+        function toggleMenu() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("hidden");
         }
     </script>
     <custom-footer

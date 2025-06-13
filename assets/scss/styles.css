@@ -370,7 +370,18 @@ section {
     margin-left: 2%;
     margin-right: 2%;
 }
-
+.my-5{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.my-2{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.my-2px{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
 @media (max-width: 600px) {
   .col-md-4 {
     margin-right: 15%;
@@ -537,9 +548,21 @@ tbody tr:nth-child(even) {
   width: 175px;
   background: var(--primary-color);
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+#sidebar.hidden {
+  display: none;
 }
 #sidebar h2{
   color:white;
+}
+
+#toggle-menu {
+position: absolute;
+background: var(--primary-color);
+color: white;
+border: none;
+padding: 10px;
+cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
