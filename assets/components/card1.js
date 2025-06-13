@@ -121,18 +121,25 @@ const start2impactProjects = [
 
 const personalProjects = [
     {
-    "Id" : 4,
+    "Id" : 1,
     "Title" : "CSV to JSON Converter",
     "Thumbnail": "../../assets/img/progetto.webp",
     "Description": "<p>Convertitore istantaneo da csv a json</p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
     "Url": "csvToJsonConverter/"
     },
     {
-    "Id" : 5,
+    "Id" : 2,
     "Title" : "Graph Plotter",
     "Thumbnail": "../../assets/img/programmazione.webp",
     "Description": "<p>Analisi di trend veloce a partire da punti ed etichette prese in input </p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
     "Url": "graphPlotter/"
+    },
+    {
+    "Id" : 3,
+    "Title" : "Progetto GIS",
+    "Thumbnail": "../../assets/img/programmazione.webp",
+    "Description": "<p>Semplice programma GIS che calcola la rotta da un punto A ad un punto B qualsiasi sulla mappa. Usa Javascript e leaflet per il suo funzionamento </p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
+    "Url": "gis/"
     },
 
 ];

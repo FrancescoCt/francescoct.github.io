@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <script src="../../../assets/components/headContent.js" defer></script>
+    <custom-head_content 
+        title="Graph Plotter" 
+        linkStyle="../../../assets/scss/styles.css" 
+        linkIcon="../../../assets/svg/github.svg"
+        images="
+        ../../../assets/svg/github.svg,
+        ../../../assets/svg/linkedin.svg,
+        ../../../assets/svg/instagram.svg
+        "
+        scripts="
+        ../../../assets/components/customNavbar.js,
+        ../../../assets/components/header.js,
+        ../../../assets/components/footer.js
+        "
+        >
+    </custom-head_content>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+    <style>
+        .map-container {
+            display: flex;
+            height: 100vh;
+        }
+
+        #sidebar h2 {
+            margin-top: 0;
+        }
+
+        #sidebar button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #map {
+            flex-grow: 1;
+        }
+
+        #legend {
+            background: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <custom-horizontal_navbar
+        id="navbar"
+        urlHome = "../../../"
+        items="Portfolio, https://francescoct.github.io/portfolio/">
+    </custom-horizontal_navbar>
+    <custom-header
+        id="custom-header"
+        title = "Progetto GIS"
+        motto="Seleziona due punti sulla mappa e calcola la rotta da seguire!">
+    </custom-header>
+
+    <div class="map-container">
+        <div id="sidebar">
+            <h2>Controlli Mappa</h2>
+            <button onclick="resetMarkers()">🗑 Rimuovi Punti</button>
+            <button onclick="toggleLegend()">📌 Mostra/Nascondi Legenda</button>
+            <div id="legend">
+                <strong>Legenda:</strong>
+                <p>🔵 Partenza</p>
+                <p>🔴 Arrivo</p>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script>
+        const map = L.map('map').setView([37.5, 15.1], 10);
+
+        // Tipi di mappa disponibili
+        const normale = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        const satellitare = L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        });
+
+        const rilievo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenTopoMap'
+        });
+
+        // Controllo per cambiare mappa
+        L.control.layers({
+            "Normale": normale,
+            "Satellitare": satellitare,
+            "Rilievo": rilievo
+        }).addTo(map);
+
+        let startMarker = null;
+        let endMarker = null;
+        let routeControl = null;
+
+        // Selezione interattiva dei punti
+        map.on('click', function(event) {
+            if (!startMarker) {
+                startMarker = L.marker(event.latlng).addTo(map).bindPopup("Partenza").openPopup();
+            } else if (!endMarker) {
+                endMarker = L.marker(event.latlng).addTo(map).bindPopup("Arrivo").openPopup();
+
+                if (routeControl) {
+                    map.removeControl(routeControl);
+                }
+
+                routeControl = L.Routing.control({
+                    waypoints: [
+                        L.latLng(startMarker.getLatLng()),
+                        L.latLng(endMarker.getLatLng())
+                    ],
+                    routeWhileDragging: true
+                }).addTo(map);
+            }
+        });
+
+        // Funzione per rimuovere punti e percorso
+        function resetMarkers() {
+            if (startMarker) {
+                map.removeLayer(startMarker);
+                startMarker = null;
+            }
+            if (endMarker) {
+                map.removeLayer(endMarker);
+                endMarker = null;
+            }
+            if (routeControl) {
+                map.removeControl(routeControl);
+                routeControl = null;
+            }
+        }
+
+        // Funzione per mostrare/nascondere la legenda
+        function toggleLegend() {
+            const legend = document.getElementById("legend");
+            legend.style.display = (legend.style.display === "none") ? "block" : "none";
+        }
+    </script>
+    <custom-footer
+        id="footer"
+        imageLogo="../../../assets/favicons/start_to_impact_logo.webp"
+        imageGit="../../../assets/svg/github.svg"
+        imageInsta="../../../assets/svg/instagram.svg"
+        imageLinkedin="../../../assets/svg/linkedin.svg"
+    ></custom-footer>
+</body>
+</html>

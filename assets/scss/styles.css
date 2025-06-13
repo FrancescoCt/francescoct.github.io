@@ -528,4 +528,18 @@ tbody tr:nth-child(even) {
     }
 
 }
+/*Mappe GIS*/
+.leaflet-routing-alt h2, h3{
+  color: var(--primary-color);
+}
+
+#sidebar {
+  width: 175px;
+  background: var(--primary-color);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+#sidebar h2{
+  color:white;
+}
 /*# sourceMappingURL=styles.css.map */
