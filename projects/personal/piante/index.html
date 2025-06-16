@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <script src="../../../assets/components/headContent.js" defer></script>
+    <custom-head_content 
+        title="Gis Project" 
+        linkStyle="../../../assets/scss/styles.css" 
+        linkIcon="../../../assets/svg/github.svg"
+        images="
+        ../../../assets/svg/github.svg,
+        ../../../assets/svg/linkedin.svg,
+        ../../../assets/svg/instagram.svg
+        "
+        scripts="
+        ../../../assets/components/customNavbar.js,
+        ../../../assets/components/pager1.js,
+        ../../../assets/components/header.js,
+        ../../../assets/components/footer.js
+        "
+        >
+    </custom-head_content>
+
+</head>
+<body>
+    <custom-horizontal_navbar
+        id="navbar"
+        urlHome = "../../../"
+        items="Portfolio, https://francescoct.github.io/portfolio/">
+    </custom-horizontal_navbar>
+    <custom-header
+        id="custom-header"
+        title = "Elenco Piante"
+        motto="Esempio di uso delle info ottenute via fetch">
+    </custom-header>
+    <custom-pager id="skillsTable" rows="5" dataJson="output" columnHeaders="Id;Nomi;Famiglia;Proprieta"></custom-pager>
+    <custom-footer
+        id="footer"
+        imageLogo="../../../assets/favicons/start_to_impact_logo.webp"
+        imageGit="../../../assets/svg/github.svg"
+        imageInsta="../../../assets/svg/instagram.svg"
+        imageLinkedin="../../../assets/svg/linkedin.svg"
+    ></custom-footer>
+</body>
+</html>

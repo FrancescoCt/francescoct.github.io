@@ -1,0 +1,1044 @@
+[
+    {
+        "Problematiche": {
+            "2": "ascessi",
+            "1": "infiammazioni delle gengive e della gola",
+            "0": "infiammazioni gastrointestinali"
+        },
+        "Descrizione": {
+            "2": "rimanda a un personaggio della mitologia greca.",
+            "1": "I fiori dell'altea sono grandi",
+            "0": "Si tratta di una grande erba perenne"
+        },
+        "Id": 1,
+        "Usi": {
+            "2": "tintura madre",
+            "1": "tisana",
+            "0": "decotto"
+        },
+        "Famiglia": "Malvaceae",
+        "Nomi": "Altea",
+        "Nomi Latini": {
+            "1": "Althaea rosea",
+            "0": "Althaea officinalis"
+        },
+        "Controindicazioni": {
+            "2": "riduzione della biodisponibilita del farmaco",
+            "1": "se si assumono farmaci mucillagini possono ridurre l'assorbimento intestinale di nutrienti",
+            "0": "L'altea è un rimedio sicuro e privo di effetti collaterali"
+        },
+        "Correlato": {
+            "1": "mucillagini",
+            "0": "malvone"
+        },
+        "Proprieta": {
+            "2": "proprieta emollienti",
+            "1": "proprieta immunostimolanti",
+            "0": "proprieta delle mucillagini"
+        }
+    },
+    {
+        "Descrizione": {
+            "2": "formato da catene di zuccheri",
+            "1": "polisaccaride composto da amilosio e amilopectina",
+            "0": "L'amido è un carboidrato complesso"
+        },
+        "Id": 2,
+        "Usi": {
+            "7": "inamidare i colletti delle camicie",
+            "3": "budini",
+            "4": "besciamella",
+            "2": "sughi",
+            "1": "preparazione di minestre",
+            "0": "Principale carboidrato digeribile nei cereali",
+            "6": "bucato",
+            "5": "torte soffici",
+            "8": "detersione per neonati e bambini"
+        },
+        "Altro": {
+            "3": "trattamento per irritazioni vaginali e mucose",
+            "4": "assorbire il sebo",
+            "2": "ammorbidisce e deterge",
+            "1": "presenza dell'inulina",
+            "0": "Sintesi clorofilliana",
+            "6": "ridurre i cattivi odori",
+            "5": "calmare arrossamenti e prurito"
+        },
+        "Nomi": "Amido",
+        "Parti utilizzate": {
+            "3": "amido di manioca (tapioca)",
+            "4": "amido di frumento",
+            "2": "fecola di patate",
+            "1": "amido di riso",
+            "0": "Amido di mais (Maizena)",
+            "5": "amidi modificati (maltodestrine)"
+        },
+        "Proprieta": {
+            "2": "calmante e lenitivo per la pelle",
+            "3": "azione assorbente e rinfrescante",
+            "1": "gelificante",
+            "0": "Addensante in cucina"
+        }
+    },
+    {
+        "Id": 3,
+        "Usi": {
+            "2": "un prodotto cosmetico lenitivo",
+            "3": "anti arrossamento",
+            "1": "balsamo per la pelle",
+            "0": "sciroppi balsamici"
+        },
+        "Famiglia": "Fabaceae",
+        "Nomi": "Balsamo del Tolu",
+        "Nomi Latini": "Myroxylon Toluiferum",
+        "Controindicazioni": {
+            "2": "reazioni allergiche",
+            "3": "nefriti",
+            "4": "cistiti",
+            "1": "effetto cicatrizzante",
+            "0": "bassa tossicita"
+        },
+        "Parti utilizzate": {
+            "1": "corteccia",
+            "0": "essudato resinoso"
+        },
+        "Correlato": {
+            "2": "pratiche meditative",
+            "1": "rilassamento",
+            "0": "tosse secca o grassa"
+        },
+        "Proprieta": {
+            "7": "anticatarrale",
+            "3": "espettorante",
+            "4": "antispasmodico",
+            "2": "olio essenziale",
+            "1": "fluidificante",
+            "0": "balsamico",
+            "6": "astringente",
+            "5": "azione antinfiammatoria",
+            "8": "antisettica"
+        }
+    },
+    {
+        "Id": 4,
+        "Controindicazioni": {
+            "2": "non utilizzarla in gravidanza o allattamento e nella prima infanzia",
+            "1": "pua² causare danni ai reni",
+            "0": "l'effetto ipoglicemizzante che potrebbe sovradosarsi a quello di farmaci"
+        },
+        "Nomi": "Banaba",
+        "Nomi Latini": "Lagerstroemia speciosa L",
+        "Parti utilizzate": {
+            "3": "frutti",
+            "4": "corteccia",
+            "2": "fiori",
+            "1": "fusto",
+            "0": "foglie",
+            "5": "radici"
+        },
+        "Correlato": {
+            "3": "digestione dei carboidrati",
+            "4": "riduce i livelli di zucchero nel sangue gia in 60 minuti dalla sua assunzione",
+            "2": "Î±-glucosidasi",
+            "1": "estratti di metanolo e acqua",
+            "0": "Î±-amilasi",
+            "6": "",
+            "5": "diminuzione dei lipidi epatici totali"
+        },
+        "Proprieta": {
+            "7": "decongestionante",
+            "9": "lipogenesi",
+            "10": "lipolisi",
+            "3": "antinfiammatorie",
+            "4": "antimicotiche",
+            "2": "antiossidanti",
+            "1": "effetti riequilibranti l\u0027acido corosolico",
+            "0": "ipoglicemizzanti",
+            "6": "diuretico",
+            "5": "antivirali",
+            "8": "proprieta febbrifughe e spasmolitiche"
+        }
+    },
+    {
+        "Problematiche": {
+            "1": "stimolante delle mestruazioni",
+            "0": "è un ottimo rimedio contro candida e infezioni vaginali"
+        },
+        "Id": 5,
+        "Usi": "applicazione locale previa diluizione in acqua",
+        "Nomi": "Calendula",
+        "Nomi Latini": "Calendula Officinalis",
+        "Parti utilizzate": "fiori freschi",
+        "Proprieta": {
+            "3": "azione antinfiammatoria",
+            "5": "cicatrizzante",
+            "12": "lenisce e cicatrizza lesioni cutanee (uso esterno)",
+            "10": "favorisce e regola il ciclo ormonale (uso interno)",
+            "2": "antispasmodica",
+            "8": "dermopatica",
+            "0": "lenitiva",
+            "11": "proprieta antinfiammatoria e decongestionante (uso interno)",
+            "1": "cicatrizzante",
+            "9": "azione estrogenica (uso interno)",
+            "7": "emolliente",
+            "6": "rinfrescante",
+            "4": "antisettica"
+        }
+    },
+    {
+        "Descrizione": {
+            "2": "pascoli",
+            "3": "margini dei sentieri e tra le macerie",
+            "4": "legato alla leggenda del \u0027latte della Madonna\u0027",
+            "1": "cresce in campi incolti",
+            "0": "Il cardo mariano è una pianta spontanea commestibile"
+        },
+        "Id": 6,
+        "Usi": {
+            "7": "supporto per fegato e vie biliari",
+            "9": "tradizionalmente usato per stimolare la produzione di latte",
+            "3": "tisana con foglie essiccate",
+            "4": "olio di cardo mariano",
+            "2": "estratto",
+            "1": "tintura madre",
+            "0": "Infusione",
+            "6": "trattamento dei disturbi epatici",
+            "5": "integratori alimentari",
+            "8": "allevia disturbi digestivi"
+        },
+        "Altro": {
+            "3": "controindicato in caso di allergia",
+            "4": "non adatto sotto i 18 anni di eta",
+            "2": "sicuro con leggera azione lassativa",
+            "1": "depura il fegato",
+            "0": "Attivita biologica per incremento degli antiossidanti endogeni",
+            "5": "silimarina pua² ridurre l\u0027efficacia dei contraccettivi orali"
+        },
+        "Nomi": "Cardo Mariano",
+        "Parti utilizzate": {
+            "7": "silidianina",
+            "3": "estratto secco titolato",
+            "4": "acidi grassi essenziali",
+            "2": "radici",
+            "1": "foglie",
+            "0": "Frutti maturi",
+            "6": "silimarina (silibina",
+            "5": "complesso di flavolignani",
+            "8": "silicristina)"
+        },
+        "Proprieta": {
+            "7": "digestiva",
+            "9": "antinfiammatoria",
+            "3": "antiemorragica",
+            "4": "spasmolitica",
+            "2": "antiossidante",
+            "1": "rigeneranti sulle cellule del fegato",
+            "0": "Epatoprotettive",
+            "6": "galattogena",
+            "5": "tonica sui vasi sanguigni",
+            "8": "citoprotettiva"
+        }
+    },
+    {
+        "Id": 7,
+        "Usi": {
+            "1": "deve essere utilizzata per applicazione topica",
+            "0": "preparazioni omeopatiche"
+        },
+        "Nomi": {
+            "1": "Erba delle Rondini",
+            "0": "Celidonia"
+        },
+        "Nomi Latini": {
+            "2": "chelidonium",
+            "1": "chelida´n",
+            "0": "Chelidonium majus"
+        },
+        "Controindicazioni": {
+            "2": "controindicata in gravidanza",
+            "1": "se ne sconsiglia l\u0027utilizzo interno",
+            "0": "La Celidonia è una pianta tendenzialmente tossica"
+        },
+        "Correlato": {
+            "2": "soluzione idroalcolica gia formulata che si trova in erboristeria",
+            "1": "cura di verruche e porri",
+            "0": "proprieta benefiche per disturbi agli occhi"
+        },
+        "Proprieta": {
+            "7": "dell'aterosclerosi",
+            "3": "Colagoga",
+            "4": "coleretica",
+            "2": "Antimicotica",
+            "1": "Depurativa",
+            "0": "Antispasmodica",
+            "6": "celidonina",
+            "5": "Sedativa",
+            "8": "proprieta cheratolitiche"
+        }
+    },
+    {
+        "Problematiche": {
+            "2": "nausea",
+            "3": "palpitazioni",
+            "4": "pressione alta",
+            "1": "ipertiroidismo",
+            "0": "cardiopatie"
+        },
+        "Descrizione": {
+            "1": "noci",
+            "0": "I frutti sono follicoli oblunghi"
+        },
+        "Id": 8,
+        "Controindicazioni": {
+            "1": "prediligere formulazioni gia standardizzate",
+            "0": "è consigliabile ricorrere a formule standardizzate"
+        },
+        "Nomi": "Cola",
+        "Nomi Latini": "Cola acuminata",
+        "Usi": {
+            "2": "estratto",
+            "3": "Macerato in vino",
+            "1": "polvere",
+            "0": "infuso"
+        },
+        "Proprieta": {
+            "7": "broncodilatatrice",
+            "9": "afrodisiaca",
+            "3": "contrasta la sonnolenza",
+            "4": "dimagrante",
+            "2": "tonica",
+            "1": "afrodisiaca",
+            "0": "contrasto stanchezza",
+            "6": "stimolante neuromuscolare",
+            "5": "diuretica",
+            "8": "vasodilatatrice"
+        }
+    },
+    {
+        "Correlato": {
+            "1": "fungo",
+            "0": "Medicina Tradizionale Cinese"
+        },
+        "Proprieta": {
+            "2": "antivirale",
+            "3": "prevenzione delle patologie invernali",
+            "1": "antibiotico",
+            "0": "Immunostimolante"
+        },
+        "Id": 9,
+        "Nomi": "Coriolus Versicolor"
+    },
+    {
+        "Descrizione": {
+            "2": "contiene un fitocomplesso ricco di costituenti attivi",
+            "1": "utilizzata nelle preparazioni erboristiche",
+            "0": "L\u0027echinacea è nota per la sua azione sul sistema immunitario"
+        },
+        "Id": 10,
+        "Usi": {
+            "2": "applicazioni cosmetiche",
+            "3": "trattamento degli eczemi",
+            "4": "supporto nei cambi di stagione",
+            "1": "preparazioni erboristiche",
+            "0": "Tintura madre di echinacea"
+        },
+        "Altro": {
+            "2": "possibilita di preparazione fai da te",
+            "1": "tempo di assunzione non superiore a otto settimane",
+            "0": "Dosaggio consigliato di 60 gocce tre volte al giorno"
+        },
+        "Nomi": "Echinacea",
+        "Parti utilizzate": {
+            "7": "flavonoidi",
+            "3": "succo della pianta fresca",
+            "4": "olio essenziale",
+            "2": "radice",
+            "1": "tintura idroalcolica",
+            "0": "Pianta intera fresca",
+            "6": "polisaccaridi",
+            "5": "echinacoside",
+            "8": "alchilamidi"
+        },
+        "Proprieta": {
+            "3": "antibatteriche",
+            "4": "immunostimolanti",
+            "2": "antivirali",
+            "1": "cicatrizzanti",
+            "0": "Antinfiammatorie",
+            "5": "aumento di acido ialuronico"
+        }
+    },
+    {
+        "Problematiche": {
+            "3": "coliche",
+            "4": "ridurre il tempo necessario per addormentarsi",
+            "2": "emicrania",
+            "1": "calmare la tosse",
+            "0": "insonnia",
+            "5": "risvegli notturni"
+        },
+        "Descrizione": {
+            "2": "La pianta presenta foglie alterne e",
+            "1": "originaria di California Arizona Oregon e Messico",
+            "0": "escolzia è una pianta erbacea perenne"
+        },
+        "Id": 11,
+        "Usi": {
+            "2": "tintura madre",
+            "3": "estratto",
+            "4": "integratori",
+            "1": "infuso",
+            "0": "cataplasmi"
+        },
+        "Nomi": {
+            "1": "Papavero della California",
+            "0": "Escolzia"
+        },
+        "Nomi Latini": {
+            "1": "Eschscholzia californica",
+            "0": "Eschscholzia"
+        },
+        "Controindicazioni": {
+            "1": "eta pediatrica",
+            "0": "allattamento"
+        },
+        "Parti utilizzate": {
+            "2": "foglie",
+            "3": "radici",
+            "4": "parti aeree",
+            "1": "frutto",
+            "0": "fiori"
+        },
+        "Correlato": {
+            "2": "melatonina",
+            "1": "titolato in protopina",
+            "0": "alcaloidi"
+        },
+        "Proprieta": {
+            "2": "ipnoinducente",
+            "3": "ansiolitico naturale",
+            "1": "azione sedativa",
+            "0": "terapeutico"
+        }
+    },
+    {
+        "Parti utilizzate": {
+            "3": "siconio",
+            "4": "fiori",
+            "2": "fico",
+            "1": "foglie",
+            "0": "corteccia",
+            "6": "fico",
+            "5": "frutti"
+        },
+        "Id": 12,
+        "Nomi": "Fico",
+        "Famiglia": "Moraceae",
+        "Nomi Latini": {
+            "2": "Sykèus",
+            "3": "syke",
+            "1": "Carica",
+            "0": "Ficus carica"
+        },
+        "Correlato": {
+            "7": "enzimi digestivi",
+            "9": "ossalati",
+            "3": "psoralene",
+            "4": "umbelliferone",
+            "2": "ficina",
+            "1": "luteolina",
+            "0": "lignina",
+            "6": "disbiosi",
+            "5": "ossazolidinoni",
+            "8": "lattice bianco"
+        },
+        "Proprieta": {
+            "7": "antinfiammatoria",
+            "9": "antifungina",
+            "3": "ottimo contributo energetico",
+            "4": "azione lassativa",
+            "2": "remineralizzanti",
+            "1": "antinfiammatorio",
+            "0": "Ricco di calcio",
+            "6": "antiossidante",
+            "5": "mucillagini",
+            "8": "antibatterica"
+        }
+    },
+    {
+        "Id": 13,
+        "Usi": {
+            "1": "tintura madre di galega",
+            "0": "tisana di galega"
+        },
+        "Nomi": "Galega",
+        "Parti utilizzate": {
+            "2": "fiori",
+            "3": "frutto",
+            "1": "foglie",
+            "0": "fusto"
+        },
+        "Correlato": {
+            "3": "erbe sacre",
+            "4": "erba santa spagnola",
+            "2": "erba della peste",
+            "1": "erba ruta delle capre",
+            "0": "apportatrice di latte",
+            "5": "erba sacra selvaggia"
+        },
+        "Proprieta": "proprieta galattogene"
+    },
+    {
+        "Descrizione": {
+            "7": "utilizzata nelle medicine tradizionali",
+            "3": "specie rara e protetta",
+            "4": "esistono altre varieta come la genziana blu",
+            "2": "pua² crescere fino a un metro in altezza",
+            "1": "conosciuta anche come genziana gialla",
+            "0": "La genziana maggiore",
+            "6": "purpurea",
+            "5": "genzianella"
+        },
+        "Id": 14,
+        "Usi": {
+            "7": "perdita di appetito",
+            "3": "miscele depurative",
+            "4": "secrezione di bile",
+            "2": "liquore di genziana",
+            "1": "tintura madre di genziana",
+            "0": "Tisana di genziana",
+            "6": "trattamento dei disturbi dispeptici",
+            "5": "protezione del fegato",
+            "8": "benefici sulla digestione"
+        },
+        "Altro": {
+            "3": "controindicata in caso di allergia",
+            "4": "non somministrare in gravidanza",
+            "2": "sapore amaro della radice",
+            "1": "presenza di principi attivi amari",
+            "0": "Raccolta regolamentata",
+            "6": "preparazione prevede macerazione per dieci giorni e riposo per un mese",
+            "5": "ingredienti del liquore includono zucchero e miele"
+        },
+        "Nomi": "Genziana",
+        "Parti utilizzate": {
+            "2": "frutti",
+            "1": "fiori",
+            "0": "Radice di genziana"
+        },
+        "Proprieta": {
+            "7": "ricostituente durante la convalescenza",
+            "3": "miglioramento dei processi digestivi",
+            "4": "azione antinfiammatoria",
+            "2": "aperitive",
+            "1": "stimolanti",
+            "0": "Amaro-toniche",
+            "6": "epatoprotettiva",
+            "5": "antiossidante",
+            "8": "azione febbrifuga e immunostimolante"
+        }
+    },
+    {
+        "Descrizione": {
+            "3": "diffuso negli anni Novanta",
+            "4": "preparato con colture di batteri e lieviti (SCOBY)",
+            "2": "originario dell'Asia orientale",
+            "1": "considerato un elisir di lunga vita",
+            "0": "Il kombucha è un liquido fermentato leggermente frizzante",
+            "6": "sottile disco di cellulosa gelatinoso",
+            "5": "madre del kombucha"
+        },
+        "Id": 15,
+        "Usi": {
+            "2": "detergente ecologico per le pulizie",
+            "3": "fertilizzante naturale per le piante",
+            "1": "ingrediente in cucina",
+            "0": "Bevanda funzionale"
+        },
+        "Altro": {
+            "3": "attrezzature sterili necessarie per preparazione in casa",
+            "4": "consumo massimo di due bicchieri o tazze al giorno",
+            "2": "conservazione per diversi mesi",
+            "1": "seconda fermentazione per ottenere bevanda frizzante",
+            "0": "Preparazione con infuso e fermentazione di cinque-quindici giorni",
+            "6": "attenzione per chi ha sindrome dell'intestino irritabile",
+            "5": "contiene composti FODMAP"
+        },
+        "Nomi": "Kombucha",
+        "Parti utilizzate": {
+            "7": "frutta secca",
+            "3": "SCOBY",
+            "4": "spezie",
+            "2": "tè oolong",
+            "1": "tè nero",
+            "0": "Tè verde",
+            "6": "frutta disidratata",
+            "5": "frutta fresca",
+            "8": "erbe aromatiche"
+        },
+        "Proprieta": {
+            "2": "migliora il tono dell'umore",
+            "3": "benefici per fegato e intestino",
+            "4": "supporto contro la candida vaginale",
+            "1": "aumenta le difese immunitarie",
+            "0": "Favorisce equilibrio della flora batterica intestinale"
+        }
+    },
+    {
+        "Id": 16,
+        "Famiglia": "Rosaceae",
+        "Nomi": "Lampone",
+        "Nomi Latini": "Rubus idaeus",
+        "Luoghi di Raccolta": "cresce spontaneo ai margini dei boschi montuosi",
+        "Parti utilizzate": {
+            "2": "fiori",
+            "3": "frutti",
+            "1": "foglie",
+            "0": "fusto"
+        },
+        "Correlato": {
+            "1": "i polifenoli e il potassio",
+            "0": "fibre"
+        },
+        "Proprieta": {
+            "7": "flavonoidi",
+            "9": "Proprieta antitumorali",
+            "10": "effetti antitumorali",
+            "3": "quercetina",
+            "11": "Supporto alla perdita di peso",
+            "4": "acido ellagico",
+            "2": "vitamina C",
+            "1": "Antiossidanti",
+            "0": "utile per la circolazione",
+            "6": "antociani",
+            "5": "Proprieta antinfiammatorie",
+            "8": "Supporto Cardiovascolare"
+        }
+    },
+    {
+        "Nomi": "lichene islandico",
+        "Usi": {
+            "2": "tintura Madre",
+            "1": "estratto secco",
+            "0": "decotto"
+        },
+        "Nomi Latini": "leichèn",
+        "Id": 17
+    },
+    {
+        "Descrizione": "pianta perenne a portamento rampicante",
+        "Id": 18,
+        "Usi": {
+            "2": "stratto secco",
+            "3": "raccolti e consumati alla stregua degli asparagi",
+            "1": "estratto liquido",
+            "0": "tisana di luppolo"
+        },
+        "Famiglia": "annabaceae",
+        "Nomi": "Luppolo",
+        "Nomi Latini": {
+            "1": "Cannabis sativa",
+            "0": "Humulus lupulus"
+        },
+        "Controindicazioni": "gravidanza",
+        "Luoghi di Raccolta": "terreni umici e freschi",
+        "Parti utilizzate": {
+            "1": "fiori femminili",
+            "0": "foglie"
+        },
+        "Correlato": {
+            "2": "fegato",
+            "1": "secrezioni gastriche",
+            "0": "produzione di birra"
+        },
+        "Proprieta": {
+            "2": "favorire la digestione",
+            "3": "proprieta estrogeniche",
+            "4": "migliorare l\u0027aspetto dei capelli",
+            "1": "blando sedativo",
+            "0": "ipnoinduttore"
+        }
+    },
+    {
+        "Proprieta": {
+            "7": "azione ipotensiva",
+            "9": "inibizione della sintesi di trigliceridi",
+            "10": "azione diuretica",
+            "3": "citochine",
+            "4": "Grifon-D",
+            "2": "betaglucani",
+            "1": "metabolica",
+            "0": "area immunitaria",
+            "6": "inibizione dell'enzima alfa-glucosidasi",
+            "5": "potente azione nella sindrome metabolica",
+            "8": "controllo del peso"
+        },
+        "Controindicazioni": {
+            "2": "non adatto a chi soffre di malattie autoimmuni",
+            "3": "diarrea",
+            "4": "cefalee",
+            "1": "non indicato per coloro che soffrono di ipotensione",
+            "0": "non adatto a chi soffre di ipoglicemia"
+        },
+        "Problematiche": {
+            "2": "cistiti infiammatorie e batteriche",
+            "1": "trattamento di patologie epatiche",
+            "0": "alleviare alcune conseguenze indesiderate della chemioterapia"
+        },
+        "Nomi": "Maitake",
+        "Id": 19
+    },
+    {
+        "Descrizione": {
+            "2": "rimedio sicuro",
+            "3": "utilizzata sia internamente che esternamente",
+            "1": "usata per il benessere e la cosmesi",
+            "0": "La Melissa è una pianta conosciuta per il suo profumo di limone"
+        },
+        "Id": 20,
+        "Usi": {
+            "3": "idrolato di melissa",
+            "4": "uso interno",
+            "2": "olio essenziale di melissa",
+            "1": "tintura madre",
+            "0": "Infuso alla melissa",
+            "5": "cosmesi"
+        },
+        "Altro": {
+            "2": "attenzione ai dosaggi elevati e per lunghi periodi",
+            "1": "gravidanza",
+            "0": "Sapore delicato"
+        },
+        "Nomi": "Melissa",
+        "Proprieta": {
+            "2": "proprieta sedative del sistema nervoso",
+            "3": "supporto per l'ipertiroidismo",
+            "1": "azione sedativa",
+            "0": "Combattere stati di ansia"
+        }
+    },
+    {
+        "Infuso": {
+            "1": "collutorio",
+            "0": "favorisce la secrezione della bile"
+        },
+        "Id": 21,
+        "Controindicazioni": {
+            "1": "sconsigliato in gravidanza e allattamento",
+            "0": "irritazioni delle mucose"
+        },
+        "Altro": {
+            "2": "profumo molto pia¹ intenso",
+            "1": "incrocio naturale di diverse varieta selvatiche",
+            "0": "clima temperato"
+        },
+        "Nomi": "Menta Peperita",
+        "Nomi Latini": {
+            "1": "Peppermint",
+            "0": "Mentha piperita"
+        },
+        "Olio essenziale": {
+            "2": "suffumigi",
+            "3": "punture di insetti",
+            "1": "naso chiuso",
+            "0": "per massaggi rilassanti e anti-stress"
+        },
+        "Parti utilizzate": {
+            "1": "olio essenziale",
+            "0": "Le foglie fresche o essiccate"
+        },
+        "Correlato": "emicranie di tipo tensivo",
+        "Proprieta": {
+            "7": "balsamica",
+            "9": "Carminativa",
+            "10": "Aromatica",
+            "3": "Analgesica",
+            "11": "Depurativa",
+            "4": "Antisettica",
+            "2": "azione antiemetica",
+            "1": "Anestetica",
+            "0": "mentolo",
+            "6": "Decongestionante",
+            "5": "polifenoli",
+            "8": "Cosmetica"
+        }
+    },
+    {
+        "Problematiche": {
+            "2": "turbe della circolazione retinica",
+            "3": "edemi conseguenti ad insufficienza cardiaca o renale",
+            "1": "edema",
+            "0": "insufficienza venosa cronica"
+        },
+        "Id": 22,
+        "Nomi": {
+            "1": "asparago di pungitopo",
+            "0": "Rusco"
+        },
+        "Parti utilizzate": "i germogli di rusco vengono mangiati freschi",
+        "Proprieta": {
+            "7": "proprieta antiedemigene",
+            "3": "oli essenziali",
+            "4": "resine",
+            "2": "saponine steroidee",
+            "1": "antinfiammatorie",
+            "0": "vasoprotettrici",
+            "6": "spiccata attivita flebotonica",
+            "5": "proprieta vasoprotettrici e antinfiammatorie sulla circolazione venosa periferica",
+            "8": "diuretiche"
+        },
+        "Controindicazioni": {
+            "1": "",
+            "0": "possono provocare nausea e disturbi gastrointestinali"
+        }
+    },
+    {
+        "Problematiche": {
+            "2": "stati influenzali",
+            "3": "forme reumatiche",
+            "4": "trattamento di alcune patologie dermatologiche",
+            "1": "mal di testa",
+            "0": "febbre"
+        },
+        "Id": 23,
+        "Usi": {
+            "1": "tintura madre",
+            "0": "decotto"
+        },
+        "Famiglia": "Salicaceae",
+        "Corteccia": "La corteccia viene prelevata dai rami di due-tre anni",
+        "Nomi": "Salice",
+        "Nomi Latini": {
+            "3": "Salix cinerea",
+            "4": "Salix viminalis",
+            "2": "Salix purpurea",
+            "1": "Salix",
+            "0": "Salix alba",
+            "6": "Salix fragilis",
+            "5": "Salix daphnoides"
+        },
+        "Controindicazioni": {
+            "3": "sensibilita ai salicilati",
+            "4": "favismo",
+            "2": "asma",
+            "1": "allattamento",
+            "0": "gravidanza",
+            "6": "anemia da carenza di ferro",
+            "5": "stitichezza"
+        },
+        "Parti utilizzate": {
+            "2": "salicina o salicoside",
+            "1": "corteccia",
+            "0": "frutti"
+        },
+        "Correlato": {
+            "2": "alcool salicilico",
+            "3": "farmaci antinfiammatori non steroidei o FANS",
+            "1": "acido acetilsalicilico",
+            "0": "acido salicilico"
+        },
+        "Proprieta": {
+            "2": "proprieta cheratolitiche",
+            "1": "antipiretica",
+            "0": "antinfiammatorie"
+        }
+    },
+    {
+        "Problematiche": {
+            "7": "irritazione della mucosa gastrica",
+            "3": "dolori reumatici",
+            "4": "raffreddore",
+            "2": "artrite",
+            "1": "sifilide",
+            "0": "lebbra",
+            "6": "febbre",
+            "5": "influenza",
+            "8": ""
+        },
+        "Id": 24,
+        "Usi": "decotto depurativo della pelle",
+        "Nomi": "Salsapariglia",
+        "Nomi Latini": {
+            "2": "zarzaparrilla",
+            "1": "salsaparrilha",
+            "0": "Smilax Aspera"
+        },
+        "Controindicazioni": {
+            "1": "in gravidanza o in fase di allattamento",
+            "0": "se si stanno assumendo farmaci diuretici e digitalici"
+        },
+        "Luoghi di Raccolta": "originaria dell'America tropicale",
+        "Parti utilizzate": "radice",
+        "Correlato": "saponine",
+        "Proprieta": {
+            "1": "fitodepuratore",
+            "0": "diaforetico"
+        }
+    },
+    {
+        "Id": 25,
+        "Nomi Latini": {
+            "1": "Sambucus ebulus",
+            "0": "Sambucus nigra"
+        },
+        "Foglie": "depurative",
+        "Correlato": {
+            "2": "tannino",
+            "3": "mucillagine",
+            "4": "antocianine",
+            "1": "rutina",
+            "0": "sambucina"
+        },
+        "Proprieta": {
+            "2": "lassative",
+            "1": "diuretiche",
+            "0": "diaforetiche"
+        },
+        "Parti utilizzate": {
+            "2": "frutti",
+            "3": "corteccia",
+            "1": "foglie",
+            "0": "fiori"
+        },
+        "Luoghi di Raccolta": "ambienti di montagna",
+        "Nomi": "Sambuca",
+        "Controindicazioni": {
+            "1": "intossicazione",
+            "0": "andrebbe evitato in caso di terapie con farmaci diuretici"
+        },
+        "Corteccia interna": "diuretiche",
+        "Frutti": {
+            "2": "antinevralgici",
+            "1": "immunostimolanti",
+            "0": "lassativa"
+        },
+        "Fiori": {
+            "2": "espettoranti",
+            "1": "diuretici",
+            "0": "diaforetici"
+        },
+        "Usi": {
+            "2": "Tintura madre",
+            "3": "Sciroppo",
+            "1": "Decotto di corteccia",
+            "0": "Infuso di fiori"
+        }
+    },
+    {
+        "Id": 26,
+        "Usi": {
+            "2": "compresse",
+            "1": "capsule",
+            "0": "Tisane"
+        },
+        "Famiglia": "Fabaceae",
+        "Nomi": "Senna",
+        "Nomi Latini": "Cassia angustfolia",
+        "Luoghi di Raccolta": {
+            "1": "",
+            "0": "boschi e terreni incolti"
+        },
+        "Parti utilizzate": {
+            "1": "frutti essiccati",
+            "0": "foglie"
+        },
+        "Proprieta": {
+            "2": "febbrifugo",
+            "3": "lassativo antrachinonico",
+            "4": "stipsi occasionali",
+            "1": "antielmintico",
+            "0": "glucosidi antrachinonici"
+        }
+    },
+    {
+        "Problematiche": {
+            "2": "rughe",
+            "3": "macchie cutanee",
+            "4": "perdita di elasticita",
+            "1": "pelli secche che tendono a desquamarsi",
+            "0": "pelle delicata"
+        },
+        "Id": 27,
+        "Usi": {
+            "3": "Lo si puo utilizzare da solo o in miscela con altri oli vegetali",
+            "4": "massaggi",
+            "2": "Ambito cosmetico",
+            "1": "creare un effetto barriera sullo strato corneo",
+            "0": "migliora la penetrazione di principi attivi",
+            "5": "L'olio di sesamo è adatto a tutti i tipi di pelle"
+        },
+        "Altro": {
+            "3": "poco sensibile all'ossidazione",
+            "4": "medicina tradizionale indiana",
+            "2": "non eccessivamente costoso",
+            "1": "contorno occhi",
+            "0": "texture leggera",
+            "5": "In India la pianta del sesamo è chiamata \u0027tila\u0027"
+        },
+        "Nomi": "Sesamo",
+        "Parti utilizzate": "Semi di sesamo",
+        "Correlato": {
+            "2": "tempura",
+            "1": "cucina indiana",
+            "0": "L'olio di sesamo si ottiene per spremitura"
+        },
+        "Proprieta": {
+            "2": "lignani",
+            "3": "sesamolo",
+            "4": "fenolo antiossidante",
+            "1": "vitamina E",
+            "0": "acidi grassi"
+        }
+    },
+    {
+        "Descrizione": {
+            "7": "Pai Hao Yin Zhen",
+            "9": "Gong Mei",
+            "3": "esistono diverse varieta",
+            "4": "tra cui Silver Needle",
+            "2": "originario della Cina",
+            "1": "raccolto solo dalle gemme apicali e dalle due foglioline sottostanti",
+            "0": "Il tè bianco è considerato pregiato",
+            "6": "Pai Mu Tan",
+            "5": "Ago d\u0027Argento",
+            "8": "Shou Mei"
+        },
+        "Id": 28,
+        "Usi": {
+            "7": "tè anti-age",
+            "9": "inibisce l'adipogenesi",
+            "10": "aumenta la concentrazione",
+            "3": "azione antibatterica",
+            "4": "presenza di fluoro",
+            "2": "controlla la glicemia",
+            "1": "stabilizza la pressione del sangue",
+            "0": "Controlla il colesterolo",
+            "6": "previene l'invecchiamento",
+            "5": "previene l'osteoporosi",
+            "8": "aiuta a perdere peso"
+        },
+        "Altro": {
+            "2": "sapore pia¹ delicato rispetto al tè verde",
+            "3": "ottima abitudine",
+            "1": "assorbimento lento ma duraturo",
+            "0": "Tipo di lavorazione"
+        },
+        "Nomi": "Te Bianco",
+        "Parti utilizzate": {
+            "2": "catechine",
+            "3": "teina",
+            "1": "polifenoli",
+            "0": "Foglie di Camellia sinensis"
+        },
+        "Proprieta": {
+            "7": "tonificante",
+            "3": "remineralizzante",
+            "4": "migliora elasticita articolare",
+            "2": "azioni preventive antitumorali",
+            "1": "contrasto all\u0027invecchiamento cellulare",
+            "0": "Antiossidante",
+            "6": "ipoglicemizzante",
+            "5": "cardioprotettivo"
+        }
+    }
+]
