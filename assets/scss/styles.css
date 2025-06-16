@@ -564,4 +564,11 @@ button:hover {
   color: white;
 }
 
+#auth-container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+
 /*# sourceMappingURL=styles.css.map */

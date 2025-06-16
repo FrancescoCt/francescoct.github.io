@@ -141,6 +141,13 @@ const personalProjects = [
     "Description": "<p>Semplice programma GIS che calcola la rotta da un punto A ad un punto B qualsiasi sulla mappa. Usa Javascript e leaflet per il suo funzionamento </p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
     "Url": "gis/"
     },
+    {
+    "Id" : 4,
+    "Title" : "Piante",
+    "Thumbnail": "../../assets/img/programmazione.webp",
+    "Description": "<p>Programma con autenticazione per vedere dati da API personalizzata </p>\n<h4>Linguaggi: HTML, CSS, JS</h4>",
+    "Url": "piante/"
+    },
 
 ];
 

@@ -15,6 +15,7 @@
         ../../../assets/components/customNavbar.js,
         ../../../assets/components/pager1.js,
         ../../../assets/components/header.js,
+        ../../../assets/components/authenticator.js,
         ../../../assets/components/footer.js
         "
         >
@@ -22,6 +23,7 @@
 
 </head>
 <body>
+    
     <custom-horizontal_navbar
         id="navbar"
         urlHome = "../../../"
@@ -32,7 +34,11 @@
         title = "Elenco Piante"
         motto="Esempio di uso delle info ottenute via fetch">
     </custom-header>
-    <custom-pager id="skillsTable" rows="5" dataJson="output" columnHeaders="Id;Nomi;Famiglia;Proprieta"></custom-pager>
+        
+    <div id="protectedContent" style="display: none;">
+        <custom-pager id="skillsTable" rows="5" dataJson="output" columnHeaders="Id;Nomi;Famiglia;Proprieta"></custom-pager>
+    </div>
+    <custom-authenticator></custom-authenticator>
     <custom-footer
         id="footer"
         imageLogo="../../../assets/favicons/start_to_impact_logo.webp"
