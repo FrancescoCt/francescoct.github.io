@@ -24,11 +24,6 @@
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
 
     <style>
-        /* @media (max-width: 768px) {
-            #sidebar{
-                display: none;
-            }
-        } */
         .map-container {
             display: flex;
             height: 100vh;
@@ -62,14 +57,14 @@
 
     <div class="row my-2px">
         <div class="col">
-            <button id="toggle-menu" onclick="toggleMenu()">☰ Apri/Chiudi Menu</button>
+            <button id="toggle-menu">☰ Apri/Chiudi Menu</button>
         </div>
     </div>
     <div class="map-container">
         <div id="sidebar" class="hidden">
             <h2>Controlli Mappa</h2>
-            <button onclick="resetMarkers()">🗑 Rimuovi Punti</button>
-            <button onclick="toggleLegend()">📌 Mostra/Nascondi Legenda</button>
+            <button id="resetMarkers">🗑 Rimuovi Punti</button>
+            <button id="toggleLegend">📌 Mostra/Nascondi Legenda</button>
             <div id="legend">
                 <strong>Legenda:</strong>
                 <p>🔵 Punto di Partenza</p>
@@ -80,80 +75,152 @@
     </div>
 
     <script>
-        const map = L.map('map').setView([37.5, 15.1], 10);
+        class MappaInterattiva {
+            constructor(mapId, center, zoom) {
+                this.map = L.map(mapId).setView(center, zoom);
+                this.startMarker = null;
+                this.endMarker = null;
+                this.routeControl = null;
 
-        // Tipi di mappa disponibili
-        const normale = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
+                this.initLayers();
+                this.initEventListeners();
+            }
 
-        const satellitare = L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        });
+            initLayers() {
+                this.normale = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(this.map);
 
-        const rilievo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenTopoMap'
-        });
+                this.satellitare = L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors'
+                });
 
-        // Controllo per cambiare mappa
-        L.control.layers({
-            "Normale": normale,
-            "Satellitare": satellitare,
-            "Rilievo": rilievo
-        }).addTo(map);
+                this.rilievo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenTopoMap'
+                });
 
-        let startMarker = null;
-        let endMarker = null;
-        let routeControl = null;
+                L.control.layers({
+                    "Normale": this.normale,
+                    "Satellitare": this.satellitare,
+                    "Rilievo": this.rilievo
+                }).addTo(this.map);
+            }
 
-        // Selezione interattiva dei punti
-        map.on('click', function(event) {
-            if (!startMarker) {
-                startMarker = L.marker(event.latlng).addTo(map).bindPopup("Partenza").openPopup();
-            } else if (!endMarker) {
-                endMarker = L.marker(event.latlng).addTo(map).bindPopup("Arrivo").openPopup();
+            initEventListeners() {
+                this.map.on('click', (event) => this.handleMapClick(event));
 
-                if (routeControl) {
-                    map.removeControl(routeControl);
+                document.getElementById("toggle-menu").addEventListener("click", () => {
+                    mappa.toggleMenu();
+                });
+                document.getElementById("resetMarkers").addEventListener("click", () => {
+                    mappa.resetMarkers();
+                });
+                document.getElementById("toggleLegend").addEventListener("click", () => {
+                    mappa.toggleLegend();
+                });
+            }
+
+            async handleMapClick(event) {
+                if (!this.startMarker) {
+                    this.startMarker = L.marker(event.latlng).addTo(this.map).bindPopup("Partenza").openPopup();
+                    await this.getWeatherData(this.startMarker);
+                } else if (!this.endMarker) {
+                    this.endMarker = L.marker(event.latlng).addTo(this.map).bindPopup("Arrivo").openPopup();
+                    await this.getWeatherData(this.endMarker);
+                    this.calculateRoute();
+                }
+            }
+
+            calculateRoute() {
+                if (this.routeControl) {
+                    this.map.removeControl(this.routeControl);
                 }
 
-                routeControl = L.Routing.control({
+                this.routeControl = L.Routing.control({
                     waypoints: [
-                        L.latLng(startMarker.getLatLng()),
-                        L.latLng(endMarker.getLatLng())
+                        L.latLng(this.startMarker.getLatLng()),
+                        L.latLng(this.endMarker.getLatLng())
                     ],
                     routeWhileDragging: true
-                }).addTo(map);
+                }).addTo(this.map);
             }
-        });
 
-        // Funzione per rimuovere punti e percorso
-        function resetMarkers() {
-            if (startMarker) {
-                map.removeLayer(startMarker);
-                startMarker = null;
+            async getWeatherData(marker) {
+                const { lat, lng } = marker.getLatLng();
+                const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,weathercode&timezone=Europe/Rome`;
+
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+
+                    if (data.current) {
+                        const info = `
+                            🌡️ <b>Temperatura:</b> ${data.current.temperature_2m}°C<br>
+                            🌤️ <b>Condizioni:</b> ${this.decodeWeatherCode(data.current.weathercode)}
+                        `;
+                        marker.bindPopup(info).openPopup();
+                    } else {
+                        marker.bindPopup("Dati meteo non disponibili").openPopup();
+                    }
+                } catch (error) {
+                    marker.bindPopup("Errore nel recupero dei dati meteo").openPopup();
+                }
             }
-            if (endMarker) {
-                map.removeLayer(endMarker);
-                endMarker = null;
+
+            decodeWeatherCode(code) {
+                const conditions = {
+                    0: "Soleggiato",
+                    1: "Prevalentemente soleggiato",
+                    2: "Parzialmente nuvoloso",
+                    3: "Nuvoloso",
+                    45: "Nebbia",
+                    48: "Nebbia intensa",
+                    51: "Pioviggine leggera",
+                    53: "Pioviggine moderata",
+                    55: "Pioviggine forte",
+                    61: "Pioggia leggera",
+                    63: "Pioggia moderata",
+                    65: "Pioggia forte",
+                    71: "Nevicata leggera",
+                    73: "Nevicata moderata",
+                    75: "Nevicata forte",
+                    80: "Rovesci leggeri",
+                    81: "Rovesci moderati",
+                    82: "Rovesci forti"
+                };
+
+                return conditions[code] || "Condizioni sconosciute";
             }
-            if (routeControl) {
-                map.removeControl(routeControl);
-                routeControl = null;
+
+            resetMarkers() {
+                if (this.startMarker) {
+                    this.map.removeLayer(this.startMarker);
+                    this.startMarker = null;
+                }
+                if (this.endMarker) {
+                    this.map.removeLayer(this.endMarker);
+                    this.endMarker = null;
+                }
+                if (this.routeControl) {
+                    this.map.removeControl(this.routeControl);
+                    this.routeControl = null;
+                }
+            }
+
+            toggleLegend() {
+                const legend = document.getElementById("legend");
+                legend.style.display = (legend.style.display === "none") ? "block" : "none";
+            }
+
+            toggleMenu() {
+                const sidebar = document.getElementById("sidebar");
+                sidebar.classList.toggle("hidden");
             }
         }
 
-        // Funzione per mostrare/nascondere la legenda
-        function toggleLegend() {
-            const legend = document.getElementById("legend");
-            legend.style.display = (legend.style.display === "none") ? "block" : "none";
-        }
+        // Esempio di utilizzo
+        const mappa = new MappaInterattiva('map', [37.5, 15.1], 10);
 
-        // Funzione per mostrare/nascondere il menu laterale
-        function toggleMenu() {
-            const sidebar = document.getElementById("sidebar");
-            sidebar.classList.toggle("hidden");
-        }
     </script>
     <custom-footer
         id="footer"
