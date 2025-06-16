@@ -441,7 +441,8 @@ footer{
 table {
   width: 80%;
   border-collapse: collapse;
-  margin: 5%;
+  margin: auto;
+  margin-top: 5%;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -565,4 +566,27 @@ border: none;
 padding: 10px;
 cursor: pointer;
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pagination button {
+  padding: 10px;
+  margin-left:5%;
+  margin-right: 5%;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--primary-color);
+  background: white;
+  border: 1px solid var(--primary-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */
