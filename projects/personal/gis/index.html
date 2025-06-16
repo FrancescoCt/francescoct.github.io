@@ -41,6 +41,43 @@
             display: block;
         }
 
+        .leaflet-routing-alt table{
+           visibility: hidden;
+           display: none;
+        }
+
+        .leaflet-routing-container{
+            background-color: white;
+            padding: 5px;
+        }
+
+        /*Mappe GIS*/
+        .leaflet-routing-alt h2, h3{
+        color: var(--primary-color);
+        }
+
+        #sidebar {
+        width: 175px;
+        background: var(--primary-color);
+        padding: 20px;
+        transition: transform 0.3s ease;
+        }
+        #sidebar.hidden {
+        display: none;
+        }
+        #sidebar h2{
+        color:white;
+        }
+
+        #toggle-menu {
+        position: absolute;
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
