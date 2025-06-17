@@ -2,6 +2,7 @@ class CustomPager extends HTMLElement {
     constructor() {
         super();
 
+        this.name = this.getAttribute("name") || "";
         this.rowsPerPage = parseInt(this.getAttribute("rows") || "5");
         this.currentPage = 1;
         this.dataJson = this.getAttribute("dataJson");
@@ -40,33 +41,33 @@ class CustomPager extends HTMLElement {
         const container = document.querySelector("custom-pager");
         container.insertAdjacentHTML("beforebegin", `
             <div class="table-container">
-                <input id="search-box" type="text" placeholder="Cerca..." style="margin: auto;" />
+                <input id="${this.name}-search-box" type="text" placeholder="Cerca..." style="margin: auto;" />
                 <table>
                     <thead>
-                        <tr id="table-header"></tr>
+                        <tr id="${this.name}-table-header"></tr>
                     </thead>
-                    <tbody id="table-body"></tbody>
+                    <tbody id="${this.name}-table-body"></tbody>
                 </table>
                 <div class="pagination">
-                    <button id="prev-page"> <- Precedente</button>
-                    <span id="page-info">${this.currentPage} di ${this.totalPages}</span>
-                    <button id="next-page"> -> Successiva</button>
+                    <button id="${this.name}-prev-page"> <- Precedente</button>
+                    <span id="${this.name}-page-info">${this.currentPage} di ${this.totalPages}</span>
+                    <button id="${this.name}-next-page"> -> Successiva</button>
                 </div>
             </div>
         `);
 
         this.displayTable();
 
-        document.getElementById("prev-page").addEventListener("click", () => this.prevPage());
-        document.getElementById("next-page").addEventListener("click", () => this.nextPage());
-        document.getElementById("search-box").addEventListener("input", (e) => this.applyFilter(e.target.value));
+        document.getElementById(`${this.name}-prev-page`).addEventListener("click", () => this.prevPage());
+        document.getElementById(`${this.name}-next-page`).addEventListener("click", () => this.nextPage());
+        document.getElementById(`${this.name}-search-box`).addEventListener("input", (e) => this.applyFilter(e.target.value));
 
         this.remove();
     }
 
     displayTable() {
-        const headerRow = document.getElementById("table-header");
-        const body = document.getElementById("table-body");
+        const headerRow = document.getElementById(`${this.name}-table-header`);
+        const body = document.getElementById(`${this.name}-table-body`);
         headerRow.innerHTML = "";
         body.innerHTML = "";
 
@@ -100,7 +101,7 @@ class CustomPager extends HTMLElement {
             body.appendChild(tr);
         }
 
-        document.getElementById("page-info").textContent = `${this.currentPage} di ${this.totalPages}`;
+        document.getElementById(`${this.name}-page-info`).textContent = `${this.currentPage} di ${this.totalPages}`;
     }
 
     applyFilter(query) {
