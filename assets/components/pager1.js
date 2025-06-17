@@ -17,9 +17,9 @@ class CustomPager extends HTMLElement {
     }
 
     async loadData() {
-        if (this.dataJson === "output") {
+        if (["output", "spreaProprieta"].includes(this.dataJson)) {
             try {
-                const response = await fetch("output.json");
+                const response = await fetch(`${this.dataJson}.json`);
                 if (!response.ok) throw new Error(`Errore nel caricamento del file JSON: ${response.status}`);
                 this.data = await response.json();
             } catch (error) {
@@ -41,6 +41,9 @@ class CustomPager extends HTMLElement {
         const container = document.querySelector("custom-pager");
         container.insertAdjacentHTML("beforebegin", `
             <div class="table-container">
+                <div class="profile-description">
+                    <h2>${this.name.toUpperCase()}</h2>
+                </div>
                 <input id="${this.name}-search-box" type="text" placeholder="Cerca..." style="margin: auto;" />
                 <table>
                     <thead>
@@ -108,11 +111,23 @@ class CustomPager extends HTMLElement {
         this.currentPage = 1;
         const lowered = query.toLowerCase();
 
+        // this.filteredData = this.data.filter(row =>
+        //     Object.values(row).some(value =>
+        //         String(value).toLowerCase().includes(lowered)
+        //     )
+        // );
         this.filteredData = this.data.filter(row =>
             Object.values(row).some(value =>
-                String(value).toLowerCase().includes(lowered)
+                (function extract(val) {
+                    if (val === null || val === undefined) return false;
+                    if (typeof val === 'object') {
+                        return Object.values(val).some(nested => extract(nested));
+                    }
+                    return String(val).toLowerCase().includes(lowered);
+                })(value)
             )
         );
+
 
         this.totalPages = Math.ceil(this.filteredData.length / this.rowsPerPage);
         this.displayTable();

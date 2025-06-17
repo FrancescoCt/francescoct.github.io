@@ -1,0 +1,2007 @@
+﻿[
+    {
+        "Id": 1,
+        "Nomi": {
+            "0": "Abete Bianco",
+            "1": "Abies alba Mill."
+        },
+        "Proprieta": {
+            "0": "Rimineralizzante",
+            "1": "Balsamica",
+            "2": "Antireumatica"
+        }
+    },
+    {
+        "Id": 2,
+        "Nomi": {
+            "0": "Acerola",
+            "1": "Malpighia punicifolia o Malpighia glabra L."
+        },
+        "Proprieta": {
+            "0": "Antianemica",
+            "1": "Antiossidante/vitaminizzante",
+            "2": "Tonica-stimolante",
+            "3": "Immunostimolante"
+        }
+    },
+    {
+        "Id": 3,
+        "Nomi": {
+            "0": "Achillea",
+            "1": "Achillea millefolium L."
+        },
+        "Proprieta": {
+            "0": "Spasmolitica/Calmante dolori addominali",
+            "1": "Digestiva",
+            "2": "Anti-emorragica*",
+            "3": "Vasoprotettrice"
+        }
+    },
+    {
+        "Id": 4,
+        "Nomi": {
+            "0": "Agnocasto",
+            "1": "Vitex agnus castus Kurz"
+        },
+        "Proprieta": {
+            "0": "Spasmolitica/Calmante dolori addominali",
+            "1": "Progestinicastringente"
+        }
+    },
+    {
+        "Id": 5,
+        "Nomi": {
+            "0": "Alchemilla",
+            "1": "Alchemilla vulgaris L."
+        },
+        "Proprieta": {
+            "0": "Astringente"
+        }
+    },
+    {
+        "Id": 6,
+        "Nomi": {
+            "0": "Alloro",
+            "1": "Laurus nobilis L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Antisudorale*",
+            "2": "Balsamica"
+        }
+    },
+    {
+        "Id": 7,
+        "Nomi": {
+            "0": "Aloe Vera",
+            "1": "Aloe vera (L.) Burm. F."
+        },
+        "Proprieta": {
+            "0": "Protettiva gastrica",
+            "1": "Lassativa",
+            "2": "Immunostimolante",
+            "3": "Lenitiva*"
+        }
+    },
+    {
+        "Id": 8,
+        "Nomi": {
+            "0": "Altea",
+            "1": "Althaea officinalis L."
+        },
+        "Proprieta": {
+            "0": "Protettiva gastrica",
+            "1": "Dolcemente lassativa",
+            "2": "Espettorante/Emolliente vie respiratorie",
+            "3": "Lenitiva*"
+        }
+    },
+    {
+        "Id": 9,
+        "Nomi": {
+            "0": "Amamelide",
+            "1": "Hamamelis virginiana L."
+        },
+        "Proprieta": {
+            "0": "Lenitiva*",
+            "1": "Astringente*",
+            "2": "Antiemorragica"
+        }
+    },
+    {
+        "Id": 10,
+        "Nomi": {
+            "0": "Ananas",
+            "1": "Ananas sativus Schult."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Depurativa",
+            "2": "Drenante",
+            "3": "Diuretica",
+            "4": "Vasoprotettrice",
+            "5": "Antiossidante/Vitaminizzante"
+        }
+    },
+    {
+        "Id": 11,
+        "Nomi": {
+            "0": "Angelica",
+            "1": "Angelica archangelica L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Spasmolitica/Calmante dolori addominali"
+        }
+    },
+    {
+        "Id": 12,
+        "Nomi": {
+            "0": "Anice Verde",
+            "1": "Pimpinella anisum L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Sgonfiante",
+            "2": "Galattogena",
+            "3": "Spasmolitica/Calmante dolori addominali"
+        }
+    },
+    {
+        "Id": 13,
+        "Nomi": {
+            "0": "Arancio",
+            "1": "Citrus aurantium L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Astringente",
+            "2": "Antisettica"
+        }
+    },
+    {
+        "Id": 14,
+        "Nomi": {
+            "0": "Argan",
+            "1": "Argania spinosa L."
+        },
+        "Proprieta": {
+            "0": "Lenitiva",
+            "1": "Elasticizzante",
+            "2": "Cicatrizzante"
+        }
+    },
+    {
+        "Id": 15,
+        "Nomi": {
+            "0": "Arnica",
+            "1": "Arnica montana L."
+        },
+        "Proprieta": {
+            "0": "Antireumatica*",
+            "1": "Lenitiva*"
+        }
+    },
+    {
+        "Id": 16,
+        "Nomi": {
+            "0": "Artiglio del Diavolo",
+            "1": "Harpagophytum procumbens DC."
+        },
+        "Proprieta": {
+            "0": "Antireumatica",
+            "1": "Lenitiva",
+            "2": "Spasmolitica",
+            "3": "Digestiva"
+        }
+    },
+    {
+        "Id": 17,
+        "Nomi": {
+            "0": "Assenzio",
+            "1": "Artemisia absinthium L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Antisettica"
+        }
+    },
+    {
+        "Id": 18,
+        "Nomi": {
+            "0": "Avena",
+            "1": "Avena sativa L."
+        },
+        "Proprieta": {
+            "0": "Rilassante",
+            "1": "Antistress"
+        }
+    },
+    {
+        "Id": 19,
+        "Nomi": {
+            "0": "Ballota",
+            "1": "Ballota nigra L."
+        },
+        "Proprieta": {
+            "0": "Rilassante",
+            "1": "Ipnoinducente"
+        }
+    },
+    {
+        "Id": 20,
+        "Nomi": {
+            "0": "Bardana",
+            "1": "Arctium lappa L."
+        },
+        "Proprieta": {
+            "0": "Depurativa",
+            "1": "Ipoglicemizzante",
+            "2": "Cicatrizzante*"
+        }
+    },
+    {
+        "Id": 21,
+        "Nomi": {
+            "0": "Basilico",
+            "1": "Ocimum basilicum L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Balsamica",
+            "2": "Sgradita agli insetti*"
+        }
+    },
+    {
+        "Id": 22,
+        "Nomi": {
+            "0": "Bergamotto",
+            "1": "Citrus bergamia Risso."
+        },
+        "Proprieta": {
+            "0": "Astringente*",
+            "1": "Drenante*",
+            "2": "Tonificante dellâ€™umore*",
+            "3": "Ipocolesterolemizzante"
+        }
+    },
+    {
+        "Id": 23,
+        "Nomi": {
+            "0": "Betonica",
+            "1": "Stachys officinalis L."
+        },
+        "Proprieta": {
+            "0": "Rilassante",
+            "1": "Antistress"
+        }
+    },
+    {
+        "Id": 24,
+        "Nomi": {
+            "0": "Betulla",
+            "1": "Betula alba L."
+        },
+        "Proprieta": {
+            "0": "Drenante",
+            "1": "Anti-renella",
+            "2": "Antireumatica"
+        }
+    },
+    {
+        "Id": 25,
+        "Nomi": {
+            "0": "Biancospino",
+            "1": "Crataegus monogyna Jacq. (Lindm.)"
+        },
+        "Proprieta": {
+            "0": "Rilassante",
+            "1": "Antiaritmica",
+            "2": "Ipotensiva",
+            "3": "Antistress"
+        }
+    },
+    {
+        "Id": 26,
+        "Nomi": {
+            "0": "Boswellia",
+            "1": "Boswellia serrata Roxb. ex Colebr."
+        },
+        "Proprieta": {
+            "0": "Antireumatica",
+            "1": "Lenitiva"
+        }
+    },
+    {
+        "Id": 27,
+        "Nomi": {
+            "0": "Borragine",
+            "1": "Borago officinalis L."
+        },
+        "Proprieta": {
+            "0": "Antidislipidemica/Ipocolesterolemizzante",
+            "1": "Elasticizzante",
+            "2": "Antireumatica",
+            "3": "Estrogenica"
+        }
+    },
+    {
+        "Id": 28,
+        "Nomi": {
+            "0": "Borsa del pastore",
+            "1": "Capsella bursa pastoris Moench."
+        },
+        "Proprieta": {
+            "0": "Antiemorragica*",
+            "1": "Cicatrizzante*"
+        }
+    },
+    {
+        "Id": 29,
+        "Nomi": {
+            "0": "Cacao",
+            "1": "Theobroma cacao L."
+        },
+        "Proprieta": {
+            "0": "Tonica/Stimolante",
+            "1": "Tonificante dellâ€™umore",
+            "2": "Antiossidante",
+            "3": "Cicatrizzante*",
+            "4": "Elasticizzante*"
+        }
+    },
+    {
+        "Id": 30,
+        "Nomi": {
+            "0": "Calendula",
+            "1": "Calendula officinalis L."
+        },
+        "Proprieta": {
+            "0": "Lenitiva*",
+            "1": "Spasmolitica/Calmante dolori addominali",
+            "2": "Cicatrizzante*"
+        }
+    },
+    {
+        "Id": 31,
+        "Nomi": {
+            "0": "Cannella",
+            "1": "Cinnamomum zeylanicum Blume",
+            "2": "Cinnamomum verum J. Presl"
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Antisettica",
+            "2": "Tonica/Stimolante",
+            "3": "Ipoglicemizzante"
+        }
+    },
+    {
+        "Id": 32,
+        "Nomi": {
+            "0": "Camomilla",
+            "1": "Matricaria chamomilla L."
+        },
+        "Proprieta": {
+            "0": "Spasmolitica/Calmante dolori addominali",
+            "1": "Protettiva gastrica",
+            "2": "Sfiammante oculare*"
+        }
+    },
+    {
+        "Id": 33,
+        "Nomi": {
+            "0": "Carciofo",
+            "1": "Cynara scolymus L."
+        },
+        "Proprieta": {
+            "0": "Depurativa",
+            "1": "Digestiva",
+            "2": "Ipocolesterolemizzante"
+        }
+    },
+    {
+        "Id": 34,
+        "Nomi": {
+            "0": "Cardiaca",
+            "1": "Leonurus cardiaca L."
+        },
+        "Proprieta": {
+            "0": "Antiaritmica",
+            "1": "Ipotensiva",
+            "2": "Rilassante",
+            "3": "Antistress"
+        }
+    },
+    {
+        "Id": 35,
+        "Nomi": {
+            "0": "Cardo mariano",
+            "1": "Silybum marianum (L.) Gaertner"
+        },
+        "Proprieta": {
+            "0": "Depurativa",
+            "1": "Digestiva",
+            "2": "Antiossidante",
+            "3": "Antiemorragica"
+        }
+    },
+    {
+        "Id": 36,
+        "Nomi": {
+            "0": "Carota",
+            "1": "Daucus carota sativa L."
+        },
+        "Proprieta": {
+            "0": "Vitaminizzante",
+            "1": "Abbronzante",
+            "2": "Emolliente*"
+        }
+    },
+    {
+        "Id": 37,
+        "Nomi": {
+            "0": "Carpino",
+            "1": "Carpinus betulus L."
+        },
+        "Proprieta": {
+            "0": "Espettorante/Emolliente vie respiratorie"
+        }
+    },
+    {
+        "Id": 38,
+        "Nomi": {
+            "0": "Carvi (Cumino dei prati)",
+            "1": "Carum carvi L."
+        },
+        "Proprieta": {
+            "0": "Sgonfiante",
+            "1": "Digestiva",
+            "2": "Galattogena"
+        }
+    },
+    {
+        "Id": 39,
+        "Nomi": {
+            "0": "Cedro del Libano",
+            "1": "Cedrus libani A. Rich."
+        },
+        "Proprieta": {
+            "0": "Espettorante",
+            "1": "Antisettica",
+            "2": "Balsamica",
+            "3": "Depurativa"
+        }
+    },
+    {
+        "Id": 40,
+        "Nomi": {
+            "0": "Castagno",
+            "1": "Castanea vesca Gaertn. (Sinonimo: Castanea sativa Miller)"
+        },
+        "Proprieta": {
+            "0": "Drenante",
+            "1": "Vasoprotettrice",
+            "2": "Espettorante/Emolliente vie respiratorie"
+        }
+    },
+    {
+        "Id": 41,
+        "Nomi": {
+            "0": "Celidonia",
+            "1": "Chelidonium majus L."
+        },
+        "Proprieta": {
+            "0": "Antisettica"
+        }
+    },
+    {
+        "Id": 42,
+        "Nomi": {
+            "0": "Centella",
+            "1": "Centella asiatica L. Hydrocotyle asiatica L."
+        },
+        "Proprieta": {
+            "0": "Vasoprottetrice",
+            "1": "Drenante",
+            "2": "Cicatrizzante*",
+            "3": "Elasticizzante*"
+        }
+    },
+    {
+        "Id": 43,
+        "Nomi": {
+            "0": "Centinodia",
+            "1": "Polygonum aviculare L."
+        },
+        "Proprieta": {
+            "0": "Drenante",
+            "1": "Anti-renella"
+        }
+    },
+    {
+        "Id": 44,
+        "Nomi": {
+            "0": "Chiodi di Garofano",
+            "1": "Syzygium aromaticum (L.) Merr&L.M. Perry",
+            "2": "Eugenia caryophyllus (Spreng.) Bullock&S.Harrison"
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Antisettica",
+            "2": "Sgonfiante",
+            "3": "Balsamica",
+            "4": "Sgradita insetti"
+        }
+    },
+    {
+        "Id": 45,
+        "Nomi": {
+            "0": "Cicoria",
+            "1": "Cichorium intybus L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Dolcemente lassativa",
+            "2": "Depurativa",
+            "3": "Drenante",
+            "4": "Diuretica"
+        }
+    },
+    {
+        "Id": 46,
+        "Nomi": {
+            "0": "Cimicifuga",
+            "1": "Actaea racemosa L"
+        },
+        "Proprieta": {
+            "0": "Estrogenica"
+        }
+    },
+    {
+        "Id": 47,
+        "Nomi": {
+            "0": "Cipresso",
+            "1": "Cupressus sempervirens L."
+        },
+        "Proprieta": {
+            "0": "Antireumatica*",
+            "1": "Balsamica*"
+        }
+    },
+    {
+        "Id": 48,
+        "Nomi": {
+            "0": "Citronella",
+            "1": "Cymbopogon citratus (DC.) Stapf."
+        },
+        "Proprieta": {
+            "0": "Astringente",
+            "1": "Antisettica",
+            "2": "Tonificante umore",
+            "3": "Antireumatica",
+            "4": "Sgradita insetti"
+        }
+    },
+    {
+        "Id": 49,
+        "Nomi": {
+            "0": "Cocco",
+            "1": "Cocos nucifera L."
+        },
+        "Proprieta": {
+            "0": "Lenitiva",
+            "1": "Elasticizzante",
+            "2": "Cicatrizzante"
+        }
+    },
+    {
+        "Id": 50,
+        "Nomi": {
+            "0": "Consolida",
+            "1": "Symphytum officinale L."
+        },
+        "Proprieta": {
+            "0": "Emolliente*",
+            "1": "Cicatrizzante*",
+            "2": "Lenitiva*"
+        }
+    },
+    {
+        "Id": 51,
+        "Nomi": {
+            "0": "Coriandolo",
+            "1": "Coriandrum sativum L."
+        },
+        "Proprieta": {
+            "0": "Sgonfiante",
+            "1": "Digestiva"
+        }
+    },
+    {
+        "Id": 52,
+        "Nomi": {
+            "0": "Curcuma",
+            "1": "Curcuma longa L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Antidislipidemica/Ipocolesterolemizzante",
+            "2": "Antiossidante",
+            "3": "Antireumatica"
+        }
+    },
+    {
+        "Id": 53,
+        "Nomi": {
+            "0": "Echinacea",
+            "1": "Echinacea angustifolia L."
+        },
+        "Proprieta": {
+            "0": "Immunostimolante",
+            "1": "Cicatrizzante*"
+        }
+    },
+    {
+        "Id": 54,
+        "Nomi": {
+            "0": "Edera Helix",
+            "1": "Hedera helix L."
+        },
+        "Proprieta": {
+            "0": "Espettorante/Emolliente vie respiratorie",
+            "1": "Linfodrenante*"
+        }
+    },
+    {
+        "Id": 55,
+        "Nomi": {
+            "0": "Edera Terrestre",
+            "1": "Glechoma hederacea L."
+        },
+        "Proprieta": {
+            "0": "Espettorante/Emolliente vie respiratorie"
+        }
+    },
+    {
+        "Id": 56,
+        "Nomi": {
+            "0": "Eleuterococco",
+            "1": "Eleutherococcus senticosus Maxim."
+        },
+        "Proprieta": {
+            "0": "Adattogena",
+            "1": "Tonica/Stimolante",
+            "2": "Immunostimolante"
+        }
+    },
+    {
+        "Id": 57,
+        "Nomi": {
+            "0": "Elicriso",
+            "1": "Helichrysum italicum (Roh) G. Don."
+        },
+        "Proprieta": {
+            "0": "Lenitiva*"
+        }
+    },
+    {
+        "Id": 58,
+        "Nomi": {
+            "0": "Enotera",
+            "1": "Oenothera biennis Scopoli"
+        },
+        "Proprieta": {
+            "0": "Lenitiva",
+            "1": "Elasticizzante"
+        }
+    },
+    {
+        "Id": 59,
+        "Nomi": {
+            "0": "Equiseto",
+            "1": "Equisetum arvense L."
+        },
+        "Proprieta": {
+            "0": "Diuretica",
+            "1": "Rimineralizzante",
+            "2": "Elasticizzante*"
+        }
+    },
+    {
+        "Id": 60,
+        "Nomi": {
+            "0": "Epilobio",
+            "1": "Epilobium angustifolium Schreb."
+        },
+        "Proprieta": {
+            "0": "Lenitiva",
+            "1": "Disinfettante urinaria",
+            "2": "Astrigente",
+            "3": "Espettorante"
+        }
+    },
+    {
+        "Id": 61,
+        "Nomi": {
+            "0": "Erba CatiorÃ",
+            "1": "Stachys recta L."
+        },
+        "Proprieta": {
+            "0": "Espettorante/Emolliente vie respiratorie*",
+            "1": "Lenitiva*"
+        }
+    },
+    {
+        "Id": 62,
+        "Nomi": {
+            "0": "Erba Medica",
+            "1": "Medicago sativa L."
+        },
+        "Proprieta": {
+            "0": "Vitaminizzante",
+            "1": "Tonica/Stimolante",
+            "2": "Rimineralizzante"
+        }
+    },
+    {
+        "Id": 63,
+        "Nomi": {
+            "0": "Erica",
+            "1": "Calluna vulgaris L."
+        },
+        "Proprieta": {
+            "0": "Diuretica",
+            "1": "Disinfettante urinaria"
+        }
+    },
+    {
+        "Id": 64,
+        "Nomi": {
+            "0": "Erisimo",
+            "1": "Sisymbrium officinale L."
+        },
+        "Proprieta": {
+            "0": "Tonico della voce",
+            "1": "Espettorante/Emolliente vie respiratorie",
+            "2": "Lenitiva"
+        }
+    },
+    {
+        "Id": 65,
+        "Nomi": {
+            "0": "Eucalipto",
+            "1": "Eucalyptus globulus  Labill"
+        },
+        "Proprieta": {
+            "0": "Espettorante/Emolliente vie respiratorie",
+            "1": "Balsamica*",
+            "2": "Antisettica",
+            "3": "Sgradita agli insetti*"
+        }
+    },
+    {
+        "Id": 66,
+        "Nomi": {
+            "0": "Escolzia",
+            "1": "Eschscholtzia californica Chamisson"
+        },
+        "Proprieta": {
+            "0": "Rilassante",
+            "1": "Lenitiva*",
+            "2": "Ipnoinducente"
+        }
+    },
+    {
+        "Id": 67,
+        "Nomi": {
+            "0": "Eufrasia",
+            "1": "Euphrasia officinalis L."
+        },
+        "Proprieta": {
+            "0": "Lenitiva*",
+            "1": "Sfiammante oculare*",
+            "2": "Antiallergica*"
+        }
+    },
+    {
+        "Id": 68,
+        "Nomi": {
+            "0": "Faggio",
+            "1": "Fagus sylvatica L."
+        },
+        "Proprieta": {
+            "0": "Drenante",
+            "1": "Anti-renella"
+        }
+    },
+    {
+        "Id": 69,
+        "Nomi": {
+            "0": "Farfaraccio",
+            "1": "Petasites hybridus L."
+        },
+        "Proprieta": {
+            "0": "Espettorante/Emolliente vie respiratorie",
+            "1": "Spasmolitica/Calmante dolori addominali"
+        }
+    },
+    {
+        "Id": 70,
+        "Nomi": {
+            "0": "Farfaro",
+            "1": "Tussilago farfara L."
+        },
+        "Proprieta": {
+            "0": "Espettorante/Emolliente vie respiratorie"
+        }
+    },
+    {
+        "Id": 71,
+        "Nomi": {
+            "0": "Fieno greco",
+            "1": "Trigonella foenum-graecum L."
+        },
+        "Proprieta": {
+            "0": "Tonica/Stimolante",
+            "1": "Ipocolesterolemizzante",
+            "2": "Ipoglicemizzante"
+        }
+    },
+    {
+        "Id": 72,
+        "Nomi": {
+            "0": "Fico",
+            "1": "Ficus carica L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Antistress",
+            "2": "Protettiva gastrica",
+            "3": "Dolcemente lassativa"
+        }
+    },
+    {
+        "Id": 73,
+        "Nomi": {
+            "0": "Finocchio Selvatico",
+            "1": "Foeniculum vulgare Miller"
+        },
+        "Proprieta": {
+            "0": "Sgonfiante",
+            "1": "Galattogena",
+            "2": "Digestiva"
+        }
+    },
+    {
+        "Id": 74,
+        "Nomi": {
+            "0": "Fiordaliso",
+            "1": "Centaurea cyanus L."
+        },
+        "Proprieta": {
+            "0": "Sfiammante oculare*",
+            "1": "Lenitiva*",
+            "2": "Astringente*"
+        }
+    },
+    {
+        "Id": 75,
+        "Nomi": {
+            "0": "Frangula",
+            "1": "Rhamnus frangula L."
+        },
+        "Proprieta": {
+            "0": "Lassativa"
+        }
+    },
+    {
+        "Id": 76,
+        "Nomi": {
+            "0": "Frassino",
+            "1": "Fraxinus excelsior L."
+        },
+        "Proprieta": {
+            "0": "Drenante",
+            "1": "Antireumatica"
+        }
+    },
+    {
+        "Id": 77,
+        "Nomi": {
+            "0": "Frassino da Manna",
+            "1": "Fraxinus ornus L."
+        },
+        "Proprieta": {
+            "0": "Dolcemente lassativa",
+            "1": "Espettorante/Emolliente vie respiratorie"
+        }
+    },
+    {
+        "Id": 78,
+        "Nomi": {
+            "0": "Fucus",
+            "1": "Fucus vesiculosus L."
+        },
+        "Proprieta": {
+            "0": "Dimagrante",
+            "1": "Protettiva gastrica"
+        }
+    },
+    {
+        "Id": 79,
+        "Nomi": {
+            "0": "Fumaria",
+            "1": "Fumaria officinalis L."
+        },
+        "Proprieta": {
+            "0": "Depurativa",
+            "1": "Vasoprotettrice"
+        }
+    },
+    {
+        "Id": 80,
+        "Nomi": {
+            "0": "Galega",
+            "1": "Galega officinalis L."
+        },
+        "Proprieta": {
+            "0": "Galattogena",
+            "1": "Ipoglicemizzante"
+        }
+    },
+    {
+        "Id": 81,
+        "Nomi": {
+            "0": "Gaultheria",
+            "1": "Gaultheria procumbens L."
+        },
+        "Proprieta": {
+            "0": "Espettorante",
+            "1": "Spasmolitica",
+            "2": "Antisettica",
+            "3": "Antireumatica",
+            "4": "Balsamica"
+        }
+    },
+    {
+        "Id": 82,
+        "Nomi": {
+            "0": "Genziana",
+            "1": "Gentiana lutea L."
+        },
+        "Proprieta": {
+            "0": "Digestiva"
+        }
+    },
+    {
+        "Id": 83,
+        "Nomi": {
+            "0": "Geranio",
+            "1": "Pelargonium graveolens Lâ€™Herit."
+        },
+        "Proprieta": {
+            "0": "Astringente*",
+            "1": "Tonica/Stimolante*",
+            "2": "Drenante*",
+            "3": "Sgradita agli insetti*"
+        }
+    },
+    {
+        "Id": 84,
+        "Nomi": {
+            "0": "Ginepro",
+            "1": "Juniperus communis L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Antireumatica*",
+            "2": "Espettorante*"
+        }
+    },
+    {
+        "Id": 85,
+        "Nomi": {
+            "0": "Ginkgo",
+            "1": "Ginkgo biloba L."
+        },
+        "Proprieta": {
+            "0": "Vasoprotettrice",
+            "1": "Antiossidante",
+            "2": "Benessere vista"
+        }
+    },
+    {
+        "Id": 86,
+        "Nomi": {
+            "0": "Ginseng",
+            "1": "Panax ginseng C.A. Meyer"
+        },
+        "Proprieta": {
+            "0": "Adattogena",
+            "1": "Tonica/Stimolante",
+            "2": "Immunostimolante"
+        }
+    },
+    {
+        "Id": 87,
+        "Nomi": {
+            "0": "Gramigna",
+            "1": "Agropyrum repens (L.) P. Beauv"
+        },
+        "Proprieta": {
+            "0": "Diuretica",
+            "1": "Disinfettante urinaria"
+        }
+    },
+    {
+        "Id": 88,
+        "Nomi": {
+            "0": "Griffonia",
+            "1": "Griffonia simplicifolia (DC.) Baill"
+        },
+        "Proprieta": {
+            "0": "Rilassante/Antistress",
+            "1": "Tonica dellâ€™umore"
+        }
+    },
+    {
+        "Id": 89,
+        "Nomi": {
+            "0": "Ibisco",
+            "1": "Hibiscus sabdariffa DC."
+        },
+        "Proprieta": {
+            "0": "Dolcemente lassativa",
+            "1": "Vasoprotettrice",
+            "2": "Antiossidante-Vitaminizzante"
+        }
+    },
+    {
+        "Id": 90,
+        "Nomi": {
+            "0": "Iperico",
+            "1": "Hypericum perforatum L."
+        },
+        "Proprieta": {
+            "0": "Tonificante dell'umore",
+            "1": "Antipruriginosa*",
+            "2": "Cicatrizzante*"
+        }
+    },
+    {
+        "Id": 91,
+        "Nomi": {
+            "0": "Ippocastano",
+            "1": "Aesculus hippocastanum L."
+        },
+        "Proprieta": {
+            "0": "Astringente",
+            "1": "Vasoprottetrice"
+        }
+    },
+    {
+        "Id": 92,
+        "Nomi": {
+            "0": "Jojoba",
+            "1": "Simmondsia chinensis Link Buxus chinensis Link"
+        },
+        "Proprieta": {
+            "0": "Lenitiva",
+            "1": "Elasticizzante",
+            "2": "Cicatrizzante"
+        }
+    },
+    {
+        "Id": 93,
+        "Nomi": {
+            "0": "KaritÃ¨",
+            "1": "Vitellaria paradoxa CF Gaertn",
+            "2": "Sinonimo: Butyrospermum parkii"
+        },
+        "Proprieta": {
+            "0": "Idratante*",
+            "1": "Lenitiva*"
+        }
+    },
+    {
+        "Id": 94,
+        "Nomi": {
+            "0": "Lampone",
+            "1": "Rubus idaeus L."
+        },
+        "Proprieta": {
+            "0": "Spasmolitica/Calmante dolori addominali",
+            "1": "Astringente"
+        }
+    },
+    {
+        "Id": 95,
+        "Nomi": {
+            "0": "Lavanda",
+            "1": "Lavanda officinalis Chaix"
+        },
+        "Proprieta": {
+            "0": "Rilassante",
+            "1": "Spasmolitica/Calmante dolori addominali",
+            "2": "Lenitiva*",
+            "3": "Antistress*"
+        }
+    },
+    {
+        "Id": 96,
+        "Nomi": {
+            "0": "Limone",
+            "1": "Citrus x limon (L.) Burmann"
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Astringente",
+            "2": "Antisettica"
+        }
+    },
+    {
+        "Id": 97,
+        "Nomi": {
+            "0": "Lino",
+            "1": "Linum usitatissimum L."
+        },
+        "Proprieta": {
+            "0": "Dolcemente lassativa",
+            "1": "Ipocolesterolemizzante"
+        }
+    },
+    {
+        "Id": 98,
+        "Nomi": {
+            "0": "Liquirizia",
+            "1": "Glycyrrhiza glabra L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Spasmolitica",
+            "2": "Protettiva gastrica",
+            "3": "Espettorante",
+            "4": "Antisettica",
+            "5": "Lenitiva",
+            "6": "Emolliente vie respiratorie",
+            "7": "Tonica/Stimolante",
+            "8": "Dolcemente lassativa"
+        }
+    },
+    {
+        "Id": 99,
+        "Nomi": {
+            "0": "Luppolo",
+            "1": "Humulus lupulus L."
+        },
+        "Proprieta": {
+            "0": "Rilassante",
+            "1": "Estrogenica",
+            "2": "Digestiva",
+            "3": "Antistress"
+        }
+    },
+    {
+        "Id": 100,
+        "Nomi": {
+            "0": "Maggiorana",
+            "1": "Origanum majorana L"
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Sgonfiante"
+        }
+    },
+    {
+        "Id": 101,
+        "Nomi": {
+            "0": "Mais",
+            "1": "Zea mays L."
+        },
+        "Proprieta": {
+            "0": "Diuretica",
+            "1": "Anti-renella",
+            "2": "Depurativa"
+        }
+    },
+    {
+        "Id": 102,
+        "Nomi": {
+            "0": "Malva",
+            "1": "Malva sylvestris L."
+        },
+        "Proprieta": {
+            "0": "Protettiva gastrica",
+            "1": "Dolcemente lassativa",
+            "2": "Espettorante/Emolliente vie respiratorie",
+            "3": "Lenitiva*"
+        }
+    },
+    {
+        "Id": 103,
+        "Nomi": {
+            "0": "Mandorlo",
+            "1": "Prunus dulcis (Mill.) D.A. Webb."
+        },
+        "Proprieta": {
+            "0": "Lenitiva",
+            "1": "Elasticizzante",
+            "2": "Lassativa"
+        }
+    },
+    {
+        "Id": 104,
+        "Nomi": {
+            "0": "Marrubio",
+            "1": "Marrubium vulgare L."
+        },
+        "Proprieta": {
+            "0": "Espettorante",
+            "1": "Digestiva"
+        }
+    },
+    {
+        "Id": 105,
+        "Nomi": {
+            "0": "Mela",
+            "1": "Malus domestica Borkh."
+        },
+        "Proprieta": {
+            "0": "Dimagrante",
+            "1": "Ipocolesterolemizzante"
+        }
+    },
+    {
+        "Id": 106,
+        "Nomi": {
+            "0": "Meliloto",
+            "1": "Melilotus officinalis L."
+        },
+        "Proprieta": {
+            "0": "Vasoprottetrice",
+            "1": "Astringente",
+            "2": "Spasmolitica",
+            "3": "Cicatrizzante"
+        }
+    },
+    {
+        "Id": 107,
+        "Nomi": {
+            "0": "Melissa",
+            "1": "Melissa officinalis L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Rilassante",
+            "2": "Antinausea",
+            "3": "Antistress*"
+        }
+    },
+    {
+        "Id": 108,
+        "Nomi": {
+            "0": "Menta",
+            "1": "Mentha x piperita L."
+        },
+        "Proprieta": {
+            "0": "Balsamica*",
+            "1": "Tonica/Stimolante*",
+            "2": "Digestiva",
+            "3": "Antinausea"
+        }
+    },
+    {
+        "Id": 109,
+        "Nomi": {
+            "0": "Miglio",
+            "1": "Panicum miliaceum L."
+        },
+        "Proprieta": {
+            "0": "Remineralizzante",
+            "1": "Digestiva",
+            "2": "Tonica/Stimolante"
+        }
+    },
+    {
+        "Id": 110,
+        "Nomi": {
+            "0": "Mirra",
+            "1": "Commiphora myrrha Jacq."
+        },
+        "Proprieta": {
+            "0": "Astringente",
+            "1": "Antisettica",
+            "2": "Cicatrizzante"
+        }
+    },
+    {
+        "Id": 111,
+        "Nomi": {
+            "0": "Mirtillo Nero",
+            "1": "Vaccinium myrtillus L."
+        },
+        "Proprieta": {
+            "0": "Vasoprotrettrice",
+            "1": "Astringente",
+            "2": "Antiossidante/Vitaminizzante",
+            "3": "Benessere vista",
+            "4": "Disinfettante urinaria"
+        }
+    },
+    {
+        "Id": 112,
+        "Nomi": {
+            "0": "Mirtillo Rosso Americano",
+            "1": "Vaccinium macrocarpon L."
+        },
+        "Proprieta": {
+            "0": "Antisettica",
+            "1": "Antiossidante"
+        }
+    },
+    {
+        "Id": 113,
+        "Nomi": {
+            "0": "Mirtillo Rosso",
+            "1": "Vaccinium vitis idaea L."
+        },
+        "Proprieta": {
+            "0": "Astringente",
+            "1": "Dolcemente lassativa",
+            "2": "Disinfettante urinaria",
+            "3": "Vasoprottetrice"
+        }
+    },
+    {
+        "Id": 114,
+        "Nomi": {
+            "0": "Muira Puama",
+            "1": "Ptychopetalum olacoides Benth."
+        },
+        "Proprieta": {
+            "0": "Afrodisiaca",
+            "1": "Tonica",
+            "2": "Digestiva"
+        }
+    },
+    {
+        "Id": 115,
+        "Nomi": {
+            "0": "Mughetto",
+            "1": "Convallaria majalis L."
+        },
+        "Proprieta": {
+            "0": "Cardiotonica",
+            "1": "Diuretica (Pianta velenosa)"
+        }
+    },
+    {
+        "Id": 116,
+        "Nomi": {
+            "0": "Noce",
+            "1": "Juglans regia L."
+        },
+        "Proprieta": {
+            "0": "Depurativa",
+            "1": "Astringente",
+            "2": "Ipoglicemizzante"
+        }
+    },
+    {
+        "Id": 117,
+        "Nomi": {
+            "0": "Noce moscata",
+            "1": "Myristica fragrans Houtt"
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Sgonfiante"
+        }
+    },
+    {
+        "Id": 118,
+        "Nomi": {
+            "0": "Olivo",
+            "1": "Olea europaea L."
+        },
+        "Proprieta": {
+            "0": "Ipotensiva",
+            "1": "Ipoglicemizzante",
+            "2": "Ipocolesterolemizzante",
+            "3": "Lenitiva*"
+        }
+    },
+    {
+        "Id": 119,
+        "Nomi": {
+            "0": "Olmaria",
+            "1": "Spiraea ulmaria L."
+        },
+        "Proprieta": {
+            "0": "Antifebbrile",
+            "1": "Antiereumatica",
+            "2": "Diuretica"
+        }
+    },
+    {
+        "Id": 120,
+        "Nomi": {
+            "0": "Origano",
+            "1": "Origanum vulgare L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Sgonfiante"
+        }
+    },
+    {
+        "Id": 121,
+        "Nomi": {
+            "0": "Ortica",
+            "1": "Urtica dioica L."
+        },
+        "Proprieta": {
+            "0": "Diuretica",
+            "1": "Remineralizzante",
+            "2": "Antiprostatica",
+            "3": "Antianemica"
+        }
+    },
+    {
+        "Id": 122,
+        "Nomi": {
+            "0": "Papaya",
+            "1": "Carica papaya L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Antiossidante",
+            "2": "Cicatrizzante*"
+        }
+    },
+    {
+        "Id": 123,
+        "Nomi": {
+            "0": "Parietaria",
+            "1": "Parietaria officinalis L."
+        },
+        "Proprieta": {
+            "0": "Diuretica",
+            "1": "Depurativa",
+            "2": "Anti-renella"
+        }
+    },
+    {
+        "Id": 124,
+        "Nomi": {
+            "0": "Partenio",
+            "1": "Tanacetum parthenium L."
+        },
+        "Proprieta": {
+            "0": "Spasmolitica/Calmante dolori addominali"
+        }
+    },
+    {
+        "Id": 125,
+        "Nomi": {
+            "0": "Passiflora",
+            "1": "Passiflora incarnata L."
+        },
+        "Proprieta": {
+            "0": "Rilassante",
+            "1": "Ipnoinducente"
+        }
+    },
+    {
+        "Id": 126,
+        "Nomi": {
+            "0": "Peperoncino",
+            "1": "Capsicum annuum L."
+        },
+        "Proprieta": {
+            "0": "Lenitiva",
+            "1": "Digestiva",
+            "2": "Ipocolesterolemizzante",
+            "3": "Ipotensiva"
+        }
+    },
+    {
+        "Id": 127,
+        "Nomi": {
+            "0": "Piantaggine",
+            "1": "Plantago major L."
+        },
+        "Proprieta": {
+            "0": "Antiallergica",
+            "1": "Espettorante/Emolliente vie respiratorie",
+            "2": "Lenitiva"
+        }
+    },
+    {
+        "Id": 128,
+        "Nomi": {
+            "0": "Pilosella",
+            "1": "Hieracium pilosella L."
+        },
+        "Proprieta": {
+            "0": "Diuretica",
+            "1": "Disinfettante urinaria"
+        }
+    },
+    {
+        "Id": 129,
+        "Nomi": {
+            "0": "Pino Mugo",
+            "1": "Pinus mugo Turra"
+        },
+        "Proprieta": {
+            "0": "Balsamica*",
+            "1": "Espettorante/Emolliente vie respiratorie",
+            "2": "Antisettica",
+            "3": "Antireumatica*"
+        }
+    },
+    {
+        "Id": 130,
+        "Nomi": {
+            "0": "Pino Silvestre",
+            "1": "Pinus sylvestris L"
+        },
+        "Proprieta": {
+            "0": "Balsamica*",
+            "1": "Espettorante/Emolliente vie respiratorie",
+            "2": "Antisettica",
+            "3": "Antireumatica*"
+        }
+    },
+    {
+        "Id": 131,
+        "Nomi": {
+            "0": "Platano",
+            "1": "Platanus orientalis L."
+        },
+        "Proprieta": {
+            "0": "Drenante cutanea"
+        }
+    },
+    {
+        "Id": 132,
+        "Nomi": {
+            "0": "Polipodio",
+            "1": "Polypodium vulgare L."
+        },
+        "Proprieta": {
+            "0": "Espettorante/Emolliente vie respiratorie",
+            "1": "Depurativa",
+            "2": "Dolcemente lassativa"
+        }
+    },
+    {
+        "Id": 133,
+        "Nomi": {
+            "0": "Prezzemolo",
+            "1": "Petroselinum crispum Mill. Sinonimo: Petroselinum hortense Hoffm."
+        },
+        "Proprieta": {
+            "0": "Diuretica",
+            "1": "Emmenagoga"
+        }
+    },
+    {
+        "Id": 134,
+        "Nomi": {
+            "0": "Primula",
+            "1": "Primula veris L."
+        },
+        "Proprieta": {
+            "0": "Espettorante/Emolliente vie respiratorie",
+            "1": "Rilassante",
+            "2": "Antireumatica"
+        }
+    },
+    {
+        "Id": 135,
+        "Nomi": {
+            "0": "Psillio",
+            "1": "Plantago psyllium L."
+        },
+        "Proprieta": {
+            "0": "Dolcemente lassativa"
+        }
+    },
+    {
+        "Id": 136,
+        "Nomi": {
+            "0": "Quercia",
+            "1": "Quercus robur L. Quercus peduncola Ehrh."
+        },
+        "Proprieta": {
+            "0": "Astringente",
+            "1": "Antisettica*",
+            "2": "Tonica/Stimolante",
+            "3": "Cicatrizzante*",
+            "4": "Vasoprottetrice*"
+        }
+    },
+    {
+        "Id": 137,
+        "Nomi": {
+            "0": "Rabarbaro",
+            "1": "Rheum palmatum L."
+        },
+        "Proprieta": {
+            "0": "Lassativa",
+            "1": "Digestiva"
+        }
+    },
+    {
+        "Id": 138,
+        "Nomi": {
+            "0": "Ribes Nero",
+            "1": "Ribes nigrum L."
+        },
+        "Proprieta": {
+            "0": "Antireumatica",
+            "1": "Antiallergica",
+            "2": "Antiossidante",
+            "3": "Vitaminizzante"
+        }
+    },
+    {
+        "Id": 139,
+        "Nomi": {
+            "0": "Rooibos",
+            "1": "Aspalathus linearis (Burm.f.) R.Dahlgr."
+        },
+        "Proprieta": {
+            "0": "Antiossidante"
+        }
+    },
+    {
+        "Id": 140,
+        "Nomi": {
+            "0": "Rosa Canina",
+            "1": "Rosa canina L."
+        },
+        "Proprieta": {
+            "0": "Antiallergica",
+            "1": "Immunostimolante",
+            "2": "Antiossidante",
+            "3": "Vitaminizzante"
+        }
+    },
+    {
+        "Id": 141,
+        "Nomi": {
+            "0": "Rosa mosqueta",
+            "1": "Rosa moschata",
+            "2": "Rosa rubiginosa",
+            "3": "Rosa canina",
+            "4": "Rosa Englanteria L."
+        },
+        "Proprieta": {
+            "0": "Cicatrizzante*"
+        }
+    },
+    {
+        "Id": 142,
+        "Nomi": {
+            "0": "Rosmarino",
+            "1": "Rosmarinus officinalis L."
+        },
+        "Proprieta": {
+            "0": "Depurativa",
+            "1": "Ipocolesterolemizzante",
+            "2": "Balsamica*",
+            "3": "Tonica/Stimolante*"
+        }
+    },
+    {
+        "Id": 143,
+        "Nomi": {
+            "0": "Rusco",
+            "1": "Ruscus aculeatus L."
+        },
+        "Proprieta": {
+            "0": "Vasoprotettrice",
+            "1": "Diuretica"
+        }
+    },
+    {
+        "Id": 144,
+        "Nomi": {
+            "0": "Salice",
+            "1": "Salix alba L."
+        },
+        "Proprieta": {
+            "0": "Antireumatica",
+            "1": "Antipiretica"
+        }
+    },
+    {
+        "Id": 145,
+        "Nomi": {
+            "0": "Salvia",
+            "1": "Salvia officinalis L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Estrogenica",
+            "2": "Antisudorale",
+            "3": "Ipoglicemizzante"
+        }
+    },
+    {
+        "Id": 146,
+        "Nomi": {
+            "0": "Sambuco",
+            "1": "Sambucus nigra L."
+        },
+        "Proprieta": {
+            "0": "Diuretica",
+            "1": "Antiossidante",
+            "2": "Vitaminizzante",
+            "3": "Antifebbrile"
+        }
+    },
+    {
+        "Id": 147,
+        "Nomi": {
+            "0": "Santoreggia",
+            "1": "Satureja montana L."
+        },
+        "Proprieta": {
+            "0": "Antisettica",
+            "1": "Digestiva"
+        }
+    },
+    {
+        "Id": 148,
+        "Nomi": {
+            "0": "Senna",
+            "1": "Cassia angustifolia Vahl"
+        },
+        "Proprieta": {
+            "0": "Lassativa"
+        }
+    },
+    {
+        "Id": 149,
+        "Nomi": {
+            "0": "Serenoa repens",
+            "1": "Serenoa repens Bertoni Sinonimo:Serenoa serrulata"
+        },
+        "Proprieta": {
+            "0": "Antiandrogenica e antiestrogenica"
+        }
+    },
+    {
+        "Id": 150,
+        "Nomi": {
+            "0": "Sequoia",
+            "1": "Sequoia gigantea (Lindl.) Dec."
+        },
+        "Proprieta": {
+            "0": "Tonica/Stimolante",
+            "1": "Antiprostatica",
+            "2": "Tonificante dellâ€™umore",
+            "3": "Remineralizzante"
+        }
+    },
+    {
+        "Id": 151,
+        "Nomi": {
+            "0": "Spirulina",
+            "1": "Arthrospira platensis(Nordstedt ) Gomont"
+        },
+        "Proprieta": {
+            "0": "Antiossidante/Vitaminizzante",
+            "1": "Remineralizzante"
+        }
+    },
+    {
+        "Id": 152,
+        "Nomi": {
+            "0": "Stevia",
+            "1": "Stevia rebaudiana Bertoni"
+        },
+        "Proprieta": {
+            "0": "Dolcificante",
+            "1": "Ipoglicemizzante"
+        }
+    },
+    {
+        "Id": 153,
+        "Nomi": {
+            "0": "Tamarindo",
+            "1": "Tamarindus indica L."
+        },
+        "Proprieta": {
+            "0": "Dolcemente lassativa"
+        }
+    },
+    {
+        "Id": 154,
+        "Nomi": {
+            "0": "Tarassaco",
+            "1": "Taraxacum officinale Weber"
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Depurativa",
+            "2": "Ipocolesterolemizzante"
+        }
+    },
+    {
+        "Id": 155,
+        "Nomi": {
+            "0": "TÃ¨",
+            "1": "Camellia sinensis (L.) Kuntze"
+        },
+        "Proprieta": {
+            "0": "Tonica/Stimolante",
+            "1": "Diuretica",
+            "2": "Astringente"
+        }
+    },
+    {
+        "Id": 156,
+        "Nomi": {
+            "0": "Tea Tree",
+            "1": "Melaleuca alternifolia Mill."
+        },
+        "Proprieta": {
+            "0": "Astringente*",
+            "1": "Antisettica*",
+            "2": "Sgradita agli insetti*",
+            "3": "Balsamica*"
+        }
+    },
+    {
+        "Id": 157,
+        "Nomi": {
+            "0": "Tiglio",
+            "1": "Tilia cordata Cheel."
+        },
+        "Proprieta": {
+            "0": "Rilassante",
+            "1": "Lenitiva",
+            "2": "Espettorante/Emolliente vie respiratorie",
+            "3": "Antistress"
+        }
+    },
+    {
+        "Id": 158,
+        "Nomi": {
+            "0": "Timo",
+            "1": "Thymus vulgaris L."
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Balsamica*",
+            "2": "Espettorante/Emolliente vie respiratorie",
+            "3": "Antisettica*"
+        }
+    },
+    {
+        "Id": 159,
+        "Nomi": {
+            "0": "Trifoglio rosso",
+            "1": "Trifolium pratense L"
+        },
+        "Proprieta": {
+            "0": "Estrogenica"
+        }
+    },
+    {
+        "Id": 160,
+        "Nomi": {
+            "0": "Uva Ursina",
+            "1": "Arctostaphylos uva ursi (L.) Sprengel"
+        },
+        "Proprieta": {
+            "0": "Antisettica urinaria"
+        }
+    },
+    {
+        "Id": 161,
+        "Nomi": {
+            "0": "Valeriana",
+            "1": "Valeriana officinalis L."
+        },
+        "Proprieta": {
+            "0": "Calmante dolori addominali/Spasmolitica",
+            "1": "Rilassante/Antistress"
+        }
+    },
+    {
+        "Id": 162,
+        "Nomi": {
+            "0": "Verbasco",
+            "1": "Verbascum thapsus L."
+        },
+        "Proprieta": {
+            "0": "Espettorante/Emolliente vie respiratorie"
+        }
+    },
+    {
+        "Id": 163,
+        "Nomi": {
+            "0": "Verbena odorosa",
+            "1": "Lippia citriodora Kunth",
+            "2": "Aloysia citriodora Palau"
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Rilassante",
+            "2": "Antistress*",
+            "3": "Sgradita agli insetti*"
+        }
+    },
+    {
+        "Id": 164,
+        "Nomi": {
+            "0": "Verga d'oro",
+            "1": "Solidago virga aurea L."
+        },
+        "Proprieta": {
+            "0": "Drenante",
+            "1": "Diuretica",
+            "2": "Anti-renella",
+            "3": "Disinfettante urinaria",
+            "4": "Antiossidante",
+            "5": "Vasoprottetrice"
+        }
+    },
+    {
+        "Id": 165,
+        "Nomi": {
+            "0": "Viburno",
+            "1": "Viburnum lantana L."
+        },
+        "Proprieta": {
+            "0": "Antiallergica",
+            "1": "Espettorante/Emolliente vie respiratorie",
+            "2": "Spasmolitica/Calmante dolori addominali"
+        }
+    },
+    {
+        "Id": 166,
+        "Nomi": {
+            "0": "Viola",
+            "1": "Viola tricolor L."
+        },
+        "Proprieta": {
+            "0": "Depurativa",
+            "1": "Diuretica",
+            "2": "Disinfettante urinaria"
+        }
+    },
+    {
+        "Id": 167,
+        "Nomi": {
+            "0": "Vite rossa",
+            "1": "Vitis vinifera L."
+        },
+        "Proprieta": {
+            "0": "Antiossidante/Vitaminizzante",
+            "1": "Vasoprotrettrice",
+            "2": "Ipocolesterolemizzante",
+            "3": "Depurativa"
+        }
+    },
+    {
+        "Id": 168,
+        "Nomi": {
+            "0": "Ylang ylang",
+            "1": "Cananga odorata (Lam.) Hook.f. and T.Thomson"
+        },
+        "Proprieta": {
+            "0": "Digestiva",
+            "1": "Antinausea",
+            "2": "Sgonfiante",
+            "3": "Ipocolesterolemizzante"
+        }
+    }
+]
