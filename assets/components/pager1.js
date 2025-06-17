@@ -1,7 +1,7 @@
 class CustomPager extends HTMLElement {
     constructor() {
         super();
-        
+
         this.rowsPerPage = parseInt(this.getAttribute("rows") || "5");
         this.currentPage = 1;
         this.dataJson = this.getAttribute("dataJson");
@@ -9,6 +9,7 @@ class CustomPager extends HTMLElement {
             ? this.getAttribute("columnHeaders").split(";").map(header => header.trim()) 
             : null;
         this.data = [];
+        this.filteredData = [];
         this.totalPages = 0;
 
         this.loadData();
@@ -18,20 +19,19 @@ class CustomPager extends HTMLElement {
         if (this.dataJson === "output") {
             try {
                 const response = await fetch("output.json");
-                if (!response.ok) {
-                    throw new Error(`Errore nel caricamento del file JSON: ${response.status}`);
-                }
+                if (!response.ok) throw new Error(`Errore nel caricamento del file JSON: ${response.status}`);
                 this.data = await response.json();
-                this.totalPages = Math.ceil(this.data.length / this.rowsPerPage);
-                this.render();
             } catch (error) {
                 console.error("Errore durante la fetch:", error);
+                return;
             }
         } else {
             this.data = this.dataJson === "skills" ? skillsTable : [];
-            this.totalPages = Math.ceil(this.data.length / this.rowsPerPage);
-            this.render();
         }
+
+        this.filteredData = [...this.data];
+        this.totalPages = Math.ceil(this.filteredData.length / this.rowsPerPage);
+        this.render();
     }
 
     render() {
@@ -40,16 +40,16 @@ class CustomPager extends HTMLElement {
         const container = document.querySelector("custom-pager");
         container.insertAdjacentHTML("beforebegin", `
             <div class="table-container">
+                <input id="search-box" type="text" placeholder="Cerca..." style="margin: auto;" />
                 <table>
                     <thead>
                         <tr id="table-header"></tr>
                     </thead>
                     <tbody id="table-body"></tbody>
                 </table>
-            
                 <div class="pagination">
                     <button id="prev-page"> <- Precedente</button>
-                    <span id="page-info">Pagina ${this.currentPage} di ${this.totalPages}</span>
+                    <span id="page-info">${this.currentPage} di ${this.totalPages}</span>
                     <button id="next-page"> -> Successiva</button>
                 </div>
             </div>
@@ -59,6 +59,7 @@ class CustomPager extends HTMLElement {
 
         document.getElementById("prev-page").addEventListener("click", () => this.prevPage());
         document.getElementById("next-page").addEventListener("click", () => this.nextPage());
+        document.getElementById("search-box").addEventListener("input", (e) => this.applyFilter(e.target.value));
 
         this.remove();
     }
@@ -69,9 +70,9 @@ class CustomPager extends HTMLElement {
         headerRow.innerHTML = "";
         body.innerHTML = "";
 
-        if (this.data.length === 0) return;
+        if (this.filteredData.length === 0) return;
 
-        const headers = this.columnHeaders || Object.keys(this.data[0]);
+        const headers = this.columnHeaders || Object.keys(this.filteredData[0]);
 
         headers.forEach(header => {
             const th = document.createElement("th");
@@ -80,18 +81,18 @@ class CustomPager extends HTMLElement {
         });
 
         const startIndex = (this.currentPage - 1) * this.rowsPerPage;
-        const endIndex = Math.min(startIndex + this.rowsPerPage, this.data.length);
+        const endIndex = Math.min(startIndex + this.rowsPerPage, this.filteredData.length);
 
         for (let i = startIndex; i < endIndex; i++) {
             const tr = document.createElement("tr");
             headers.forEach(key => {
                 const td = document.createElement("td");
+                const cellValue = this.filteredData[i][key];
 
-                // Se il valore è un oggetto con più elementi, concatenalo
-                if (typeof this.data[i][key] === "object") {
-                    td.textContent = Object.values(this.data[i][key]).join(", ");
+                if (typeof cellValue === "object" && cellValue !== null) {
+                    td.textContent = Object.values(cellValue).join(", ");
                 } else {
-                    td.textContent = this.data[i][key] || "";
+                    td.textContent = cellValue || "";
                 }
 
                 tr.appendChild(td);
@@ -99,7 +100,21 @@ class CustomPager extends HTMLElement {
             body.appendChild(tr);
         }
 
-        document.getElementById("page-info").textContent = `Pagina ${this.currentPage} di ${this.totalPages}`;
+        document.getElementById("page-info").textContent = `${this.currentPage} di ${this.totalPages}`;
+    }
+
+    applyFilter(query) {
+        this.currentPage = 1;
+        const lowered = query.toLowerCase();
+
+        this.filteredData = this.data.filter(row =>
+            Object.values(row).some(value =>
+                String(value).toLowerCase().includes(lowered)
+            )
+        );
+
+        this.totalPages = Math.ceil(this.filteredData.length / this.rowsPerPage);
+        this.displayTable();
     }
 
     prevPage() {

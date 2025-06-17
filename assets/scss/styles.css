@@ -569,6 +569,33 @@ button:hover {
     margin: 0 auto;
 }
 
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+.table-container span {
+  width: 65px;
+}
+
+#search-box {
+  
+  padding: 5px;
+  width: 50%; /* oppure 100% se vuoi che occupi tutta la larghezza disponibile */
+  text-align: center;
+}
+
+input:focus {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+  outline: none;
+  background-color: #f0f8ff;
+}
+
+
 
 
 /*# sourceMappingURL=styles.css.map */
